@@ -1,0 +1,167 @@
+// _global.scss
+
+/* Global styles, mixins, variables */
+
+$max-width:1040px;
+
+$white:#ffffff;
+$teal:#1AB19A;
+$yellow:#D4EA00;
+$grey:#515254;
+
+$font-dark:#515254;
+
+//////////////////////////////////////
+@mixin clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020"; 
+        display: block; 
+        height: 0; 
+        overflow: hidden; 
+    }
+    &:after {
+        clear: both;
+    }
+}
+@mixin transition($speed){
+    -webkit-transition: all $speed ease;
+    -moz-transition: all $speed ease;
+    -o-transition: all $speed ease;
+    transition: all $speed ease;
+}
+@mixin transform($value){
+    -webkit-transform: $value;
+    -moz-transform:    $value;
+    -ms-transform:     $value;
+    -o-transform:      $value;
+    transform:         $value;
+    -webkit-animation-fill-mode: forwards;
+}
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin image-overlay{
+	content:'';
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(81,82,84,0.6);
+	width:100%;
+	height:100%;
+	@include transition(0.3s);
+}
+@mixin image-overlay-2{
+  content:'';
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(81,82,84,0.4);
+  width:100%;
+  height:100%;
+  @include transition(0.3s);
+}
+
+/*
+*	FONTS
+*/
+@font-face {
+  font-family: "Karla Regular";
+  src: url('fonts/Karla/Karla-Regular.ttf'); 
+}
+@font-face {
+  font-family: "Karla Bold";
+  src: url('fonts/Karla/Karla-Bold.ttf'); 
+}
+@font-face {
+  font-family: "Karla Italic";
+  src: url('fonts/Karla/Karla-Italic.ttf'); 
+}
+@font-face {
+  font-family: "Karla BoldItalic";
+  src: url('fonts/Karla/Karla-BoldItalic.ttf'); 
+}
+@font-face {
+  font-family: "Neuzeit Reg";
+  src: url('fonts/Neuzeit/NeuzeitGro-Reg.otf'); 
+}
+@font-face {
+  font-family: "Neuzeit Bold";
+  src: url('fonts/Neuzeit/NeuzeitGro-Bol.otf'); 
+}
+@font-face {
+  font-family: "Caecilia Regular";
+  src: url('fonts/Caecilia/Caecilia-Regular.ttf'); 
+}
+
+
+
+$karla-reg:"Karla Regular";
+$karla-bold:"Karla Bold";
+$karla-italic:"Karla Italic";
+$karla-BoldItalic:"Karla BoldItalic";
+
+$neu-reg:"Neuzeit Reg";
+$neu-bold:"Neuzeit Bold";
+
+$cae-reg:"Caecilia Regular";
+
+/*$caeci-rom:"Caecillia Rom";*/
+
+@mixin karla-bold-12($color){
+	font-family:$karla-bold;
+	color:$color;
+	font-size:0.75em;
+}
+@mixin karla-bold-14($color){
+	font-family:$karla-bold;
+	color:$color;
+	font-size:0.875em;
+  font-weight:600;
+}
+@mixin karla-reg-16($color){
+	font-family:$karla-reg;
+	font-size:1em;
+	color:$color;
+  line-height:1.3em;
+}
+@mixin neu-bold-20($color){//fix
+	font-family:$karla-bold;
+	font-size:1.25em;
+	color:$color;
+}
+@mixin new-bold-28($color){//fix
+	font-family:$karla-bold;
+	font-size:1.75em;
+	color:$color;
+}
+@mixin neu-bold-92($color){//fix
+	font-family:$karla-bold;
+	font-size:5.75em;
+	color:$color;
+	line-height:1em;
+}
+@mixin neu-bold-36($color){//fix
+	font-family:$karla-reg;
+	font-size:2.25em;
+	color:$color;
+	line-height:1.35em;
+}
+@mixin cae-reg-36($color){
+  font-family:$cae-reg;
+  font-size:2.25em;
+  color:$color;
+  line-height:1.3em;
+}
+@mixin cae-reg-28($color){
+  font-family:$cae-reg;
+  font-size:1.75em;
+  color:$color;
+}

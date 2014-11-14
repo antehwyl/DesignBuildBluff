@@ -1,0 +1,271 @@
+// _nav.scss
+
+@import 'global';
+
+#masthead{
+	position:absolute;
+	width:100%;
+	z-index:999;
+	margin:40px 0 0 0;
+}
+footer{
+	width:100%;
+	background:#868688;
+}
+#header-inner,
+#footer-inner{
+	max-width:$max-width;
+	width:100%;
+	margin:auto;
+	//background:red;
+}
+#footer-inner{
+	padding:63px 0 50px 0;
+}
+#site-logo,
+#footer-site-logo{
+	float:left;
+	//background-image:url('img/logo.png');
+	//background-repeat:no-repeat;
+	//background-size:100%;
+	width:295px;
+	height:73px;
+	img{
+		width:100%;
+	}
+	h1{
+		display:none;
+	}
+}
+#main-menu-wrap,
+#footer-main-menu-wrap{
+	float:right;
+	@include karla-bold-12(red);
+	//font-weight:500;
+	text-transform:uppercase;
+	margin:16px 0 0 0;
+
+	ul{
+		list-style:none;
+		@include clearfix;
+	}
+	li{
+		float:left;
+		//margin:0 0 0 25px;
+	}
+	a{
+		text-decoration:none;
+		color:$white;
+	}
+	.menu-contact{
+		margin:0 25px 0 0;
+		a{
+			@include transition(0.2s);
+			border-bottom:2px solid rgba(212,234,0,0);
+		}
+	}
+	.menu-blog{
+		margin:0 20px 0 0;
+		a{
+			@include transition(0.2s);
+			border-bottom:2px solid rgba(212,234,0,0);
+		}
+	}
+	.menu-contact:hover,
+	.menu-blog:hover{
+		a{
+			border-bottom:2px solid rgba(212,234,0,1);
+		}
+	}
+	.menu-contribute{
+		a{
+			padding:15px 17px;
+			background:rgba(255,255,255,0.3);
+			@include border-radius(4px);
+			@include transition(0.2s);
+		}
+	}
+	.menu-contribute:hover{
+		a{
+			color:$font-dark;
+			background:rgba(212,234,0,1);
+		}
+	}
+}
+/*
+#footer-social-wrap{
+	float:left;
+	clear:both;
+	width:100%;
+	@include karla-bold-12($white);
+	margin:40px 0 0 0;
+	ul{
+		float:right;
+		list-style:none;
+	}
+	li{
+		float:left;
+		margin:0 0 0 10px;
+		padding:0 0 2px 0;
+		border-bottom:2px solid $yellow;
+		@include transition(0.2s);
+	}
+	li:hover{
+		border-bottom:2px solid $font-dark;
+	}
+	a{
+		text-decoration:none;
+		color:$white;
+	}
+}
+*/
+#contact-details{
+	float:right;
+	clear:both;
+	margin:15px 41px 0 0;
+	//text-align:center;
+	p{
+		@include karla-bold-12($white);
+		margin:4px 0 0 0;
+		//float:right;
+		clear:both;
+		a{
+			color:$white;
+		}
+	}
+	a{
+		font-size:1em;
+		text-decoration:none;
+		//float:left;
+		display:inline-block;
+		margin:2px 0 0 0;
+		p{
+			border-bottom:2px solid $yellow;
+			@include transition(0.2s);
+			margin:0;
+		}
+	}
+	a:hover{
+		p{
+			border-bottom:2px solid $font-dark;
+		}
+	}
+}
+//////////////////////////////////////////////
+@media only screen and (max-width:1150px){
+	#header-inner,
+	#footer-inner{
+		width:90%;
+	}
+}
+@media only screen and (max-width:650px){
+	#masthead{
+		margin:20px 0 0 0;
+	}
+	#site-logo,
+	#footer-site-logo{
+		float:none;
+		margin:0 auto 38px auto;
+	}
+	#main-menu-wrap,
+	#footer-main-menu-wrap{
+		float:none;
+		width:295px;
+		margin:16px auto 0 auto;
+		ul{
+			padding:0;
+			width:220px;
+			margin:auto;
+		}
+		.menu-contact,
+		.menu-blog{
+			margin:0 15px 0 0;
+		}
+	}
+	/*#footer-social-wrap{
+		float:none;
+		width:232px;
+		margin:40px auto 0 auto;
+		ul{
+			float:none;
+			width:100%;
+			margin:auto;
+			padding:0;
+		}
+	}*/
+	#contact-details{
+		float:none;
+		text-align:center;
+		margin:38px 0 0 0;
+		p{
+			float:none;
+			clear:both;
+			margin:4px 0 0 0;
+
+		}
+		a{
+						display:inline-block;
+			p{
+				margin:0;
+			}
+		}
+	}
+}
+@media only screen and (max-width:400px){
+	#header-inner,
+	#footer-inner{
+		width:100%;
+	}
+	#site-logo,
+	#footer-site-logo{
+		width:90%;
+		height:auto;
+		margin:0 auto 25px auto;
+	}
+	#main-menu-wrap,
+	#footer-main-menu-wrap{
+		width:100%;
+		margin:0;
+		
+		
+		/*ul{
+			padding:0;
+			display:inline-block;
+			text-align:center;
+			position:relative;
+			//left:50%;
+			//@include transform(translateX(-50%));
+			margin:0;
+		}
+		li{
+			//float:left;
+			//clear:both;
+			//display:block;
+			//text-align:center;
+		}
+		.menu-contact,
+		.menu-blog,
+		.menu-contribute{
+			//width:100%;
+			//margin:0;
+			//text-align:center;
+		}
+		.menu-contact,
+		.menu-blog{
+			margin:20px 0 0 0;
+		}
+		.menu-contribute{
+			margin:30px 0 0 0;
+			a{
+				padding:15px 12%;
+			}
+		}*/
+	}
+	
+}
+@media only screen and (max-width:350px){
+	
+}
+@media only screen and (max-width:300px){
+	
+}

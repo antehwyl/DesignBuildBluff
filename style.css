@@ -1,0 +1,30 @@
+/*
+ Theme Name:   Design Build Bluff
+ Description:  Twenty Twelve Child Theme
+ Author:       James Larson
+ Template:     twentytwelve
+*/
+
+
+
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+html{
+	font-size:16px;
+	-webkit-font-smoothing: antialiased;
+}
+body{
+	margin:0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
