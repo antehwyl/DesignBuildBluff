@@ -1,0 +1,33 @@
+/* Global styles, mixins, variables */
+/*
+*	FONTS
+*/
+@font-face {
+  font-family: "Karla Regular";
+  src: url('fonts/Karla/Karla-Regular.ttf'); }
+
+@font-face {
+  font-family: "Karla Bold";
+  src: url('fonts/Karla/Karla-Bold.ttf'); }
+
+@font-face {
+  font-family: "Karla Italic";
+  src: url('fonts/Karla/Karla-Italic.ttf'); }
+
+@font-face {
+  font-family: "Karla BoldItalic";
+  src: url('fonts/Karla/Karla-BoldItalic.ttf'); }
+
+@font-face {
+  font-family: "Neuzeit Reg";
+  src: url('fonts/Neuzeit/NeuzeitGro-Reg.otf'); }
+
+@font-face {
+  font-family: "Neuzeit Bold";
+  src: url('fonts/Neuzeit/NeuzeitGro-Bol.otf'); }
+
+@font-face {
+  font-family: "Caecilia Regular";
+  src: url('fonts/Caecilia/Caecilia-Regular.ttf'); }
+
+/*$caeci-rom:"Caecillia Rom";*/
