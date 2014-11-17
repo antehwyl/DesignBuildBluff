@@ -44,11 +44,14 @@
 			'depth'           => 0,
 		);
 	?>
+	
+	<?php include INCLUDES_DIR.'/contact.php'; /* The contact information overlay */ ?>
+
 	<header id="masthead" class="site-header cf" role="banner">
 		<div id='header-inner' class='cf'>
 			<div id='site-logo'>
 				<h1>DesignBuildBluff</h1>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/css/img/logo.png" />
+				<a href='<?php echo get_site_url(); ?>'><img src="<?php echo get_stylesheet_directory_uri(); ?>/css/img/logo.png" /></a>
 			</div>
 			<div id='main-menu-wrap'>
 				<?php wp_nav_menu( $main ); ?>

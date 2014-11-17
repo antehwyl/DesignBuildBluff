@@ -27,6 +27,10 @@ function add_theme_styles(){
     array(), 'VERSION', 'all' );
   wp_enqueue_style( 'footer' );
 
+  wp_register_style( 'contact', get_stylesheet_directory_uri().'/css/contact.css',
+    array(), 'VERSION', 'all' );
+  wp_enqueue_style( 'contact' );
+
 	if( is_page_template ('page-templates/home.php') ):
 	    wp_register_style( 'teaser_page', get_stylesheet_directory_uri().'/css/home.css',
 	    array(), 'VERSION', 'all' );

@@ -57,41 +57,108 @@ footer{
 		text-decoration:none;
 		color:$white;
 	}
-	.menu-contact{
-		margin:0 25px 0 0;
-		a{
-			@include transition(0.2s);
-			border-bottom:2px solid rgba(212,234,0,0);
-		}
-	}
-	.menu-blog{
+	
+	.main-menu-contact,
+	.main-menu-blog,
+	.main-menu-involved,
+	.main-menu-work{
 		margin:0 20px 0 0;
 		a{
 			@include transition(0.2s);
-			border-bottom:2px solid rgba(212,234,0,0);
+			//border-bottom:2px solid rgba(212,234,0,0);
 		}
 	}
-	.menu-contact:hover,
-	.menu-blog:hover{
+	.main-menu-contact:hover,
+	.main-menu-blog:hover,
+	.main-menu-involved:hover,
+	.main-menu-work:hover{
 		a{
-			border-bottom:2px solid rgba(212,234,0,1);
+			//border-bottom:2px solid rgba(212,234,0,1);
+			color:$teal;
 		}
 	}
-	.menu-contribute{
+	.main-menu-about{
+		margin:0 20px 0 0;
+		position:relative;
+		a{
+			@include transition(0.2s);
+			//border-bottom:2px solid rgba(212,234,0,0);
+			//color:$teal;
+		}
+		ul{
+			@include transition(0.2s);
+			max-height:0;
+			opacity:0;
+			position:absolute;
+			padding:0;
+			width:200px;
+			overflow:hidden;
+
+			li{
+				clear:both;
+				text-transform:Capitalize;
+				margin:0 0 5px 0;
+			}
+			li:hover{
+				a{
+					color:#1AB19A;
+				}
+			}
+		}
+	}
+	.main-menu-about:hover{
+		a{
+			//border-bottom:2px solid rgba(212,234,0,1);
+			color:$teal;
+		}
+		ul{
+			max-height:1000px;
+			opacity:1;
+			padding:13px 0 0 0;
+			//width:200px;
+			a{
+				//border-bottom:2px solid rgba(212,234,0,0);
+				color:$white;
+			}
+		}
+	}
+	.main-menu-donate{
 		a{
 			padding:15px 17px;
-			background:rgba(255,255,255,0.3);
-			@include border-radius(4px);
+			border:2px solid $teal;
+			background:rgba(26,177,154,0);
+			//@include border-radius(4px);
 			@include transition(0.2s);
+			color:$teal;
 		}
 	}
-	.menu-contribute:hover{
+	.main-menu-donate:hover{
 		a{
-			color:$font-dark;
-			background:rgba(212,234,0,1);
+			color:$white;
+			background:rgba(26,177,154,1);
 		}
 	}
 }
+/* Footer Nav Changes */
+	#footer-main-menu-wrap{
+		.main-menu-donate{
+			a{
+				padding:15px 17px;
+				border:2px solid $white;
+				background:rgba(26,177,154,0);
+				//@include border-radius(4px);
+				@include transition(0.2s);
+				color:$white;
+			}
+		}
+		.main-menu-donate:hover{
+			a{
+				color:$white;
+				border:2px solid $teal;
+				background:rgba(26,177,154,1);
+			}
+		}
+	}
 /*
 #footer-social-wrap{
 	float:left;
