@@ -18,14 +18,36 @@ $supporters			= get_field('supporters');
 	<div id='content-inner'>
 		
 		<div id='team-heading'>
-			<h3><?php echo $team_heading; ?></h3>
+			<h4><?php echo $team_heading; ?></h4>
 		</div>
 
-		<div></div>
+		<div id='team-members'>
+			<?php foreach($team_members as $row): ?>
+				<div class='single-team-member'>
+					<img src='<?php echo $row['image']['url']; ?>' />
+					<h4><?php echo $row['name']; ?></h4>
+					<p><?php echo $row['position']; ?></p>
+					<p><?php echo $row['description']; ?></p>
+				</div>
+			<?php endforeach; ?>
+		</div>
 
-		<div></div>
+		<div id='supporters-heading'>
+			<?php foreach($supporters_heading as $row): ?>
+				<h4><?php echo $row['heading']; ?></h4>
+				<p><?php echo $row['text']; ?></p>
+			<?php endforeach; ?>
+		</div>
 
-		<div></div>
+		<div id='supporters'>
+			<?php foreach($supporters as $row): ?>
+				<div class='single-supporter'>
+					<img src='<?php echo $row['image']['url']; ?>' />
+					<h4><?php echo $row['name']; ?></h4>
+					<p><?php echo $row['position']; ?></p>
+				</div>
+			<?php endforeach; ?>
+		</div>
 
 	</div>
 </div>
