@@ -24,7 +24,7 @@
 		<div id='footer-inner' class='cf'>
 			<div id='footer-site-logo'>
 				<h1>DesignBuildBluff</h1>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/css/img/logo.png" />
+				<a href='<?php echo get_site_url(); ?>'><img src="<?php echo get_stylesheet_directory_uri(); ?>/css/img/logo.png" /></a>
 			</div>
 			<div id='footer-main-menu-wrap'>
 				<?php wp_nav_menu( $main ); ?>

@@ -31,5 +31,10 @@
   src: url('fonts/Caecilia/Caecilia-Regular.ttf'); }
 
 /*$caeci-rom:"Caecillia Rom";*/
+.nav-buffer {
+  position: relative;
+  width: 100%;
+  height: 113px; }
+
 #contact-wrap {
   display: none; }

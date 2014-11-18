@@ -36,15 +36,16 @@
   width: 100%;
   height: 113px; }
 
-#home-splash {
+#featured-project {
   height: 810px;
   overflow: hidden;
   width: 100%;
   position: relative; }
-  #home-splash img {
-    position: absolute; }
+  #featured-project img {
+    position: absolute;
+    width: 100%; }
 
-#home-splash:before {
+#featured-project:before {
   content: '';
   position: absolute;
   top: 0;
@@ -60,21 +61,29 @@
   transition: all 0.3s ease;
   z-index: 1; }
 
-#home-splash-text-wrap {
+#featured-text-wrap {
   width: 1220px;
   margin: auto;
   height: 697px;
   /* (image height)810 - (nav buffer)113 = 697px */
+  text-align: center;
   position: relative;
   z-index: 2; }
-  #home-splash-text-wrap h3 {
+  #featured-text-wrap h3 {
     position: relative;
     font-family: "Neuzeit Reg";
     color: #ffffff;
-    font-size: 5.75em;
+    font-size: 3.5em;
+    line-height: 0.75em;
     text-align: center;
-    width: 80%;
+    max-width: 80%;
     margin: auto;
+    border-bottom: 4px solid #D4EA00;
+    display: inline-block; }
+  #featured-text-wrap a {
+    text-decoration: none; }
+  #featured-text-wrap #text-wrap-inner {
+    position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -82,52 +91,35 @@
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     -webkit-animation-fill-mode: forwards; }
+  #featured-text-wrap .featured-text {
+    font-family: "Neuzeit Reg";
+    font-size: 1.25em;
+    line-height: 115px;
+    color: #ffffff;
+    width: 110px;
+    height: 110px;
+    border: 4px solid #ffffff;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    border-radius: 200px;
+    margin: 0 auto 63px auto; }
 
-#home-who {
+#other-projects {
   width: 1220px;
-  margin: auto;
-  text-align: center; }
-  #home-who p {
-    font-family: "Caecilia Regular";
-    font-size: 2em;
-    color: #515254;
-    width: 75%;
-    margin: 52px auto 0 auto; }
+  margin: 25px auto 130px auto; }
 
-.section-heading {
-  font-family: "Neuzeit Reg";
-  color: #8A8C88;
-  font-size: 1.25em;
-  margin: 110px 0 0 0; }
-
-#home-featured {
-  text-align: center;
-  width: 1220px;
-  margin: auto; }
-
-.item-1 {
-  width: 100%;
-  height: 670px;
-  margin: 52px 0 22px 0; }
-  .item-1 img {
-    width: 100%; }
-
-.item-2, .item-3 {
+.sub-project {
   width: 49%;
-  height: 330px; }
-  .item-2 img, .item-3 img {
+  float: left;
+  margin: 0 0 25px 0;
+  position: relative;
+  height: 330px;
+  overflow: hidden; }
+  .sub-project img {
     width: 100%; }
 
-.item-2 {
-  float: left; }
-
-.item-3 {
-  float: right; }
-
-.featured-item {
-  position: relative; }
-
-.featured-item:before {
+.sub-project:before {
   content: '';
   position: absolute;
   top: 0;
@@ -143,7 +135,7 @@
   transition: all 0.3s ease;
   z-index: 1; }
 
-.featured-item-title {
+.sub-project-text-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -159,38 +151,15 @@
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
   -webkit-animation-fill-mode: forwards;
-  font-family: "Neuzeit Reg";
-  font-size: 1.75em;
-  color: #ffffff;
-  border-bottom: 4px solid #D4EA00;
-  margin: 0;
   z-index: 2; }
+  .sub-project-text-wrap h3 {
+    margin: 0;
+    font-size: 1.75em;
+    font-family: "Neuzeit Reg";
+    color: #ffffff;
+    border-bottom: 4px solid #D4EA00; }
+  .sub-project-text-wrap .visit-text {
+    display: none; }
 
-#home-blog {
-  width: 1220px;
-  margin: auto;
-  text-align: center; }
-  #home-blog .section-heading {
-    margin-bottom: 52px; }
-
-.recent-post {
-  width: 23.6%;
-  float: left;
-  border-top: 3px solid #515254;
-  border-bottom: 3px solid #515254; }
-
-.recent-title {
-  font-family: "Neuzeit Reg";
-  font-size: 1.25em;
-  color: #515254;
-  margin: 60px 0 0 0; }
-
-.recent-date {
-  font-family: "Neuzeit Reg";
-  font-size: 0.68em;
-  color: #515254;
-  text-transform: uppercase;
-  margin: 8px 0 55px 0; }
-
-.recent-post-1, .recent-post-2, .recent-post-3 {
-  margin: 0 1.8666% 135px 0; }
+.even-project {
+  margin: 0 2% 0 0; }

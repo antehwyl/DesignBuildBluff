@@ -2,7 +2,7 @@
 
 /* Global styles, mixins, variables */
 
-$max-width:1040px;
+$max-width:1220px;
 
 $white:#ffffff;
 $teal:#1AB19A;
@@ -10,6 +10,8 @@ $yellow:#D4EA00;
 $grey:#515254;
 
 $font-dark:#515254;
+$font-grey-one:#8A8C88;
+$font-grey-two:#515254;
 
 //////////////////////////////////////
 @mixin clearfix {
@@ -164,4 +166,11 @@ $cae-reg:"Caecilia Regular";
   font-family:$cae-reg;
   font-size:1.75em;
   color:$color;
+}
+
+///////////////////////////////
+.nav-buffer{
+  position:relative;
+  width:100%;
+  height:113px;
 }
