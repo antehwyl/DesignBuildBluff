@@ -47,22 +47,14 @@ $featured 			= get_field('featured_projects');
 		<div id='home-blog' class='cf'>
 			<h4 class='section-heading'>From the Blog</h4>
 			<?php 
-				$args = array( 'numberposts' => 4 );
-			    $recent_posts = wp_get_recent_posts( $args );
+				query_posts('cat=-141&showposts=4');
 			?>
-			<?php $i=0; foreach($recent_posts as $recent): $i++; ?>
-			<?php 
-			//echo '<pre>';
-			//print_r($recent);
-			//echo '</pre>';
-			?>
-				<a href='<?php echo get_post_permalink($recent['ID']); ?>'>
-					<div class='recent-post recent-post-<?php echo $i; ?>'>
-						<h5 class='recent-title'><?php echo get_the_title($recent['ID']); ?></h5>
-						<p class='recent-date'><?php echo get_the_date($d,$recent['ID']); ?></p>
-					</div>
-				</a>
-			<?php endforeach; ?>
+			<?php $i=0; while (have_posts()) : the_post(); $i++; ?>
+			 	<div class='recent-post recent-post-<?php echo $i; ?>'>
+					<h5 class='recent-title'><?php echo the_title(); ?></h5>
+					<p class='recent-date'><?php echo get_the_date(); ?></p>
+				</div>
+			<?php endwhile; ?>
 		</div>
 
 	</div>

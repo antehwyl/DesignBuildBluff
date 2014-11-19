@@ -48,6 +48,12 @@ function add_theme_styles(){
       array(), 'VERSION', 'all' );
     wp_enqueue_style( 'project_page' );
   endif;
+
+  if( is_page_template ('page-templates/about_us_approach.php') ):
+      wp_register_style( 'about_approach', get_stylesheet_directory_uri().'/css/about_approach.css',
+      array(), 'VERSION', 'all' );
+    wp_enqueue_style( 'about_approach' );
+  endif;
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_styles');
@@ -72,7 +78,7 @@ function add_theme_scripts() {
     wp_enqueue_script( 'our_work' );
   endif;
 
-	/*if( is_page_template ('page-templates/teaser_page.php') ):
+  if( is_page_template ('page-templates/about_us_approach.php') ):
     wp_register_script('fancybox', get_stylesheet_directory_uri().'/js/fancybox/jquery.fancybox.pack.js', false, false, true);
     wp_enqueue_script( 'fancybox' );
 
@@ -81,6 +87,18 @@ function add_theme_scripts() {
 
     wp_register_script('lightboxes', get_stylesheet_directory_uri().'/js/lightboxes.js', false, false, true);
     wp_enqueue_script( 'lightboxes' );
+  endif;
+
+  if( is_page_template ('page-templates/about_us_approach.php') ):
+    wp_register_script('backstretch', get_stylesheet_directory_uri().'/js/backstretch.min.js', false, false, true);
+    wp_enqueue_script( 'backstretch' );
+
+    wp_register_script('about_approach', get_stylesheet_directory_uri().'/js/about_approach.js', false, false, true);
+    wp_enqueue_script( 'about_approach' );
+  endif;
+
+	/*if( is_page_template ('page-templates/teaser_page.php') ):
+    
 
      
 
