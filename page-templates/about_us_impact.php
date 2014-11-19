@@ -18,21 +18,33 @@ $press 			= get_field('press');
 
 <div id='content-wrap' class='impact-content'>
 	<div id='content-inner'>
-		
-		<div id='section-one'>
+		<div class='nav-buffer'></div>
+		<div id='section-one' class='cf'>
 			<?php foreach($section_one as $row): ?>
-				<h4><?php echo $row['heading'] ?></h4>
-				<p><?php echo $row['sub_heading']; ?></p>
-				<p><?php echo $row['text']; ?></p>
+				<h4 class='section-heading'><?php echo $row['heading'] ?></h4>
+				<p class='section-sub-heading'><?php echo $row['sub_heading']; ?></p>
+				<p class='section-text'><?php echo $row['text']; ?></p>
 			<?php endforeach; ?>
 		</div>
 
-		<div id='video'>
-			<?php echo $video; ?>
+		<div id='video' class='cf'>
+			<?php foreach($video as $row): ?>
+				<a class='fancybox-video' href='<?php echo $row['iframe']; ?>'>
+					<div class='video-screencap'>
+						<img src='<?php echo $row['thumbnail']['url']; ?>' />
+						
+						<div id='video-text-wrap'>
+							<div id='play-button'><span>PLAY</span></div>
+							<div id='play-preload'></div>
+							<p><?php echo $row['text']; ?></p>
+						</div>
+					</div>
+				</a>
+			<?php endforeach; ?>
 		</div>
 
-		<div id='awards_heading'>
-			<h4><?php echo $awards_heading; ?></h4>
+		<div id='awards-heading'>
+			<h4 class='section-heading'><?php echo $awards_heading; ?></h4>
 		</div>
 
 		<div id='awards'>
@@ -41,15 +53,17 @@ $press 			= get_field('press');
 			<?php endforeach; ?>
 		</div>
 
-		<div id='press_heading'>
-			<?php echo $press_heading; ?>
+		<div id='press-heading'>
+			<h4 class='section-heading'><?php echo $press_heading; ?></h4>
 		</div>
 
 		<div id='press'>
 			<?php foreach($press as $row): ?>
 				
 				<?php if($row['link']): /* If there is a link */ ?>
-					<a href='<?php echo $row['link']; ?>'><p><?php echo $row['item']; ?></p></a>
+					<div>
+						<a href='<?php echo $row['link']; ?>'><p><?php echo $row['item']; ?></p></a>
+					</div>
 				<?php endif; ?>
 
 				<?php if(!$row['link']): /* If there is no link */ ?>

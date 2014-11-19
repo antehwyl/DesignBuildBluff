@@ -58,6 +58,7 @@
 				<?php wp_nav_menu( $main ); ?>
 			</div>
 		</div>
-	</header><!-- #masthead -->
 
+	</header><!-- #masthead -->
+	
 	<div id="main" class="wrapper">

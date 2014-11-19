@@ -60,6 +60,12 @@ function add_theme_styles(){
       array(), 'VERSION', 'all' );
     wp_enqueue_style( 'about_people' );
   endif;
+
+  if( is_page_template ('page-templates/about_us_impact.php') ):
+      wp_register_style( 'about_impact', get_stylesheet_directory_uri().'/css/about_impact.css',
+      array(), 'VERSION', 'all' );
+    wp_enqueue_style( 'about_impact' );
+  endif;
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_styles');
