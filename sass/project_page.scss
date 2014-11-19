@@ -1,3 +1,79 @@
 // _project_page.scss
 
 @import 'global';
+
+.project-content{
+	width:$max-width;
+	margin:auto;
+}
+#project-title{
+	text-align:center;
+	font-family:$neu-bold;
+	font-size:1.75em;
+	color:$font-grey-two;
+	margin:100px 0 0 0;
+}
+#project-headline{
+	text-align:center;
+	font-family:$cae-reg;
+	font-size:2em;
+	color:$font-grey-two;
+	margin:50px auto 100px auto;
+	width:80%;
+}
+.full-width{
+	width:100%;
+	margin-bottom:25px;
+	float:left;
+}
+.half-width-left,
+.half-width-right{
+	width:49%;
+	float:left;
+	margin-bottom:25px;
+}
+.half-width-left{
+	margin:0 2% 25px 0;
+}
+.project-text{
+	width:80%;
+	margin:90px 10% 90px 10%;
+	font-family:$karla-reg;
+	font-size:1em;
+	color:$font-grey-two;
+	line-height:1.4em;
+	float:left;
+
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+}
+#project-nav{
+	font-family:$neu-reg;
+	font-size:1.75em;
+	margin:55px 0 100px 0;
+	a{
+		color:$font-grey-two;
+		text-decoration:none;
+
+	}
+	p{
+		border-bottom:4px solid $yellow;
+		margin:0;
+	}
+	.left{
+		float:left;
+
+	}
+	.right{
+		float:right;
+		a{
+			float:left;
+			border-bottom:4px solid $yellow;
+			margin:0 0 0 40px;
+		}
+	}
+}

@@ -32,7 +32,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
+<div id="page" class="hfeed site <?php //echo template_name(); ?>">
 	<?php 
 		$main = array(
 			'menu'            => 'Main Menu',
@@ -51,7 +51,8 @@
 		<div id='header-inner' class='cf'>
 			<div id='site-logo'>
 				<h1>DesignBuildBluff</h1>
-				<a href='<?php echo get_site_url(); ?>'><img src="<?php echo get_stylesheet_directory_uri(); ?>/css/img/logo.png" /></a>
+				<a href='<?php echo get_site_url(); ?>'><img id='logo-light' src="<?php echo get_stylesheet_directory_uri(); ?>/css/img/logo.png" /></a>
+				<a href='<?php echo get_site_url(); ?>'><img id='logo-dark' src="<?php echo get_stylesheet_directory_uri(); ?>/css/img/logo_dark.png" /></a>
 			</div>
 			<div id='main-menu-wrap'>
 				<?php wp_nav_menu( $main ); ?>

@@ -15,7 +15,6 @@ $body 		= get_field('content');
 
 <div id='content-wrap' class='project-content'>
 	<div id='content-inner'>
-		
 		<div id='project-heading'>
 			<div class='nav-buffer'></div>
 			<h2 id='project-title'><?php the_title(); ?></h2>
@@ -54,8 +53,12 @@ $body 		= get_field('content');
 				<div id='home-link'><a href='<?php echo $our_work_page->guid; ?>'><p>All Projects</p></a></div>
 			</div>
 			<div class='right cf'>
-				<a><p class='prev'>Previous</p></a>
-				<a><p class='next'>Next</p></a>
+				
+				<?php 	
+					$prev_link = previous_post_link( '%link', 'Previous', TRUE );
+					$next_link = next_post_link( '%link', 'Next', TRUE );
+				?>
+
 			</div>
 		</div>
 

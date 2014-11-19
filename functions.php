@@ -43,7 +43,7 @@ function add_theme_styles(){
     wp_enqueue_style( 'our_work' );
   endif;
 
-  if( is_page_template ('page-templates/project_page.php') ):
+  if( is_single() ):
       wp_register_style( 'project_page', get_stylesheet_directory_uri().'/css/project_page.css',
       array(), 'VERSION', 'all' );
     wp_enqueue_style( 'project_page' );
@@ -93,11 +93,8 @@ add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
 /////////////////////////////////////////////////////////////////
 
-/*
-*	Gets post cat slug and looks for single-[cat slug].php and applies it
-*	allows templates for post categories
-*/
-
+//Gets post cat slug and looks for single-[cat slug].php and applies it
+//allows templates for post categories
 add_filter('single_template', create_function(
   '$the_template',
   'foreach( (array) get_the_category() as $cat ) {
@@ -108,11 +105,3 @@ add_filter('single_template', create_function(
 
 /////////////////////////////////////////////////////////////////
 
-/*register_sidebar(array(
-    'name'=>'Nav Search',
-    'id'=>'nav_search',
-    'before_widget'=>'<div id="nav-search">',
-    'after_widget'=>'</div>',
-    'before_title'=>'<h3 id="nav-search-title">',
-    'after_title'=>'</h3>',
-  ));*/

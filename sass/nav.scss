@@ -37,6 +37,12 @@ footer{
 		display:none;
 	}
 }
+#logo-light{
+	display:none;
+}
+#logo-dark{
+	display:block;
+}
 #main-menu-wrap,
 #footer-main-menu-wrap{
 	float:right;
@@ -55,9 +61,11 @@ footer{
 	}
 	a{
 		text-decoration:none;
-		color:$white;
+		color:$font-grey-two;
 	}
-	
+	.main-menu-contact{
+		cursor:pointer;
+	}
 	.main-menu-contact,
 	.main-menu-blog,
 	.main-menu-involved,
@@ -118,7 +126,7 @@ footer{
 			//width:200px;
 			a{
 				//border-bottom:2px solid rgba(212,234,0,0);
-				color:$white;
+				color:$font-grey-two;
 			}
 		}
 	}
@@ -141,6 +149,17 @@ footer{
 }
 /* Footer Nav Changes */
 	#footer-main-menu-wrap{
+		a{
+			color:$white;
+		}
+		.main-menu-about:hover{
+			ul{
+				a{
+					//border-bottom:2px solid rgba(212,234,0,0);
+					color:$white;
+				}
+			}
+		}
 		.main-menu-donate{
 			a{
 				padding:15px 17px;
@@ -218,6 +237,61 @@ footer{
 		}
 	}
 }
+
+
+.page-template-page-templateshome-php,
+,
+,
+.page-template-page-templatesabout_us_approach-php,
+.page-template-page-templatesabout_us_people-php,
+.page-template-page-templatesabout_us_impact-php,
+.page-template-page-templatesget_involved-php{
+
+}
+.page-template-page-templateshome-php,
+.page-template-page-templatesour_work-php{//light color nav
+	
+	#logo-light{
+		display:block;
+	}
+	#logo-dark{
+		display:none;
+	}
+	#main-menu-wrap{
+		a{
+			color:$white;
+		}
+		.main-menu-about{
+			ul{
+				li:hover{
+					a{
+						color:#1AB19A;
+					}
+				}
+			}
+		}
+		.main-menu-about:hover{
+			ul{
+				a{
+					//border-bottom:2px solid rgba(212,234,0,0);
+					color:$white;
+				}
+			}
+		}
+		.main-menu-donate{
+			a{
+				color:$teal;
+			}
+		}
+		.main-menu-donate:hover{
+			a{
+				color:$white;
+			}
+		}
+	}
+	
+}
+
 //////////////////////////////////////////////
 @media only screen and (max-width:1150px){
 	#header-inner,

@@ -63,6 +63,12 @@ footer {
   #site-logo h1, #footer-site-logo h1 {
     display: none; }
 
+#logo-light {
+  display: none; }
+
+#logo-dark {
+  display: block; }
+
 #main-menu-wrap, #footer-main-menu-wrap {
   float: right;
   font-family: "Karla Bold";
@@ -84,7 +90,9 @@ footer {
     float: left; }
   #main-menu-wrap a, #footer-main-menu-wrap a {
     text-decoration: none;
-    color: #ffffff; }
+    color: #515254; }
+  #main-menu-wrap .main-menu-contact, #footer-main-menu-wrap .main-menu-contact {
+    cursor: pointer; }
   #main-menu-wrap .main-menu-contact, #main-menu-wrap .main-menu-blog, #main-menu-wrap .main-menu-involved, #main-menu-wrap .main-menu-work, #footer-main-menu-wrap .main-menu-contact, #footer-main-menu-wrap .main-menu-blog, #footer-main-menu-wrap .main-menu-involved, #footer-main-menu-wrap .main-menu-work {
     margin: 0 20px 0 0; }
     #main-menu-wrap .main-menu-contact a, #main-menu-wrap .main-menu-blog a, #main-menu-wrap .main-menu-involved a, #main-menu-wrap .main-menu-work a, #footer-main-menu-wrap .main-menu-contact a, #footer-main-menu-wrap .main-menu-blog a, #footer-main-menu-wrap .main-menu-involved a, #footer-main-menu-wrap .main-menu-work a {
@@ -126,7 +134,7 @@ footer {
     opacity: 1;
     padding: 13px 0 0 0; }
     #main-menu-wrap .main-menu-about:hover ul a, #footer-main-menu-wrap .main-menu-about:hover ul a {
-      color: #ffffff; }
+      color: #515254; }
   #main-menu-wrap .main-menu-donate a, #footer-main-menu-wrap .main-menu-donate a {
     padding: 15px 17px;
     border: 2px solid #1AB19A;
@@ -141,6 +149,10 @@ footer {
     background: #1ab19a; }
 
 /* Footer Nav Changes */
+#footer-main-menu-wrap a {
+  color: #ffffff; }
+#footer-main-menu-wrap .main-menu-about:hover ul a {
+  color: #ffffff; }
 #footer-main-menu-wrap .main-menu-donate a {
   padding: 15px 17px;
   border: 2px solid #ffffff;
@@ -208,6 +220,21 @@ footer {
       margin: 0; }
   #contact-details a:hover p {
     border-bottom: 2px solid #515254; }
+
+.page-template-page-templateshome-php #logo-light, .page-template-page-templatesour_work-php #logo-light {
+  display: block; }
+.page-template-page-templateshome-php #logo-dark, .page-template-page-templatesour_work-php #logo-dark {
+  display: none; }
+.page-template-page-templateshome-php #main-menu-wrap a, .page-template-page-templatesour_work-php #main-menu-wrap a {
+  color: #ffffff; }
+.page-template-page-templateshome-php #main-menu-wrap .main-menu-about ul li:hover a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-about ul li:hover a {
+  color: #1AB19A; }
+.page-template-page-templateshome-php #main-menu-wrap .main-menu-about:hover ul a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-about:hover ul a {
+  color: #ffffff; }
+.page-template-page-templateshome-php #main-menu-wrap .main-menu-donate a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-donate a {
+  color: #1AB19A; }
+.page-template-page-templateshome-php #main-menu-wrap .main-menu-donate:hover a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-donate:hover a {
+  color: #ffffff; }
 
 @media only screen and (max-width: 1150px) {
   #header-inner, #footer-inner {
