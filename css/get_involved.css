@@ -1,0 +1,83 @@
+/* Global styles, mixins, variables */
+/*
+*	FONTS
+*/
+@font-face {
+  font-family: "Karla Regular";
+  src: url('fonts/Karla/Karla-Regular.ttf'); }
+
+@font-face {
+  font-family: "Karla Bold";
+  src: url('fonts/Karla/Karla-Bold.ttf'); }
+
+@font-face {
+  font-family: "Karla Italic";
+  src: url('fonts/Karla/Karla-Italic.ttf'); }
+
+@font-face {
+  font-family: "Karla BoldItalic";
+  src: url('fonts/Karla/Karla-BoldItalic.ttf'); }
+
+@font-face {
+  font-family: "Neuzeit Reg";
+  src: url('fonts/Neuzeit/NeuzeitGro-Reg.otf'); }
+
+@font-face {
+  font-family: "Neuzeit Bold";
+  src: url('fonts/Neuzeit/NeuzeitGro-Bol.otf'); }
+
+@font-face {
+  font-family: "Caecilia Regular";
+  src: url('fonts/Caecilia/Caecilia-Regular.ttf'); }
+
+/*$caeci-rom:"Caecillia Rom";*/
+.nav-buffer {
+  position: relative;
+  width: 100%;
+  height: 113px; }
+
+.involved-content {
+  width: 1220px;
+  margin: auto; }
+
+#involved-wrapper {
+  margin: 130px 0 125px 0; }
+
+.section-heading {
+  font-family: "Neuzeit Reg";
+  color: #8A8C88;
+  font-size: 1.25em;
+  text-align: center; }
+
+.section-sub-heading {
+  font-family: "Caecilia Regular";
+  font-size: 2em;
+  color: #515254;
+  width: 80%;
+  margin: 30px auto 50px auto;
+  text-align: center; }
+
+.section-link {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 100px 0;
+  border: 4px solid #1AB19A;
+  color: #1AB19A;
+  padding: 20px 20px 15px 20px;
+  font-family: "Neuzeit Reg";
+  font-size: 1.75em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-animation-fill-mode: forwards;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.section-link:hover {
+  color: #ffffff;
+  background: #1AB19A; }

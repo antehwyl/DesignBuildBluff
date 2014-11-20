@@ -1,0 +1,75 @@
+// _blog.scss
+
+@import 'global';
+
+.blog-content{
+	width:$max-width;
+	margin:auto;
+}
+#blog-filters{
+	float:right;
+	margin:30px 0 0 0;
+}
+#category-filters,
+#archive-filters{
+	float:left;
+	p{
+		float:left;
+		margin:0;
+		font-family:$karla-bold;
+		color:$font-grey-two;
+		font-size:0.75em;
+		text-transform:uppercase;
+		margin:17px 15px 0 0;
+	}
+	select{
+		float:left;
+		-webkit-appearance:none;
+		@include border-radius(0px);
+		border:2px solid $font-grey-two;
+		background-color:$white;
+		padding:15px 15px;
+		font-family:$karla-bold;
+		color:$font-grey-two;
+		font-size:0.75em;
+		text-transform:uppercase;
+		position:relative;
+	}
+	.select-wrap{
+		float:left;
+		position:relative;
+	}
+	.select-wrap:before{
+		content:'';
+		width:10px;
+		border-top:2px solid $font-grey-two;
+		@include transform(rotate(45deg));
+		display:inline-block;
+		position:absolute;
+		right:21px;
+		z-index:2;
+		margin:22px 0 0 0;
+	}
+	.select-wrap:after{
+		content:'';
+		width:10px;
+		border-bottom:2px solid $font-grey-two;
+		@include transform(rotate(-45deg));
+		display:inline-block;
+		position:absolute;
+		right:15px;
+		z-index:2;
+		margin:22px 0 0 0;
+	}
+}
+#category-filters{
+	select{
+		width:120px;
+	}
+}
+#archive-filters{
+	margin:0 0 0 35px;
+	select{
+		width:145px;
+	}
+}

@@ -66,6 +66,18 @@ function add_theme_styles(){
       array(), 'VERSION', 'all' );
     wp_enqueue_style( 'about_impact' );
   endif;
+
+  if( is_page_template ('page-templates/get_involved.php') ):
+      wp_register_style( 'get_involved', get_stylesheet_directory_uri().'/css/get_involved.css',
+      array(), 'VERSION', 'all' );
+    wp_enqueue_style( 'get_involved' );
+  endif;
+
+  if( is_home() ):
+      wp_register_style( 'blog', get_stylesheet_directory_uri().'/css/blog.css',
+      array(), 'VERSION', 'all' );
+    wp_enqueue_style( 'blog' );
+  endif;
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_styles');
@@ -74,6 +86,9 @@ add_action('wp_enqueue_scripts', 'add_theme_styles');
 
 function add_theme_scripts() {
 	
+  wp_register_script('contact', get_stylesheet_directory_uri().'/js/contact.js', false, false, true);
+  wp_enqueue_script( 'contact' );
+
   if( is_page_template ('page-templates/home.php') ):
     wp_register_script('backstretch', get_stylesheet_directory_uri().'/js/backstretch.min.js', false, false, true);
     wp_enqueue_script( 'backstretch' );
@@ -120,14 +135,8 @@ function add_theme_scripts() {
     wp_enqueue_script( 'about_people' );
   endif;
 
-	/*if( is_page_template ('page-templates/teaser_page.php') ):
-    
+  
 
-     
-
-    wp_register_script('stretcher', get_stylesheet_directory_uri().'/js/stretcher.js', false, false, true);
-    wp_enqueue_script( 'stretcher' ); 
-    endif;*/
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
@@ -146,3 +155,38 @@ add_filter('single_template', create_function(
 
 /////////////////////////////////////////////////////////////////
 
+//exclude project posts from blog pages
+
+function exclude_category($query) {
+if ( $query->is_home() ) {//add all pages you want to exclude them on here!
+$query->set('cat', '-141');
+}
+return $query;
+}
+add_filter('pre_get_posts', 'exclude_category');
+
+/////////////////////////////////////////////////////////////////
+
+//trim the excerpt 
+function replace_excerpt($content) {
+       return str_replace('[&hellip;]',
+               '...',
+               $content
+       );
+}
+add_filter('get_the_excerpt', 'replace_excerpt');
+
+//////////////////////////////////////////////////////////////////
+function catch_that_image() {
+  global $post, $posts;
+  $first_img = '';
+  ob_start();
+  ob_end_clean();
+  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+  $first_img = $matches[1][0];
+
+  if(empty($first_img)) {
+    $first_img = "/path/to/default.png";
+  }
+  return $first_img;
+}

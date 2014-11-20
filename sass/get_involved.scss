@@ -1,0 +1,43 @@
+// _get_involved.scss
+
+@import 'global';
+
+.involved-content{
+	width:$max-width;
+	margin:auto;
+}
+#involved-wrapper{
+	margin:130px 0 125px 0;
+}
+.section-heading{
+	font-family:$neu-reg;
+	color:$font-grey-one;
+	font-size:1.25em;
+	text-align:center;
+	
+}
+.section-sub-heading{
+	font-family:$cae-reg;
+	font-size:2em;
+	color:$font-grey-two;
+	width:80%;
+	margin:30px auto 50px auto;
+	text-align:center;
+}
+.section-link{
+	position:relative;
+	display:inline-block;
+	margin:0 0 100px 0;
+	border:4px solid $teal;
+	color:$teal;
+	padding:20px 20px 15px 20px;
+	font-family:$neu-reg;
+	font-size:1.75em;
+	left:50%;
+	@include transform(translateX(-50%));
+	@include transition(0.2s);
+}
+.section-link:hover{
+	color:$white;
+	background:$teal;
+}
