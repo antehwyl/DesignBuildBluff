@@ -28,10 +28,10 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php //get_template_part( 'content', get_post_format() ); ?>
 				
-				<article id='post-<?php echo get_the_ID(); ?>' class='post'>
-					<a href='<?php the_permalink(); ?>'><h4 class='post-title'><?php the_title(); ?></h4></a>
+				<article id='post-<?php echo get_the_ID(); ?>' class='post cf'>
+					<a href='<?php the_permalink(); ?>' class='post-title'><h4><?php the_title(); ?></h4></a>
 					<p class='post-date'><?php echo get_the_date(); ?></p>
-					<p><?php echo get_the_excerpt(); ?></p>
+					<p class='post-excerpt'><?php echo get_the_excerpt(); ?></p>
 					<?php if ( get_the_post_thumbnail($post_id) != '' ) : ?>
 
 						<?php the_post_thumbnail(); ?>
@@ -42,7 +42,7 @@ get_header(); ?>
 					<?php endif; ?>
 
 					
-					<a href='<?php the_permalink(); ?>'><p>Read More</p></a>
+					<a href='<?php the_permalink(); ?>' class='read-more-link'><p>Read More</p></a>
 				</article>
 				
 			<?php endwhile; ?>
