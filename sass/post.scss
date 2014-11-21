@@ -1,0 +1,49 @@
+// _post.scss
+
+@import 'global';
+
+.post{
+	width:$max-width;
+	margin:auto;
+	text-align:center;
+}
+.post-title{
+	font-family:$neu-reg;
+	font-size:1.75em;
+	color:$font-grey-two;
+	text-decoration:none;
+	margin:60px 0 0 0;
+}
+.post-date{
+	font-family:$neu-reg;
+	font-size:.5625em;
+	color:$font-grey-one;
+	text-transform:uppercase;
+	margin:10px 0 30px 0;
+}
+.comments-link{
+	display:none;
+}
+.post-content{
+	font-family:$karla-reg;
+	font-size:1em;
+	color:$font-grey-two;
+	margin:0 0 120px 0;
+	p{
+		width:80%;
+		margin:auto;
+
+	}
+	img{
+		margin:40px auto 20px auto;
+		display:block;
+	}
+	div{
+		margin:auto;
+	}
+	.wp-caption-text{
+		margin:0 auto 30px auto;
+		color:$font-grey-one;
+		font-size:.75em;
+	}
+}

@@ -19,8 +19,10 @@
 
 get_header(); ?>
 
-	<section id="primary" class="site-content">
-		<div id="content" role="main">
+	<section id="primary" class="site-content archive-content cf">
+		<div class='nav-buffer'></div>
+		<?php include INCLUDES_DIR.'/blog_filters.php'; /* The contact information overlay */ ?>
+		<div id="content" class='cf' role="main">
 
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
@@ -40,13 +42,32 @@ get_header(); ?>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
-			
+
 				/* Include the post format-specific template for the content. If you want to
 				 * this in a child theme then include a file called called content-___.php
 				 * (where ___ is the post format) and that will be used instead.
 				 */
-				get_template_part( 'content', get_post_format() );
+				//get_template_part( 'content', get_post_format() );
+			?>
+				<article id='post-<?php echo get_the_ID(); ?>' class='post cf cat-<?php the_category_ID(); ?>'>
+					<a href='<?php the_permalink(); ?>' class='post-title'><h4><?php the_title(); ?></h4></a>
+					<p class='post-date'><?php echo get_the_date(); ?></p>
+					<?php if( get_the_excerpt() ): ?>
+					<p class='post-excerpt'><?php echo get_the_excerpt(); ?></p>	
+				<?php endif; ?>
+					<?php if ( get_the_post_thumbnail($post_id) != '' ) : ?>
 
+						<?php the_post_thumbnail(); ?>
+					  
+					<?php else: ?>
+
+						<img src='<?php echo catch_that_image(); ?>' />
+					<?php endif; ?>
+
+					
+					<a href='<?php the_permalink(); ?>' class='read-more-link'><p>Read More</p></a>
+				</article>
+			<?php
 			endwhile;
 
 			twentytwelve_content_nav( 'nav-below' );
@@ -59,5 +80,5 @@ get_header(); ?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

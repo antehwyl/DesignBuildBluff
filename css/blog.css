@@ -36,8 +36,8 @@
   width: 100%;
   height: 113px; }
 
-.blog-content {
-  width: 1220px;
+.blog-content, .category-content, .archive-content {
+  max-width: 1220px;
   margin: auto; }
 
 #blog-filters {
@@ -63,12 +63,13 @@
     border-radius: 0px;
     border: 2px solid #515254;
     background-color: #ffffff;
-    padding: 15px 15px;
+    padding: 15px 35px 15px 15px;
     font-family: "Karla Bold";
     color: #515254;
     font-size: 0.75em;
     text-transform: uppercase;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
   #category-filters select:focus, #archive-filters select:focus {
     outline: 0; }
   #category-filters .select-wrap, #archive-filters .select-wrap {
@@ -105,13 +106,18 @@
     z-index: 2;
     margin: 22px 0 0 0; }
 
-#category-filters select {
-  width: 120px; }
-
 #archive-filters {
   margin: 0 0 0 35px; }
-  #archive-filters select {
-    width: 145px; }
+
+.archive-header {
+  color: #1AB19A;
+  font-family: "Neuzeit Reg";
+  font-size: 2em; }
+  .archive-header h1 {
+    margin: 60px 0 0 0; }
+
+.cat-141 {
+  display: none !important; }
 
 #content {
   float: left;
@@ -137,10 +143,11 @@
   font-size: 1em;
   color: #515254;
   width: 80%;
-  margin: 30px 10% 60px 10%; }
+  margin: 30px 10% 0 10%; }
 
 .post img {
-  margin: auto;
+  max-width: 100%;
+  margin: 50px auto 0 auto;
   display: block; }
 
 .read-more-link {
