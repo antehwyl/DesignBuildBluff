@@ -8,10 +8,12 @@
 	z-index:999;
 	//margin:40px 0 0 0;
 	background-color:rgba(255,255,255,1);
-	-webkit-transition: background-color 1s ease;
-    -moz-transition: background-color 1s ease;
-    -o-transition: background-color 1s ease;
-    transition: background-color 1s ease;
+	-webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+ //@include transition(0.5s);
+
 }
 footer{
 	width:100%;
@@ -36,6 +38,12 @@ footer{
 	width:295px;
 	height:73px;
 	margin:40px 0 0 0;
+	position:relative;
+	-webkit-transition: margin .3s ease;
+    -moz-transition: margin .3s ease;
+    -o-transition: margin .3s ease;
+    transition: margin .3s ease;
+
 	img{
 		width:100%;
 	}
@@ -44,10 +52,15 @@ footer{
 	}
 }
 #logo-light{
-	display:none;
+	//display:none;
+	opacity:0;
+	position:absolute;
+	@include transition(0.2s);
 }
 #logo-dark{
-	display:block;
+	//display:block;
+	opacity:1;
+	@include transition(0.2s);
 }
 #main-menu-wrap,
 #footer-main-menu-wrap{
@@ -56,6 +69,10 @@ footer{
 	//font-weight:500;
 	text-transform:uppercase;
 	margin:56px 0 0 0;
+	-webkit-transition: margin .3s ease;
+    -moz-transition: margin .3s ease;
+    -o-transition: margin .3s ease;
+    transition: margin .3s ease;	
 
 	ul{
 		list-style:none;
@@ -95,12 +112,12 @@ footer{
 		margin:0 20px 0 0;
 		position:relative;
 		a{
-			@include transition(0.2s);
+			@include transition(0.3s);
 			//border-bottom:2px solid rgba(212,234,0,0);
 			//color:$teal;
 		}
 		ul{
-			@include transition(0.2s);
+			@include transition(0.3s);
 			max-height:0;
 			opacity:0;
 			position:relative;
@@ -259,10 +276,12 @@ footer{
 		background-color:rgba(255,255,255,0);
 	}
 	#logo-light{
-		display:block;
+		//display:block;
+		opacity:1;
 	}
 	#logo-dark{
-		display:none;
+		//display:none;
+		opacity:0;
 	}
 	#main-menu-wrap{
 		a{
@@ -298,9 +317,46 @@ footer{
 	}
 	
 }
+////scroll lock on home and our-work
 #masthead.bg-color{
 	
 	background-color:rgba(255,255,255,1);
+	#site-logo{
+		margin:10px 0 10px 0;
+	}
+	#logo-light{
+		//display:none;
+		opacity:0;
+	}
+	#logo-dark{
+		//display:block;
+		opacity:1;
+	}
+
+	a{
+		//text-decoration:none;
+		color:$font-grey-two;
+	}
+	#main-menu-wrap{
+		margin:27px 0 0 0;
+		.main-menu-about{
+			ul{
+				li:hover{
+					a{
+						color:#1AB19A;
+					}
+				}
+			}
+		}
+		.main-menu-about:hover{
+			ul{
+				a{
+					//border-bottom:2px solid rgba(212,234,0,0);
+					color:$font-grey-two;
+				}
+			}
+		}
+	}
 }
 
 //////////////////////////////////////////////

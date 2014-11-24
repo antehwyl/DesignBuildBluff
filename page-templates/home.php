@@ -50,10 +50,12 @@ $featured 			= get_field('featured_projects');
 				query_posts('cat=-141&showposts=4');
 			?>
 			<?php $i=0; while (have_posts()) : the_post(); $i++; ?>
-			 	<div class='recent-post recent-post-<?php echo $i; ?>'>
-					<h5 class='recent-title'><?php echo the_title(); ?></h5>
-					<p class='recent-date'><?php echo get_the_date(); ?></p>
-				</div>
+			 	<a href='<?php the_permalink(); ?>'>
+				 	<div class='recent-post recent-post-<?php echo $i; ?>'>
+						<h5 class='recent-title'><?php echo the_title(); ?></h5>
+						<p class='recent-date'><?php echo get_the_date(); ?></p>
+					</div>
+				</a>
 			<?php endwhile; ?>
 		</div>
 
