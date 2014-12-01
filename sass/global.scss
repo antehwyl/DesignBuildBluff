@@ -103,6 +103,16 @@ $font-grey-two:#515254;
   font-family: "Caecilia Regular";
   src: url('fonts/Caecilia/Caecilia-Regular.ttf'); 
 }
+@font-face {
+  font-family: 'fontello';
+  src: url('fonts/fontello/font/fontello.eot?62442968');
+  src: url('fonts/fontello/font/fontello.eot?62442968#iefix') format('embedded-opentype'),
+       url('fonts/fontello/font/fontello.woff?62442968') format('woff'),
+       url('fonts/fontello/font/fontello.ttf?62442968') format('truetype'),
+       url('fonts/fontello/font/fontello.svg?62442968#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 
@@ -116,6 +126,7 @@ $neu-bold:"Neuzeit Bold";
 
 $cae-reg:"Caecilia Regular";
 
+$fontello:"fontello";
 /*$caeci-rom:"Caecillia Rom";*/
 
 @mixin karla-bold-12($color){

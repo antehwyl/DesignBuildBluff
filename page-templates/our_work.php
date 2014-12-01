@@ -22,6 +22,7 @@ $projects 	= get_field('projects');
 			setup_postdata( $post ); 
 		?>
 		    <div id='featured-project'>
+		    	<div class='nav-buffer'></div>
 		    	<?php 
 		    		$thumbnail = get_field('thumbnail');
 		    	?>
@@ -54,6 +55,9 @@ $projects 	= get_field('projects');
 							<div class='sub-project-text-wrap'>
 								<h3><?php echo the_title(); ?></h3>
 								<p class='visit-text'>Visit Project</p>
+							</div>
+							<div class='hover-overlay'>
+								<p>View Project</p>
 							</div>
 						</div>
 					</a>

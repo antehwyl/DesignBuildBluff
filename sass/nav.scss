@@ -169,6 +169,7 @@ footer{
 			background:rgba(26,177,154,1);
 		}
 	}
+
 }
 /* Footer Nav Changes */
 	#footer-main-menu-wrap{
@@ -317,6 +318,19 @@ footer{
 	}
 	
 }
+//highlights
+#main-menu-wrap{
+	.current-menu-item{
+		a{
+			color:$teal;
+		}
+	}
+	.main-menu-blog.current-menu-item{
+		a{
+			color:$red;
+		}
+	}
+}
 ////scroll lock on home and our-work
 #masthead.bg-color{
 	
@@ -356,120 +370,103 @@ footer{
 				}
 			}
 		}
-	}
-}
-
-//////////////////////////////////////////////
-@media only screen and (max-width:1150px){
-	#header-inner,
-	#footer-inner{
-		width:90%;
-	}
-}
-@media only screen and (max-width:650px){
-	#masthead{
-		margin:20px 0 0 0;
-	}
-	#site-logo,
-	#footer-site-logo{
-		float:none;
-		margin:0 auto 38px auto;
-	}
-	#main-menu-wrap,
-	#footer-main-menu-wrap{
-		float:none;
-		width:295px;
-		margin:16px auto 0 auto;
-		ul{
-			padding:0;
-			width:220px;
-			margin:auto;
-		}
-		.menu-contact,
-		.menu-blog{
-			margin:0 15px 0 0;
-		}
-	}
-	/*#footer-social-wrap{
-		float:none;
-		width:232px;
-		margin:40px auto 0 auto;
-		ul{
-			float:none;
-			width:100%;
-			margin:auto;
-			padding:0;
-		}
-	}*/
-	#contact-details{
-		float:none;
-		text-align:center;
-		margin:38px 0 0 0;
-		p{
-			float:none;
-			clear:both;
-			margin:4px 0 0 0;
-
-		}
-		a{
-						display:inline-block;
-			p{
-				margin:0;
+		.current-menu-item{
+			a{
+				color:$teal;
 			}
 		}
 	}
+	#mobile-toggle{
+		margin:30px 0 0 0;
+	}
 }
-@media only screen and (max-width:400px){
+#mobile-toggle{
+	display:none;
+	cursor:pointer;
+	@include transition(0.3s);
+}
+#mobile-toggle:before{
+	font-family:'fontello';
+	content: '\e814';
+	display:inline-block;
+	font-size:2em;
+	font-weight:100;
+	color:$font-grey-two;
+}
+//////////////////////////////////////////////
+@media only screen and (max-width:1270px){
 	#header-inner,
 	#footer-inner{
-		width:100%;
+		width:auto;
+		margin:0 40px;
 	}
-	#site-logo,
+}
+@media only screen and (max-width:900px){//switch to mobile nav here!
+	#header-inner,
+	#footer-inner{
+		
+	}
+	#main-menu-wrap{
+		display:none;
+		clear:both;
+		background:red;
+		float:none;
+		margin:30px 0 0 0;
+		ul{
+			padding:0;
+			li{
+				float:none;
+				clear:both;
+				//margin:0 0 15px 0;
+				text-align:center;
+			}
+		}
+		.main-menu-work,
+		.main-menu-about,
+		.main-menu-involved,
+		.main-menu-blog,
+		.main-menu-contact{
+			margin:0 0 15px 0;
+		}
+
+		.main-menu-donate{
+
+		}
+	}
+	#mobile-toggle{
+		display:block;
+		float:right;
+		margin:56px 0 0 0;
+	}
+	#mobile-toggle.open:before{
+		font-family:'fontello';
+			content: '\e800';
+			display:inline-block;
+			font-size:2em;
+			font-weight:100;
+			color:$font-grey-two;
+			margin:0 3px 0 0;
+	}
 	#footer-site-logo{
-		width:90%;
-		height:auto;
-		margin:0 auto 25px auto;
+		float:none;
+		margin:40px auto 0 auto;
 	}
-	#main-menu-wrap,
 	#footer-main-menu-wrap{
-		width:100%;
-		margin:0;
-		
-		
-		/*ul{
+		float:none;
+		margin:56px auto 0 auto;
+		ul{
 			padding:0;
 			display:inline-block;
-			text-align:center;
 			position:relative;
-			//left:50%;
-			//@include transform(translateX(-50%));
-			margin:0;
+			left:50%;
+			@include transform(translateX(-50%));
 		}
-		li{
-			//float:left;
-			//clear:both;
-			//display:block;
-			//text-align:center;
-		}
-		.menu-contact,
-		.menu-blog,
-		.menu-contribute{
-			//width:100%;
-			//margin:0;
-			//text-align:center;
-		}
-		.menu-contact,
-		.menu-blog{
-			margin:20px 0 0 0;
-		}
-		.menu-contribute{
-			margin:30px 0 0 0;
-			a{
-				padding:15px 12%;
-			}
-		}*/
 	}
-	
+}
+@media only screen and (max-width:600px){
+	#footer-main-menu-wrap{
+		display:none;
+	}
 }
 @media only screen and (max-width:350px){
 	

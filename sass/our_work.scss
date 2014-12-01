@@ -79,6 +79,11 @@
 		width:100%;
 	}
 }
+.sub-project:hover{
+	.hover-overlay{
+		opacity:1;
+	}
+}
 .sub-project:before{
 	content:'';
 	position:absolute;
@@ -96,8 +101,9 @@
 	position:absolute;
 	top:50%;
 	left:50%;
-	@include transform(translateY(-50%));
-	@include transform(translateX(-50%));
+	@include transform(translate(-50%,-50%));
+	text-align:center;
+	//@include transform(translateX(-50%));
 	z-index:2;
 	h3{
 		margin:0;
@@ -112,4 +118,78 @@
 }
 .odd-project{
 	margin:0 2% 0 0;
+}
+.hover-overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:$teal;
+	z-index:3;
+	opacity:0;
+	@include transition(0.3s);
+	p{
+		font-family:$neu-reg;
+		font-size:1.75em;
+		color:$white;
+		position:relative;
+		top:50%;
+		left:50%;
+		@include transform(translate(-50%,-50%));
+		margin:auto;
+		border:4px solid $white;
+		padding:15px 20px 12px 20px;
+		display:inline-block;
+	}
+}
+////////////////////////////////////////////////////
+@media only screen and (max-width:1270px){
+	#featured-text-wrap{
+		width:auto;
+		margin:0 40px;
+	}
+	#other-projects{
+		width:auto;
+		margin:25px 40px 130px 40px;
+	}
+}
+@media only screen and (max-width:1000px){//tablet-ish
+	#featured-project{
+		height:650px;
+	}
+	#featured-text-wrap{
+		height:537px;
+	}
+	.sub-project{
+		height:270px;
+	}
+}
+@media only screen and (max-width:600px){//phone-ish
+	#featured-project{
+		height:570px;
+	}
+	#featured-text-wrap{
+		height:447px;
+		width:auto;
+		margin:0 40px;
+		h3{
+			font-size:1.75em;
+		}
+		.featured-text{
+			font-size:.75em;
+			width:80px;
+			height:80px;
+			line-height:85px;
+			margin:0 auto 43px auto;
+		}
+	}
+	#other-projects{
+		width:100%;
+		margin:25px 0 30px 0;
+	}
+	.sub-project{
+		height:360px;
+		width:100%;
+		clear:both;
+		margin:0 0 25px 0;
+	}
 }

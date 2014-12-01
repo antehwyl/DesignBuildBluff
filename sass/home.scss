@@ -89,7 +89,34 @@
 }
 .featured-item{
 	position:relative;
-
+	overflow:hidden;
+}
+.featured-item:hover{
+	.hover-overlay{
+		opacity:1;
+	}
+}
+.hover-overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:$teal;
+	z-index:3;
+	opacity:0;
+	@include transition(0.3s);
+	p{
+		font-family:$neu-reg;
+		font-size:1.75em;
+		color:$white;
+		position:relative;
+		top:50%;
+		//left:50%;
+		@include transform(translateY(-50%));
+		margin:auto;
+		border:4px solid $white;
+		padding:15px 20px 12px 20px;
+		display:inline-block;
+	}
 }
 .featured-item:before{
 	content:'';
@@ -108,8 +135,8 @@
 	position:absolute;
 	top:50%;
 	left:50%;
-	@include transform(translateY(-50%));
-	@include transform(translateX(-50%));
+	@include transform(translate(-50%,-50%));
+	//@include transform(translateX(-50%));
 	font-family:$neu-reg;
 	font-size:1.75em;
 	color:$white;
@@ -125,6 +152,7 @@
 	.section-heading{
 		margin-bottom:52px;
 	}
+
 }
 .recent-post{
 	width:23.6%;
@@ -132,12 +160,59 @@
 	//background:red;
 	border-top:3px solid $font-grey-two;
 	border-bottom:3px solid $font-grey-two;
+	position:relative;
+	overflow:hidden;
+	@include transition(0.2s);
+	/*.recent-img{
+		width:100%;
+		//position:relative;
+		opacity:0;
+		@include transition(0.2s);
+	}*/
+	img{
+		width:100%;
+		position:absolute;
+		left:0;
+		z-index:1;
+		opacity:0;
+		@include transition(0.2s);
+	}
+	.recent-img:before{
+		content:'';
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		background:rgba(81,82,84,0.5);
+		width:100%;
+		height:100%;
+		@include transition(0.2s);
+		z-index:2;
+	}
+}
+.recent-post:hover{
+	border-top:3px solid $white;
+	border-bottom:3px solid $white;
+	img{
+		opacity:.8;
+	}
+	.recent-title,
+	.recent-date{
+		color:$white;
+	}
+}
+.post-text{
+	position:relative;
+	z-index:3;
+	
 }
 .recent-title{
 	font-family:$neu-reg;
 	font-size:1.25em;	
 	color:$font-grey-two;
 	margin:60px 0 0 0;
+	@include transition(0.2s);
 }
 .recent-date{
 	font-family:$neu-reg;
@@ -145,9 +220,138 @@
 	color:$font-grey-two;
 	text-transform:uppercase;
 	margin:8px 0 55px 0;
+	@include transition(0.2s);
 }
 .recent-post-1,
 .recent-post-2,
 .recent-post-3{
 	margin:0 1.8666% 135px 0;
+}
+////////////////////////////////////////////////////
+@media only screen and (max-width:1270px){
+	#home-splash-text-wrap{
+		width:auto;
+		margin:0 40px;
+	}
+	#home-who{
+		width:auto;
+		margin:0 40px;
+	}
+	#home-featured{
+		width:auto;
+		margin:0 40px;
+	}
+	#home-blog{
+		width:auto;
+		margin:0 40px;
+	}
+}
+@media only screen and (max-width:1000px){//tablet-ish
+	#home-splash{
+		height:650px;
+	}
+	#home-splash-text-wrap{
+		height:537px;
+		h3{
+			font-size:3em;
+		}
+	}
+	.item-1{
+		height:500px;
+	}
+	.item-2,.item-3{
+		height:270px;
+	}
+	.recent-post{
+		width:48%;
+	}
+	.recent-post-1,
+	.recent-post-3{
+		margin:0 4% 0 0;
+	}
+	.recent-post-2,
+	.recent-post-4{
+		margin:0 0 0 0;
+	}
+	.recent-post-3,
+	.recent-post-4{
+		border-top:0px solid;
+		margin-bottom:25px;
+	}
+	.recent-date{
+		margin:8px 0 40px 0;
+
+	}
+}
+@media only screen and (max-width:600px){//phone-ish
+	#home-splash{
+		height:570px;
+	}
+	.section-heading{
+		font-size:1em;
+		margin:70px 0 0 0;
+	}
+	#home-splash-text-wrap{
+		height:447px;
+		margin:0 20px;
+		h3{
+			font-size:1.75em;
+		}
+	}
+	#home-who{
+		width:auto;
+		margin:0 20px;
+		p{
+			font-size:1.25em;
+			margin:20px auto 0 auto;
+		}
+	}
+	#home-featured{
+		width:100%;
+		margin:auto;
+	}
+	.featured-item-title{
+		font-size:1.25em;
+	}
+	.item-1{
+		margin:22px 0 22px 0;
+	}
+	.item-1,.item-2,.item-3{
+		height:350px;
+		float:left;
+		clear:both;
+		width:100%;
+	}
+	.item-2,.item-3{
+		margin:0 0 22px 0;
+	}
+	#home-blog{
+		margin:0 20px;
+		.section-heading{
+			margin:45px 0 32px 0;
+		}
+	}
+	.recent-post-1,
+	.recent-post-2,
+	.recent-post-3,
+	.recent-post-4{
+		width:100%;
+		margin:0;
+		height:auto !important;
+	}
+	.recent-post-1,
+	.recent-post-2,
+	.recent-post-3{
+		border-top:3px solid $font-grey-two;
+		border-bottom:0px solid;
+	}
+	.recent-post-4{
+		border-top:3px solid $font-grey-two;
+		border-bottom:3px solid $font-grey-two;
+		margin:0 0 50px 0;
+	}
+	.recent-date{
+		margin:8px 0 30px 0;
+
+	}
 }

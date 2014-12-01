@@ -54,6 +54,7 @@
 				<a href='<?php echo get_site_url(); ?>'><img id='logo-light' src="<?php echo get_stylesheet_directory_uri(); ?>/css/img/logo.png" /></a>
 				<a href='<?php echo get_site_url(); ?>'><img id='logo-dark' src="<?php echo get_stylesheet_directory_uri(); ?>/css/img/logo_dark.png" /></a>
 			</div>
+			<div id='mobile-toggle'></div>
 			<div id='main-menu-wrap'>
 				<?php wp_nav_menu( $main ); ?>
 			</div>

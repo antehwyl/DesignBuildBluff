@@ -36,12 +36,39 @@ $featured 			= get_field('featured_projects');
 
 		<div id='home-featured' class='cf'>
 			<h4 class='section-heading'><?php echo $featured_heading; ?></h4>
+			<?php 
+				$i=0; 
+				foreach($featured as $row): 
+					$i++;
+					// override $post
+					 	$post = $row['project'];
+						setup_postdata( $post );
+						$thumbnail = get_field('thumbnail'); 
+
+			?>
+				<a href='<?php the_permalink(); ?>'>
+					<div class='featured-item item-<?php echo $i; ?>'>
+						<img src='<?php echo $thumbnail['url']; ?>' />
+						<h5 class='featured-item-title'><?php the_title(); ?></h5>
+						<div class='hover-overlay'>
+							<p>View Project</p>
+						</div>
+					</div>
+				</a>
+			<?php 
+				endforeach;
+				wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
+			?>
+
+			<?php /* 
+			<h4 class='section-heading'><?php echo $featured_heading; ?></h4>
 			<?php $i=0; foreach($featured as $row): $i++; ?>
 				<div class='featured-item item-<?php echo $i; ?>'>
 					<img src='<?php echo $row['image']['url']; ?>' />
 					<h5 class='featured-item-title'><?php echo $row['title']; ?></h5>
 				</div>
 			<?php endforeach; ?>
+			*/ ?>
 		</div>
 
 		<div id='home-blog' class='cf'>
@@ -50,10 +77,15 @@ $featured 			= get_field('featured_projects');
 				query_posts('cat=-141&showposts=4');
 			?>
 			<?php $i=0; while (have_posts()) : the_post(); $i++; ?>
+
 			 	<a href='<?php the_permalink(); ?>'>
 				 	<div class='recent-post recent-post-<?php echo $i; ?>'>
-						<h5 class='recent-title'><?php echo the_title(); ?></h5>
-						<p class='recent-date'><?php echo get_the_date(); ?></p>
+				 		
+				 			<img src='<?php echo catch_that_image(); ?>' />
+						<div class='post-text'>
+							<h5 class='recent-title'><?php echo the_title(); ?></h5>
+							<p class='recent-date'><?php echo get_the_date(); ?></p>
+						</div>
 					</div>
 				</a>
 			<?php endwhile; ?>
