@@ -152,11 +152,11 @@
   width: 100%; }
 
 .post-title {
-  font-family: "Neuzeit Reg";
-  font-size: 1.75em;
-  color: #515254;
   text-decoration: none; }
   .post-title h4 {
+    font-family: "Neuzeit Reg";
+    font-size: 1.75em;
+    color: #515254;
     margin: 60px 0 0 0; }
 
 .post-date {
@@ -212,3 +212,50 @@
   #pbd-alp-load-posts a:hover {
     color: #ffffff !important;
     background-color: #FF5F3F !important; }
+
+@media only screen and (max-width: 1270px) {
+  .blog-content {
+    width: auto;
+    margin: 0 40px; } }
+
+@media only screen and (max-width: 1000px) {
+  #blog-filters {
+    float: left;
+    margin: 30px 0 0 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    -webkit-animation-fill-mode: forwards;
+    position: relative; } }
+
+@media only screen and (max-width: 600px) {
+  .blog-content {
+    width: auto;
+    margin: 0 20px; }
+  #blog-filters {
+    float: none;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-animation-fill-mode: forwards;
+    left: 0; }
+  #archive-filters {
+    clear: both;
+    margin: 20px 0 0 0; }
+  #category-filters, #archive-filters {
+    width: 100%; }
+    #category-filters p, #archive-filters p {
+      margin: 0 0 5px 0; }
+    #category-filters .select-wrap, #archive-filters .select-wrap {
+      clear: both;
+      width: 100%; }
+      #category-filters .select-wrap select, #archive-filters .select-wrap select {
+        width: 100%; }
+  .post-title h4 {
+    font-size: 1.25em; } }
