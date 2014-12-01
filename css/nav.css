@@ -44,7 +44,7 @@
   height: 113px; }
 
 #masthead {
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 999;
   background-color: white;
@@ -252,7 +252,7 @@ footer {
     border-bottom: 2px solid #515254; }
 
 .page-template-page-templateshome-php #masthead, .page-template-page-templatesour_work-php #masthead {
-  position: fixed;
+  position: absolute;
   background-color: rgba(255, 255, 255, 0); }
 .page-template-page-templateshome-php #logo-light, .page-template-page-templatesour_work-php #logo-light {
   opacity: 1; }
@@ -271,8 +271,29 @@ footer {
 
 #main-menu-wrap .current-menu-item a {
   color: #1AB19A; }
+#main-menu-wrap .current-menu-item ul .current-menu-item a {
+  color: #1AB19A; }
+#main-menu-wrap .current-menu-parent a {
+  color: #1AB19A; }
+#main-menu-wrap .current-menu-parent ul .current-menu-item a {
+  color: #1AB19A; }
 #main-menu-wrap .main-menu-blog.current-menu-item a {
   color: #FF5F3F; }
+
+.blog #main-menu-wrap .main-menu-blog a, .archive #main-menu-wrap .main-menu-blog a {
+  color: #FF5F3F; }
+.blog #main-menu-wrap .main-menu-donate a, .archive #main-menu-wrap .main-menu-donate a {
+  padding: 15px 17px;
+  border: 2px solid #FF5F3F;
+  background: rgba(255, 95, 63, 0);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #FF5F3F; }
+.blog #main-menu-wrap .main-menu-donate:hover a, .archive #main-menu-wrap .main-menu-donate:hover a {
+  color: #ffffff;
+  background: #ff5f3f; }
 
 #masthead.bg-color {
   background-color: white; }

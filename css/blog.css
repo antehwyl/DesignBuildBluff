@@ -116,19 +116,40 @@
 #archive-filters {
   margin: 0 0 0 35px; }
 
+#category-filters.active-category select {
+  background-color: #FF5F3F;
+  color: #ffffff;
+  border: 2px solid #FF5F3F; }
+#category-filters.active-category .select-wrap:before {
+  border-top: 2px solid #ffffff; }
+#category-filters.active-category .select-wrap:after {
+  border-bottom: 2px solid #ffffff; }
+
 .archive-header {
+  display: none;
   color: #1AB19A;
   font-family: "Neuzeit Reg";
   font-size: 2em; }
   .archive-header h1 {
     margin: 60px 0 0 0; }
 
+#archive-filters.active-archives select {
+  background-color: #FF5F3F;
+  color: #ffffff;
+  border: 2px solid #FF5F3F; }
+#archive-filters.active-archives .select-wrap:before {
+  border-top: 2px solid #ffffff; }
+#archive-filters.active-archives .select-wrap:after {
+  border-bottom: 2px solid #ffffff; }
+
 .cat-141 {
   display: none !important; }
 
 #content {
   float: left;
-  text-align: center; }
+  text-align: center;
+  clear: both;
+  width: 100%; }
 
 .post-title {
   font-family: "Neuzeit Reg";

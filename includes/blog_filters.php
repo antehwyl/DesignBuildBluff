@@ -1,5 +1,10 @@
 <?php 
 /* Variables */
+$cur_cat_id = get_cat_id( single_cat_title("",false) );
+$blog_page = get_page_by_title( 'Blog' );
+//echo '<pre>';
+//print_r($blog_page);
+//echo '</pre>';
 $category = array(
 	'show_option_all'    => '',
 	'show_option_none'   => 'All Posts',
@@ -10,7 +15,7 @@ $category = array(
 	'child_of'           => 0,
 	'exclude'            => '141',
 	'echo'               => 1,
-	'selected'           => 0,
+	'selected'           => $cur_cat_id,
 	'hierarchical'       => 0, 
 	'name'               => 'cat',
 	'id'                 => '',
@@ -33,7 +38,7 @@ $archives = array(
 );
 ?>
 <script type="text/javascript">
-	//auto submit handeler for categories filter
+	//auto submit handeler for categories filter on blog pages
 	(function($){
 		$(document).ready(function(){
 			var dropdown = document.getElementById("cat");
@@ -41,15 +46,32 @@ $archives = array(
 				if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
 					location.href = "<?php echo esc_url( home_url( '/' ) ); ?>?cat="+dropdown.options[dropdown.selectedIndex].value;
 				}
+				if ( dropdown.options[dropdown.selectedIndex].value == -1 ){
+					location.href = "<?php echo $blog_page->guid; ?>";
+					//console.log('blog home');
+				}
 			}
 			dropdown.onchange = onCatChange;
+
+			var archives = $('#archive-filters').find('option');
+			var active_archives = false;
+			
+			$.each(archives,function(i){
+				if($(archives[i]).hasClass('current')){
+					active_archives = true;
+				}
+			});
+			if( active_archives == true ){
+				$('#archive-filters').addClass('active-archives');
+				$(archives[0]).html("Clear Filter");
+			}
 		});	
 	})(jQuery);
 </script>
 
 <div id='blog-filters' class='cf'>
 	
-	<div id='category-filters'>
+	<div id='category-filters' class='<?php if( $cur_cat_id!=0 ){echo 'active-category';} ?>'>
 		<p>Filter</p>
 		<div class='select-wrap cf'>
 			<?php  wp_dropdown_categories( $category ); ?>
@@ -60,7 +82,7 @@ $archives = array(
 		<p>Archives</p>		
 		<div class='select-wrap cf'>
 			<select name="archive-menu" onChange="document.location.href=this.options[this.selectedIndex].value;">
-				<option value="">Select month</option>
+				<option value="<?php echo $blog_page->guid;?>">Select month</option>
 				<?php wp_get_archives('type=monthly&format=option'); ?>
 			</select>
 		</div>

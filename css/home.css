@@ -319,6 +319,9 @@
   .recent-post-3, .recent-post-4 {
     border-top: 0px solid;
     margin-bottom: 25px; }
+  .recent-post.recent-post-3:hover, .recent-post.recent-post-4:hover {
+    border-top: 0px solid #ffffff;
+    border-bottom: 3px solid #ffffff; }
   .recent-date {
     margin: 8px 0 40px 0; } }
 
@@ -368,5 +371,11 @@
     border-top: 3px solid #515254;
     border-bottom: 3px solid #515254;
     margin: 0 0 50px 0; }
+  .recent-post.recent-post-1:hover, .recent-post.recent-post-2:hover, .recent-post.recent-post-3:hover {
+    border-top: 3px solid #ffffff;
+    border-bottom: 0px solid #ffffff; }
+  .recent-post.recent-post-4:hover {
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff; }
   .recent-date {
     margin: 8px 0 30px 0; } }

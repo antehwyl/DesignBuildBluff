@@ -1,35 +1,15 @@
 (function($){
 	$(document).ready(function(){
-		//dropdown();
-		scroll();
+		
+		
+		//scroll();
 		mobile();
 		scale.init();
 		scale.watch();
 	});
 
-	/*
-	function dropdown(){
-		$('.main-menu-about').hover(function(){
-			console.log('in');
-			var bufferHeight = $('#masthead').height();
-			//console.log(bufferHeight);
-			//$('.nav-buffer').height(bufferHeight+200);
-			$('#masthead').animate({
-				height:bufferHeight+20,
-			},200);
-		},function(){
-			console.log('out');
-			var bufferHeight = $('#masthead').height();
-			//console.log(bufferHeight);
-			//$('.nav-buffer').height(bufferHeight-200);
-			$('#masthead').animate({
-				height:bufferHeight-20,
-			},200);
-		});
-	}
-	*/
 
-	function scroll(){
+	function scroll(){//toggles locked position
 		$(document).scroll(function(){
 			var top = $(document).scrollTop();
 			//console.log(top);

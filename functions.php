@@ -123,12 +123,15 @@ function add_theme_scripts() {
     wp_enqueue_script( 'lightboxes' );
   endif;
 
-  if( is_page_template ('page-templates/about_us_approach.php') ):
-    wp_register_script('backstretch', get_stylesheet_directory_uri().'/js/backstretch.min.js', false, false, true);
-    wp_enqueue_script( 'backstretch' );
+  if( is_page_template ('page-templates/about_us_impact.php') ):
+    wp_register_script('fancybox', get_stylesheet_directory_uri().'/js/fancybox/jquery.fancybox.pack.js', false, false, true);
+    wp_enqueue_script( 'fancybox' );
 
-    wp_register_script('about_approach', get_stylesheet_directory_uri().'/js/about_approach.js', false, false, true);
-    wp_enqueue_script( 'about_approach' );
+    wp_register_script('fancybox-media', get_stylesheet_directory_uri().'/js/fancybox/helpers/jquery.fancybox-media.js', false, false, true);
+    wp_enqueue_script( 'fancybox-media' );
+
+    wp_register_script('lightboxes', get_stylesheet_directory_uri().'/js/lightboxes.js', false, false, true);
+    wp_enqueue_script( 'lightboxes' );
   endif;
 
   if( is_page_template ('page-templates/about_us_people.php') ):
@@ -207,3 +210,14 @@ function filter_ptags_on_images($content){
 add_filter('the_content', 'filter_ptags_on_images');
 
 //////////////////////////////////////////////////////////////////
+//label current selected archive with class "current"
+function wpse_62509_current_month_selector( $link_html ) {
+    if (is_month()){
+        $current_month = get_the_date("F Y");
+        if ( preg_match('/'.$current_month.'/i', $link_html ) )
+            $link_html = preg_replace('/<option/i', '<option class="current" selected="selected"', $link_html );
+    }
+    return $link_html;
+}
+
+add_filter( 'get_archives_link', 'wpse_62509_current_month_selector' );

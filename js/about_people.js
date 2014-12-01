@@ -2,6 +2,7 @@
 	
 	$(document).ready(function(){
 		stretch();
+		iso();
 	});
 
 	function stretch(){

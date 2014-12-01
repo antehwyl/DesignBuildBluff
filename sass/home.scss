@@ -278,6 +278,11 @@
 		border-top:0px solid;
 		margin-bottom:25px;
 	}
+	.recent-post.recent-post-3:hover,
+	.recent-post.recent-post-4:hover{
+		border-top:0px solid $white;
+		border-bottom:3px solid $white;
+	}
 	.recent-date{
 		margin:8px 0 40px 0;
 
@@ -349,6 +354,16 @@
 		border-top:3px solid $font-grey-two;
 		border-bottom:3px solid $font-grey-two;
 		margin:0 0 50px 0;
+	}
+	.recent-post.recent-post-1:hover,
+	.recent-post.recent-post-2:hover,
+	.recent-post.recent-post-3:hover{
+		border-top:3px solid $white;
+		border-bottom:0px solid $white;
+	}
+	.recent-post.recent-post-4:hover{
+		border-top:3px solid $white;
+		border-bottom:3px solid $white;
 	}
 	.recent-date{
 		margin:8px 0 30px 0;

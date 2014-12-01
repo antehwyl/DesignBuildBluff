@@ -21,16 +21,16 @@
 	font-size:2em;
 	color:$font-grey-two;
 	width:80%;
-	margin:30px auto 50px auto;
+	margin:30px auto 40px auto;
 	text-align:center;
 }
 .section-link{
 	position:relative;
 	display:inline-block;
-	margin:0 0 100px 0;
-	border:4px solid $teal;
-	color:$teal;
-	padding:20px 20px 15px 20px;
+	margin:0 0 130px 0;
+	border-bottom:4px solid $yellow;
+	color:$font-grey-two;
+	//padding:20px 20px 15px 20px;
 	font-family:$neu-reg;
 	font-size:1.75em;
 	left:50%;
@@ -38,6 +38,41 @@
 	@include transition(0.2s);
 }
 .section-link:hover{
-	color:$white;
-	background:$teal;
+	//color:$white;
+	//background:$teal;
+}
+////////////////////////////////////////////////////
+@media only screen and (max-width:1270px){
+	.involved-content{
+		width:auto;
+		margin:0 40px;
+	}
+}
+@media only screen and (max-width:1000px){//tablet-ish
+
+}
+@media only screen and (max-width:600px){//phone-ish
+	.involved-content{
+		width:auto;
+		margin:0 20px;
+	}
+	#involved-wrapper{
+		margin:80px 0 0 0;
+	}
+	.section-heading{
+		font-size:1em;
+		margin:0;
+	}
+	.section-sub-heading{
+		font-size:1.25em;
+		margin:30px auto 60px auto;
+	}
+	.section-link{
+		font-size:1.25em;
+	}
+	.section2{
+		.section-link{
+			margin:0 0 70px 0;
+		}
+	}
 }

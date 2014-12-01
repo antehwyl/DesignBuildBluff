@@ -107,3 +107,41 @@
 
 .single-supporter p {
   margin: 5px 0 25px 0; }
+
+@media only screen and (max-width: 1270px) {
+  .people-content {
+    width: auto;
+    margin: 0 40px; } }
+
+@media only screen and (max-width: 1000px) {
+  .section-heading {
+    margin: 100px 0 0 0; }
+  .single-team-member, .single-supporter {
+    width: 48%;
+    margin: 0 1% 22px 1%; }
+  .member-img-wrap, .supporter-img-wrap {
+    height: 250px; } }
+
+@media only screen and (max-width: 600px) {
+  .people-content {
+    width: auto;
+    margin: 0 20px; }
+  .section-heading {
+    font-size: 1em;
+    margin: 80px 0 0 0; }
+  .section-sub-heading {
+    font-size: 1.25em;
+    margin: 22px auto 0 auto; }
+  .single-team-member, .single-supporter {
+    width: 100%;
+    margin: 0; }
+  .single-supporter {
+    margin-bottom: 15px; }
+  .member-name {
+    font-size: 1.25em;
+    margin: 25px 0 0 0; }
+  .member-desc {
+    width: auto;
+    margin: 10px 20px 50px 20px; }
+  #supporters {
+    margin: 50px 0 20px 0; } }

@@ -33,7 +33,7 @@ $images			= get_field('images');
 						<div id='video-text-wrap'>
 							<div id='play-button'><span>PLAY</span></div>
 							<div id='play-preload'></div>
-							<p><?php echo $row['text']; ?></p>
+						
 						</div>
 					</div>
 				</a>

@@ -3,7 +3,7 @@
 @import 'global';
 
 #masthead{
-	position:fixed;
+	position:absolute;
 	width:100%;
 	z-index:999;
 	//margin:40px 0 0 0;
@@ -273,7 +273,7 @@ footer{
 .page-template-page-templateshome-php,
 .page-template-page-templatesour_work-php{//light color nav
 	#masthead{
-		position:fixed;
+		position:absolute;
 		background-color:rgba(255,255,255,0);
 	}
 	#logo-light{
@@ -324,12 +324,58 @@ footer{
 		a{
 			color:$teal;
 		}
+		ul{
+			.current-menu-item{
+				a{
+					color:$teal;
+				}
+			}
+		}
+	}
+	.current-menu-parent{
+		a{
+			color:$teal;
+		}
+		ul{
+			.current-menu-item{
+				a{
+					color:$teal;
+				}
+			}
+		}
 	}
 	.main-menu-blog.current-menu-item{
 		a{
 			color:$red;
 		}
 	}
+}
+.blog,
+.archive{
+	#main-menu-wrap{
+		.main-menu-blog{
+			a{
+				color:$red;
+			}
+		}
+		.main-menu-donate{
+			a{
+				padding:15px 17px;
+				border:2px solid $red;
+				background:rgba(255,95,63,0);
+				//@include border-radius(4px);
+				@include transition(0.2s);
+				color:$red;
+			}
+		}
+		.main-menu-donate:hover{
+			a{
+				color:$white;
+				background:rgba(255,95,63,1);
+			}
+		}
+	}
+	
 }
 ////scroll lock on home and our-work
 #masthead.bg-color{
