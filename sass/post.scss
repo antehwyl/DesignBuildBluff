@@ -35,11 +35,12 @@
 
 	}
 	img{
-		margin:40px auto 20px auto;
+		margin:40px auto 20px auto !important;
 		display:block;
 		max-width:100%;
 		width:auto !important;
 		height:auto !important;
+		float:none !important;
 	}
 	div{
 		margin:auto;

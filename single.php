@@ -18,7 +18,7 @@ get_header(); ?>
 				<div id='post-<?php echo get_the_ID(); ?>' class='post'>
 					<h1 class='post-title'><?php the_title(); ?></h1>
 					<p class='post-date'><?php echo get_the_date(); ?></p>
-					<div class='post-content'><?php the_content(); ?></div>
+					<div class='post-content cf'><?php the_content(); ?></div>
 				</div>
 
 				<?php /*

@@ -257,18 +257,22 @@ footer {
   opacity: 1; }
 .page-template-page-templateshome-php #logo-dark, .page-template-page-templatesour_work-php #logo-dark {
   opacity: 0; }
-.page-template-page-templateshome-php #main-menu-wrap a, .page-template-page-templatesour_work-php #main-menu-wrap a {
-  color: #ffffff; }
-.page-template-page-templateshome-php #main-menu-wrap .main-menu-about ul li:hover a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-about ul li:hover a {
-  color: #1AB19A; }
-.page-template-page-templateshome-php #main-menu-wrap .main-menu-about:hover ul a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-about:hover ul a {
-  color: #ffffff; }
-.page-template-page-templateshome-php #main-menu-wrap .main-menu-donate a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-donate a {
-  color: #1AB19A; }
-.page-template-page-templateshome-php #main-menu-wrap .main-menu-donate:hover a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-donate:hover a {
-  color: #ffffff; }
-.page-template-page-templateshome-php #main-menu-wrap .main-menu-blog:hover a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-blog:hover a {
-  color: #FF5F3F; }
+.page-template-page-templateshome-php #main-menu-wrap, .page-template-page-templatesour_work-php #main-menu-wrap {
+  /*.main-menu-blog:hover{
+			a{	
+				color:$red;
+			}
+		}*/ }
+  .page-template-page-templateshome-php #main-menu-wrap a, .page-template-page-templatesour_work-php #main-menu-wrap a {
+    color: #ffffff; }
+  .page-template-page-templateshome-php #main-menu-wrap .main-menu-about ul li:hover a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-about ul li:hover a {
+    color: #1AB19A; }
+  .page-template-page-templateshome-php #main-menu-wrap .main-menu-about:hover ul a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-about:hover ul a {
+    color: #ffffff; }
+  .page-template-page-templateshome-php #main-menu-wrap .main-menu-donate a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-donate a {
+    color: #1AB19A; }
+  .page-template-page-templateshome-php #main-menu-wrap .main-menu-donate:hover a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-donate:hover a {
+    color: #ffffff; }
 .page-template-page-templateshome-php #mobile-toggle:before, .page-template-page-templatesour_work-php #mobile-toggle:before {
   color: #ffffff; }
 
@@ -283,9 +287,17 @@ footer {
 #main-menu-wrap .main-menu-blog.current-menu-item a {
   color: #FF5F3F; }
 
-.blog #main-menu-wrap .main-menu-blog a, .archive #main-menu-wrap .main-menu-blog a {
+.blog #main-menu-wrap .main-menu-contact:hover a, .blog #main-menu-wrap .main-menu-involved:hover a, .blog #main-menu-wrap .main-menu-work:hover a, .archive #main-menu-wrap .main-menu-contact:hover a, .archive #main-menu-wrap .main-menu-involved:hover a, .archive #main-menu-wrap .main-menu-work:hover a, .blog-page #main-menu-wrap .main-menu-contact:hover a, .blog-page #main-menu-wrap .main-menu-involved:hover a, .blog-page #main-menu-wrap .main-menu-work:hover a {
   color: #FF5F3F; }
-.blog #main-menu-wrap .main-menu-donate a, .archive #main-menu-wrap .main-menu-donate a {
+.blog #main-menu-wrap .main-menu-about:hover a, .archive #main-menu-wrap .main-menu-about:hover a, .blog-page #main-menu-wrap .main-menu-about:hover a {
+  color: #FF5F3F; }
+.blog #main-menu-wrap .main-menu-about:hover ul li a, .archive #main-menu-wrap .main-menu-about:hover ul li a, .blog-page #main-menu-wrap .main-menu-about:hover ul li a {
+  color: #515254; }
+.blog #main-menu-wrap .main-menu-about:hover ul li:hover a, .archive #main-menu-wrap .main-menu-about:hover ul li:hover a, .blog-page #main-menu-wrap .main-menu-about:hover ul li:hover a {
+  color: #FF5F3F; }
+.blog #main-menu-wrap .main-menu-blog a, .archive #main-menu-wrap .main-menu-blog a, .blog-page #main-menu-wrap .main-menu-blog a {
+  color: #FF5F3F; }
+.blog #main-menu-wrap .main-menu-donate a, .archive #main-menu-wrap .main-menu-donate a, .blog-page #main-menu-wrap .main-menu-donate a {
   padding: 15px 17px;
   border: 2px solid #FF5F3F;
   background: rgba(255, 95, 63, 0);
@@ -294,7 +306,7 @@ footer {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: #FF5F3F; }
-.blog #main-menu-wrap .main-menu-donate:hover a, .archive #main-menu-wrap .main-menu-donate:hover a {
+.blog #main-menu-wrap .main-menu-donate:hover a, .archive #main-menu-wrap .main-menu-donate:hover a, .blog-page #main-menu-wrap .main-menu-donate:hover a {
   color: #ffffff;
   background: #ff5f3f; }
 

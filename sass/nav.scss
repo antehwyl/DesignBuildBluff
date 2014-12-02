@@ -315,11 +315,11 @@ footer{
 				color:$white;
 			}
 		}
-		.main-menu-blog:hover{
+		/*.main-menu-blog:hover{
 			a{	
 				color:$red;
 			}
-		}
+		}*/
 	}
 	#mobile-toggle:before{
 		color:$white;
@@ -358,8 +358,34 @@ footer{
 	}
 }
 .blog,
-.archive{
+.archive,
+.blog-page{
 	#main-menu-wrap{
+		
+		.main-menu-contact:hover,
+		.main-menu-involved:hover,
+		.main-menu-work:hover{
+			a{
+				color:$red;
+			}
+		}
+		.main-menu-about:hover{
+			a{
+				color:$red;
+			}
+			ul{
+				li{
+					a{
+						color:$font-grey-two;
+					}
+				}
+				li:hover{
+					a{
+						color:$red;
+					}
+				}
+			}
+		}
 		.main-menu-blog{
 			a{
 				color:$red;
