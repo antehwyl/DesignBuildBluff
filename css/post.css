@@ -82,3 +82,9 @@
     margin: 0 auto 30px auto;
     color: #8A8C88;
     font-size: 0.75em; }
+
+@media only screen and (max-width: 1270px) { }
+
+@media only screen and (max-width: 1000px) { }
+
+@media only screen and (max-width: 600px) { }

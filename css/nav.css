@@ -268,6 +268,8 @@ footer {
   color: #1AB19A; }
 .page-template-page-templateshome-php #main-menu-wrap .main-menu-donate:hover a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-donate:hover a {
   color: #ffffff; }
+.page-template-page-templateshome-php #main-menu-wrap .main-menu-blog:hover a, .page-template-page-templatesour_work-php #main-menu-wrap .main-menu-blog:hover a {
+  color: #FF5F3F; }
 
 #main-menu-wrap .current-menu-item a {
   color: #1AB19A; }
