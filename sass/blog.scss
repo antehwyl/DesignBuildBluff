@@ -195,7 +195,9 @@
 }
 ////////////////////////////////////////////////////
 @media only screen and (max-width:1270px){
-	.blog-content{
+	.blog-content,
+	.category-content,
+	.archive-content{
 		width:auto;
 		margin:0 40px;
 	}
@@ -210,9 +212,11 @@
 	}
 }
 @media only screen and (max-width:600px){//phone-ish
-	.blog-content{
+	.blog-content,
+	.category-content,
+	.archive-content{
 		width:auto;
-		margin:0 20px;
+		margin:0 20px 60px 20px;
 	}
 	#blog-filters{
 		float:none;
@@ -242,6 +246,16 @@
 	.post-title{
 		h4{
 			font-size:1.25em;
+		}
+	}
+	.post{
+		img{
+			margin:40px auto 0 auto;
+		}
+	}
+	.read-more-link{
+		p{
+			margin:30px 0 10px 0;
 		}
 	}
 }
