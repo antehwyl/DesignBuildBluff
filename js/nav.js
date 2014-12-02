@@ -32,10 +32,10 @@
 		$('#mobile-toggle').click(function(){
 			if( !$('#mobile-toggle').hasClass('open') ){//if closed
 				$('#mobile-toggle').addClass('open');
-				$('#main-menu-wrap').slideToggle(100);
+				$('#main-menu-wrap').fadeToggle(100);
 			}else if( $('#mobile-toggle').hasClass('open') ){//if opened
 				$('#mobile-toggle').removeClass('open');
-				$('#main-menu-wrap').slideToggle(100);
+				$('#main-menu-wrap').fadeToggle(100);
 			}
 			
 		});
