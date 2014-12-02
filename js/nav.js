@@ -6,6 +6,7 @@
 		mobile();
 		scale.init();
 		scale.watch();
+		addClass();
 	});
 
 
@@ -28,7 +29,7 @@
 		});
 	}
 
-	function mobile(){
+	function mobile(){//open and close mobile nav
 		$('#mobile-toggle').click(function(){
 			if( !$('#mobile-toggle').hasClass('open') ){//if closed
 				$('#mobile-toggle').addClass('open');
@@ -67,6 +68,16 @@
 					}
 				}
 			});
+		}
+	}
+
+	function addClass(){//label single template pages to differentiate blog post and project page 
+		if( $('body').hasClass('single') ){
+			if( $('#content-wrap').hasClass('project-content') ){
+				$('body').addClass('project-page');//project single
+			}else{
+				$('body').addClass('blog-page');//blog single
+			}
 		}
 	}
 })(jQuery);

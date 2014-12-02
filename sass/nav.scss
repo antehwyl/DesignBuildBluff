@@ -321,7 +321,9 @@ footer{
 			}
 		}
 	}
-	
+	#mobile-toggle:before{
+		color:$white;
+	}	
 }
 //highlights
 #main-menu-wrap{
@@ -510,10 +512,10 @@ footer{
 		}
 		.main-menu-about{
 			ul{
-				max-height:1000px;
+				max-height:0;
 				opacity:1;
 				margin:0;
-				padding:9px 0 0 0;
+				padding:0 0 0 0;
 				li:hover{
 					a{
 						color:$light-teal;
@@ -527,9 +529,9 @@ footer{
 				color:$light-teal;
 			}
 			ul{
-				max-height:1000px;
+				max-height:0;
 				opacity:1;
-				padding:9px 0 0 0;
+				padding:0 0 0 0;
 				//width:200px;
 				a{
 					//border-bottom:2px solid rgba(212,234,0,0);
@@ -543,6 +545,26 @@ footer{
 				border:2px solid $white;
 				background:rgba(255,255,255,0);
 				color:$white;
+			}
+		}
+		.current-menu-item{
+			a{
+				color:$light-teal;
+			}
+		}
+		.current-menu-parent{
+			a{
+				color:$light-teal;
+			}
+			ul {
+				a{
+					color:$white;
+				}
+				.current-menu-item {
+					a{
+						color:$light-teal;
+					}
+				}
 			}
 		}
 	}
@@ -570,12 +592,64 @@ footer{
 			}
 		}
 	}
-	/*.page-template-page-templateshome-php,
+	.page-template-page-templatesabout_us_approach-php,
+	.page-template-page-templatesabout_us_people-php,
+	.page-template-page-templatesabout_us_impact-php{
+		#main-menu-wrap{
+			.main-menu-about{
+				ul{
+					max-height:1000px;
+					padding:9px 0 0 0;
+
+				}
+			}
+			.main-menu-about:hover{
+				ul{
+					max-height:1000px;
+					padding:9px 0 0 0;
+				}
+			}
+		}
+	}
+	.page-template-page-templateshome-php,
 	.page-template-page-templatesour_work-php{//light color nav
 		#main-menu-wrap{
-
+			.main-menu-donate{
+				a{
+					color:$white;
+				}
+			}
+			.main-menu-donate:hover{
+				a{
+					color:$teal;
+					background:rgba(255,255,255,1);
+				}
+			}
+			.main-menu-blog:hover{
+				a{
+					color:$light-teal;
+				}
+			}
 		}
-	}*/
+	}
+	.blog-page{
+		#main-menu-wrap{
+			.main-menu-blog{
+				a{
+					color:$light-teal;
+				}
+			}
+		}
+	}
+	.project-page{
+		#main-menu-wrap{
+			.main-menu-work{
+				a{
+					color:$light-teal;
+				}
+			}
+		}
+	}
 	#mobile-toggle{
 		display:block;
 		float:right;
