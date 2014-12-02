@@ -393,10 +393,12 @@ footer {
       padding: 9px 0 0 0; }
       #main-menu-wrap .main-menu-about:hover ul a {
         color: #ffffff; }
-    #main-menu-wrap .main-menu-donate a {
-      border: 2px solid #ffffff;
-      background: rgba(255, 255, 255, 0);
-      color: #ffffff; }
+    #main-menu-wrap .main-menu-donate {
+      margin-top: 42px; }
+      #main-menu-wrap .main-menu-donate a {
+        border: 2px solid #ffffff;
+        background: rgba(255, 255, 255, 0);
+        color: #ffffff; }
   .blog #main-menu-wrap .main-menu-blog a, .archive #main-menu-wrap .main-menu-blog a {
     color: #A3E0D7; }
   .blog #main-menu-wrap .main-menu-donate, .archive #main-menu-wrap .main-menu-donate {
