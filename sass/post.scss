@@ -37,6 +37,9 @@
 	img{
 		margin:40px auto 20px auto;
 		display:block;
+		max-width:100%;
+		width:auto !important;
+		height:auto !important;
 	}
 	div{
 		margin:auto;
@@ -49,11 +52,21 @@
 }
 ////////////////////////////////////////////////////
 @media only screen and (max-width:1270px){
-
+	.post{
+		width:auto;
+		margin:0 40px;
+	}
 }
 @media only screen and (max-width:1000px){//tablet-ish
-
+	.post-content{
+		p{
+			width:100%;
+		}
+	}
 }
 @media only screen and (max-width:600px){//phone-ish
-
+	.post{
+		width:auto;
+		margin:0 20px;
+	}
 }

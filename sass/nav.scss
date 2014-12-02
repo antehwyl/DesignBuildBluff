@@ -515,8 +515,21 @@ footer{
 	}
 }
 @media only screen and (max-width:600px){
+	#header-inner,
+	#footer-inner{
+		margin:0 20px;
+	}
 	#footer-main-menu-wrap{
 		display:none;
+	}
+	#site-logo, 
+	#footer-site-logo{
+		width:186px;
+		height:46px;
+		margin:20px 0 0 0;
+	}
+	#mobile-toggle{
+		margin:25px 0 0 0;
 	}
 }
 @media only screen and (max-width:350px){

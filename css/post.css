@@ -75,7 +75,10 @@
     margin: auto; }
   .post-content img {
     margin: 40px auto 20px auto;
-    display: block; }
+    display: block;
+    max-width: 100%;
+    width: auto !important;
+    height: auto !important; }
   .post-content div {
     margin: auto; }
   .post-content .wp-caption-text {
@@ -83,8 +86,16 @@
     color: #8A8C88;
     font-size: 0.75em; }
 
-@media only screen and (max-width: 1270px) { }
+@media only screen and (max-width: 1270px) {
+  .post {
+    width: auto;
+    margin: 0 40px; } }
 
-@media only screen and (max-width: 1000px) { }
+@media only screen and (max-width: 1000px) {
+  .post-content p {
+    width: 100%; } }
 
-@media only screen and (max-width: 600px) { }
+@media only screen and (max-width: 600px) {
+  .post {
+    width: auto;
+    margin: 0 20px; } }
