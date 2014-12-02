@@ -47,7 +47,6 @@
   position: absolute;
   width: 100%;
   z-index: 999;
-  background-color: white;
   -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
@@ -162,7 +161,7 @@ footer {
   #main-menu-wrap .main-menu-about:hover ul, #footer-main-menu-wrap .main-menu-about:hover ul {
     max-height: 1000px;
     opacity: 1;
-    padding: 13px 0 0 0; }
+    padding: 9px 0 0 0; }
     #main-menu-wrap .main-menu-about:hover ul a, #footer-main-menu-wrap .main-menu-about:hover ul a {
       color: #515254; }
   #main-menu-wrap .main-menu-donate a, #footer-main-menu-wrap .main-menu-donate a {
