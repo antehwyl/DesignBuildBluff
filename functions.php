@@ -197,7 +197,7 @@ function catch_that_image() {
   $first_img = $matches[1][0];
 
   if(empty($first_img)) {
-    $first_img = "/path/to/default.png";
+    $first_img = "";
   }
   return $first_img;
 }

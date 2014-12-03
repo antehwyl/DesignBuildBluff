@@ -56,7 +56,7 @@
   #category-filters p, #archive-filters p {
     float: left;
     margin: 0;
-    font-family: "Karla Bold";
+    font-family: "Karla Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #515254;
     font-size: 0.75em;
     text-transform: uppercase;
@@ -71,7 +71,7 @@
     border: 2px solid #515254;
     background-color: #ffffff;
     padding: 15px 35px 15px 15px;
-    font-family: "Karla Bold";
+    font-family: "Karla Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #515254;
     font-size: 0.75em;
     text-transform: uppercase;
@@ -128,7 +128,7 @@
 .archive-header {
   display: none;
   color: #1AB19A;
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 2em; }
   .archive-header h1 {
     margin: 60px 0 0 0; }
@@ -154,20 +154,20 @@
 .post-title {
   text-decoration: none; }
   .post-title h4 {
-    font-family: "Neuzeit Reg";
+    font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1.75em;
     color: #515254;
     margin: 60px 0 0 0; }
 
 .post-date {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 0.5625em;
   color: #8A8C88;
   text-transform: uppercase;
   margin: 10px 0 0 0; }
 
 .post-excerpt {
-  font-family: "Karla Regular";
+  font-family: "Karla Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   color: #515254;
   width: 80%;
@@ -182,7 +182,7 @@
   text-decoration: none;
   clear: both; }
   .read-more-link p {
-    font-family: "Karla Bold";
+    font-family: "Karla Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1em;
     color: #FF5F3F;
     border-bottom: 4px solid #FF5F3F;
@@ -191,7 +191,7 @@
     line-height: 1.5em; }
 
 #pbd-alp-load-posts {
-  font-family: "Karla Bold";
+  font-family: "Karla Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin: 50px 0 110px 0; }
   #pbd-alp-load-posts a {
     color: #FF5F3F !important;

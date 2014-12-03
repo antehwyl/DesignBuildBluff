@@ -51,7 +51,7 @@
   text-align: center; }
 
 .section-heading {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #8A8C88;
   font-size: 1.25em;
   margin: 130px 0 0 0; }
@@ -73,20 +73,20 @@
   overflow: hidden; }
 
 .member-name {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.75em;
   color: #515254;
   margin: 30px 0 0 0; }
 
 .member-position {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   color: #515254;
   font-weight: 600;
   margin: 5px 0 0 0; }
 
 .member-desc {
-  font-family: "Karla Regular";
+  font-family: "Karla Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   color: #515254;
   line-height: 1.4em;
@@ -96,7 +96,7 @@
   text-align: center; }
 
 .section-sub-heading {
-  font-family: "Caecilia Regular";
+  font-family: "Caecilia Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 2em;
   color: #515254;
   width: 75%;

@@ -76,7 +76,7 @@
   z-index: 2; }
   #home-splash-text-wrap h3 {
     position: relative;
-    font-family: "Neuzeit Reg";
+    font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #ffffff;
     font-size: 5.75em;
     text-align: center;
@@ -95,14 +95,14 @@
   margin: auto;
   text-align: center; }
   #home-who p {
-    font-family: "Caecilia Regular";
+    font-family: "Caecilia Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 2em;
     color: #515254;
     width: 75%;
     margin: 52px auto 0 auto; }
 
 .section-heading {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #8A8C88;
   font-size: 1.25em;
   margin: 110px 0 0 0; }
@@ -150,7 +150,7 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   .hover-overlay p {
-    font-family: "Neuzeit Reg";
+    font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1.75em;
     color: #ffffff;
     position: relative;
@@ -192,7 +192,7 @@
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-animation-fill-mode: forwards;
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.75em;
   color: #ffffff;
   border-bottom: 4px solid #D4EA00;
@@ -262,7 +262,7 @@
   z-index: 3; }
 
 .recent-title {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.25em;
   color: #515254;
   margin: 60px 0 0 0;
@@ -272,7 +272,7 @@
   transition: all 0.2s ease; }
 
 .recent-date {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 0.68em;
   color: #515254;
   text-transform: uppercase;

@@ -49,14 +49,14 @@
   text-align: center; }
 
 .post-title {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.75em;
   color: #515254;
   text-decoration: none;
   margin: 60px 0 0 0; }
 
 .post-date {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 0.5625em;
   color: #8A8C88;
   text-transform: uppercase;
@@ -66,7 +66,7 @@
   display: none; }
 
 .post-content {
-  font-family: "Karla Regular";
+  font-family: "Karla Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   color: #515254;
   margin: 0 0 120px 0; }
@@ -86,6 +86,24 @@
     margin: 0 auto 30px auto;
     color: #8A8C88;
     font-size: 0.75em; }
+
+#post-nav {
+  margin: 0 auto 140px auto;
+  width: 80%; }
+
+#prev-link, #next-link {
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  #prev-link a, #next-link a {
+    color: #515254;
+    font-size: 1.25em;
+    text-decoration: none;
+    border-bottom: 4px solid #FF5F3F; }
+
+#prev-link {
+  float: left; }
+
+#next-link {
+  float: right; }
 
 @media only screen and (max-width: 1270px) {
   .post {

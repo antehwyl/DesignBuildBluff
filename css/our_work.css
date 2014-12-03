@@ -78,7 +78,7 @@
   z-index: 2; }
   #featured-text-wrap h3 {
     position: relative;
-    font-family: "Neuzeit Reg";
+    font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #ffffff;
     font-size: 3.5em;
     line-height: 0.75em;
@@ -99,7 +99,7 @@
     transform: translateY(-50%);
     -webkit-animation-fill-mode: forwards; }
   #featured-text-wrap .featured-text {
-    font-family: "Neuzeit Reg";
+    font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1.25em;
     line-height: 115px;
     color: #ffffff;
@@ -160,7 +160,7 @@
   .sub-project-text-wrap h3 {
     margin: 0;
     font-size: 1.75em;
-    font-family: "Neuzeit Reg";
+    font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #ffffff;
     border-bottom: 4px solid #D4EA00; }
   .sub-project-text-wrap .visit-text {
@@ -181,7 +181,7 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   .hover-overlay p {
-    font-family: "Neuzeit Reg";
+    font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1.75em;
     color: #ffffff;
     position: relative;

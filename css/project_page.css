@@ -49,14 +49,14 @@
 
 #project-title {
   text-align: center;
-  font-family: "Neuzeit Bold";
+  font-family: "Neuzeit Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.75em;
   color: #515254;
   margin: 100px 0 0 0; }
 
 #project-headline {
   text-align: center;
-  font-family: "Caecilia Regular";
+  font-family: "Caecilia Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 2em;
   color: #515254;
   margin: 50px auto 100px auto;
@@ -78,7 +78,7 @@
 .project-text {
   width: 80%;
   margin: 90px 10% 90px 10%;
-  font-family: "Karla Regular";
+  font-family: "Karla Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   color: #515254;
   line-height: 1.4em;
@@ -95,7 +95,7 @@
   column-gap: 20px; }
 
 #project-nav {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.75em;
   margin: 55px 0 100px 0; }
   #project-nav a {
@@ -112,3 +112,9 @@
       float: left;
       border-bottom: 4px solid #D4EA00;
       margin: 0 0 0 40px; }
+
+@media only screen and (max-width: 1270px) { }
+
+@media only screen and (max-width: 1000px) { }
+
+@media only screen and (max-width: 600px) { }

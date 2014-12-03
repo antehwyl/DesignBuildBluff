@@ -15,10 +15,16 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php //get_template_part( 'content', get_post_format() ); ?>
-				<div id='post-<?php echo get_the_ID(); ?>' class='post'>
+				<div id='post-<?php echo get_the_ID(); ?>' class='post cf'>
 					<h1 class='post-title'><?php the_title(); ?></h1>
 					<p class='post-date'><?php echo get_the_date(); ?></p>
 					<div class='post-content cf'><?php the_content(); ?></div>
+					
+					<div id='post-nav' class='cf'>
+						<div id='prev-link'><?php previous_post_link( '%link', 'Previous', FALSE, '141', 'category' ); ?></div>
+						<div id='next-link'><?php next_post_link( '%link', 'Next', FALSE, '141', 'category' ); ?></div>
+					</div>
+				
 				</div>
 
 				<?php /*

@@ -36,9 +36,10 @@ get_header(); ?>
 
 						<?php the_post_thumbnail(); ?>
 					  
-					<?php else: ?>
+					<?php elseif(catch_that_image()): ?>
 
 						<img src='<?php echo catch_that_image(); ?>' />
+						
 					<?php endif; ?>
 
 					

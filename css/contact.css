@@ -58,7 +58,7 @@
   top: 100px; }
 
 #contact-heading {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #ffffff;
   opacity: 0.6;
   font-size: 1.25em;
@@ -66,7 +66,7 @@
   margin: 0 0 65px 0; }
 
 #contact-text {
-  font-family: "Caecilia Regular";
+  font-family: "Caecilia Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 2em;
   color: #ffffff;
   width: 55%;
@@ -76,7 +76,7 @@
 #contact-info {
   float: right;
   width: 35%;
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.25em;
   color: #ffffff; }
   #contact-info p {
@@ -104,7 +104,7 @@
   transform: translateX(-50%);
   -webkit-animation-fill-mode: forwards;
   clear: both;
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.75em;
   color: #ffffff;
   padding: 20px 35px 15px 62px;

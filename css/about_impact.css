@@ -51,13 +51,13 @@
   margin: 130px 0 0 0; }
 
 .section-heading {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #8A8C88;
   font-size: 1.25em;
   text-align: center; }
 
 .section-sub-heading {
-  font-family: "Caecilia Regular";
+  font-family: "Caecilia Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 2em;
   color: #515254;
   width: 75%;
@@ -67,7 +67,7 @@
 .section-text {
   width: 80%;
   margin: 0 10% 80px 10%;
-  font-family: "Karla Regular";
+  font-family: "Karla Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   color: #515254;
   line-height: 1.4em;
@@ -125,7 +125,7 @@
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   #video-text-wrap p {
-    font-family: "Karla Bold";
+    font-family: "Karla Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1.75em;
     color: #ffffff;
     margin: 55px 0 4px 0; }
@@ -160,7 +160,7 @@
 #awards, #press {
   text-align: center; }
   #awards p, #press p {
-    font-family: "Neuzeit Reg";
+    font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1.75em;
     color: #515254;
     margin: 20px 0 0 0;

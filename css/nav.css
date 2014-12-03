@@ -96,7 +96,7 @@ footer {
 
 #main-menu-wrap, #footer-main-menu-wrap {
   float: right;
-  font-family: "Karla Bold";
+  font-family: "Karla Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: red;
   font-size: 0.75em;
   text-transform: uppercase;
@@ -228,7 +228,7 @@ footer {
   clear: both;
   margin: 15px 41px 0 0; }
   #contact-details p {
-    font-family: "Karla Bold";
+    font-family: "Karla Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #ffffff;
     font-size: 0.75em;
     margin: 4px 0 0 0;

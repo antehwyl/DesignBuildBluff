@@ -51,6 +51,26 @@
 		font-size:.75em;
 	}
 }
+#post-nav{
+	margin:0 auto 140px auto;
+	width:80%;
+}
+#prev-link,
+#next-link{
+	font-family:$neu-reg;
+	a{
+		color:$font-grey-two;
+		font-size:1.25em;
+		text-decoration:none;
+		border-bottom:4px solid $red;
+	}
+}
+#prev-link{
+	float:left;
+}
+#next-link{
+	float:right;
+}
 ////////////////////////////////////////////////////
 @media only screen and (max-width:1270px){
 	.post{

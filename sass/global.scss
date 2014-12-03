@@ -117,17 +117,19 @@ $font-grey-two:#515254;
 
 
 
-$karla-reg:"Karla Regular";
-$karla-bold:"Karla Bold";
-$karla-italic:"Karla Italic";
-$karla-BoldItalic:"Karla BoldItalic";
+$karla-reg:"Karla Regular","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$karla-bold:"Karla Bold","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$karla-italic:"Karla Italic","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$karla-BoldItalic:"Karla BoldItalic","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-$neu-reg:"Neuzeit Reg";
-$neu-bold:"Neuzeit Bold";
+$neu-reg:"Neuzeit Reg","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$neu-bold:"Neuzeit Bold","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-$cae-reg:"Caecilia Regular";
+$cae-reg:"Caecilia Regular","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 $fontello:"fontello";
+
+//$helvetica:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 /*$caeci-rom:"Caecillia Rom";*/
 
 @mixin karla-bold-12($color){

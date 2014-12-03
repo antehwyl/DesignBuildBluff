@@ -51,13 +51,13 @@
   margin: 130px 0 125px 0; }
 
 .section-heading {
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #8A8C88;
   font-size: 1.25em;
   text-align: center; }
 
 .section-sub-heading {
-  font-family: "Caecilia Regular";
+  font-family: "Caecilia Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 2em;
   color: #515254;
   width: 80%;
@@ -70,7 +70,7 @@
   margin: 0 0 130px 0;
   border-bottom: 4px solid #D4EA00;
   color: #515254;
-  font-family: "Neuzeit Reg";
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.75em;
   left: 50%;
   -webkit-transform: translateX(-50%);
