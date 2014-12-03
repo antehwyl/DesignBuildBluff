@@ -415,15 +415,15 @@ footer {
       color: #ffffff; }
     #main-menu-wrap .current-menu-parent ul .current-menu-item a {
       color: #A3E0D7; }
-  .blog #main-menu-wrap .main-menu-blog a, .archive #main-menu-wrap .main-menu-blog a {
+  .blog #main-menu-wrap .main-menu-blog a, .archive #main-menu-wrap .main-menu-blog a, .blog-page #main-menu-wrap .main-menu-blog a {
     color: #A3E0D7; }
-  .blog #main-menu-wrap .main-menu-donate, .archive #main-menu-wrap .main-menu-donate {
+  .blog #main-menu-wrap .main-menu-donate, .archive #main-menu-wrap .main-menu-donate, .blog-page #main-menu-wrap .main-menu-donate {
     margin-top: 42px; }
-    .blog #main-menu-wrap .main-menu-donate a, .archive #main-menu-wrap .main-menu-donate a {
+    .blog #main-menu-wrap .main-menu-donate a, .archive #main-menu-wrap .main-menu-donate a, .blog-page #main-menu-wrap .main-menu-donate a {
       border: 2px solid #ffffff;
       background: rgba(255, 255, 255, 0);
       color: #ffffff; }
-  .blog #main-menu-wrap .main-menu-donate:hover a, .archive #main-menu-wrap .main-menu-donate:hover a {
+  .blog #main-menu-wrap .main-menu-donate:hover a, .archive #main-menu-wrap .main-menu-donate:hover a, .blog-page #main-menu-wrap .main-menu-donate:hover a {
     background: white;
     color: #1AB19A; }
   .page-template-page-templatesabout_us_approach-php #main-menu-wrap .main-menu-about ul, .page-template-page-templatesabout_us_people-php #main-menu-wrap .main-menu-about ul, .page-template-page-templatesabout_us_impact-php #main-menu-wrap .main-menu-about ul {
