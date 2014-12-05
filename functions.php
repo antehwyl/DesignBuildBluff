@@ -221,3 +221,9 @@ function wpse_62509_current_month_selector( $link_html ) {
 }
 
 add_filter( 'get_archives_link', 'wpse_62509_current_month_selector' );
+
+/////////////////////////////////////////////////////////////////
+function remove_acf(){
+  remove_menu_page( 'edit.php?post_type=acf' ); 
+}
+add_action( 'admin_menu', 'remove_acf',100 );
