@@ -65,7 +65,8 @@
 
 #video {
   width: 100%;
-  position: relative; }
+  position: relative;
+  margin: 0 0 55px 0; }
   #video img {
     width: 100%;
     display: block; }
@@ -135,6 +136,8 @@
 
 #section-two {
   text-align: center; }
+  #section-two .section-heading {
+    margin: 30px 0 0 0; }
   #section-two .section-sub-heading {
     margin: 32px auto 0 auto; }
   #section-two .section-two-text {
@@ -167,6 +170,23 @@
 
 .picture-2 {
   margin: 0 2% 140px 0; }
+
+#approach-illus-one {
+  background: url('img/illos/illus-03.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 421px;
+  height: 129px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-animation-fill-mode: forwards;
+  z-index: -1; }
 
 @media only screen and (max-width: 1270px) {
   .approach-content {
@@ -203,4 +223,7 @@
     float: none;
     margin: 0 0 20px 0; }
   #images {
-    margin: 0 0 20px 0; } }
+    margin: 0 0 20px 0; }
+  #approach-illus-one {
+    width: 210px;
+    height: 65px; } }

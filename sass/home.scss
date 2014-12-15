@@ -227,6 +227,28 @@
 .recent-post-3{
 	margin:0 1.8666% 135px 0;
 }
+#home-illus-one{
+	background:url('img/illos/illus-01.png');
+	background-size:100%;
+	width:158px;
+	height:157px;
+	position:absolute;
+	margin:-31px 0 0 0;
+	z-index:-1;
+}
+#home-illus-two{
+	background:url('img/illos/illus-02.png');
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-position-x:115px;
+	overflow:hidden;
+	width:301px;
+	height:242px;
+	position:absolute;
+	right:0;
+	margin:-31px 0 0 0;
+	z-index:-1;
+}
 ////////////////////////////////////////////////////
 @media only screen and (max-width:1270px){
 	#home-splash-text-wrap{
@@ -373,5 +395,16 @@
 	.recent-date{
 		margin:8px 0 30px 0;
 
+	}
+	#home-illus-one{
+		width:80px;
+		height:80px;
+		margin:-16px 0 0 0;
+	}
+	#home-illus-two{
+		background-position-x:40px;
+		width:150px;
+		height:121px;
+		margin:-16px 0 0 0;
 	}
 }

@@ -40,6 +40,8 @@ $images			= get_field('images');
 			<?php endforeach; ?>
 		</div>
 
+		<div id='approach-illus-one'></div>
+
 		<div id='section-two'>
 			<?php foreach($section_two as $row): ?>
 				<h4 class='section-heading' ><?php echo $row['heading']; ?></h4>

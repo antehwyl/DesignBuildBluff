@@ -34,6 +34,8 @@ $featured 			= get_field('featured_projects');
 			<?php endforeach; ?>
 		</div>
 
+		<div id='home-illus-one'></div>
+
 		<div id='home-featured' class='cf'>
 			<h4 class='section-heading'><?php echo $featured_heading; ?></h4>
 			<?php 
@@ -70,6 +72,8 @@ $featured 			= get_field('featured_projects');
 			<?php endforeach; ?>
 			*/ ?>
 		</div>
+
+		<div id='home-illus-two'></div>
 
 		<div id='home-blog' class='cf'>
 			<h4 class='section-heading'>From the Blog</h4>

@@ -32,6 +32,7 @@
 #video{
 	width:100%;
 	position:relative;
+	margin:0 0 55px 0;
 	img{
 		width:100%;
 		display:block;
@@ -92,6 +93,9 @@
 }
 #section-two{
 	text-align:center;
+	.section-heading{
+		margin:30px 0 0 0;
+	}
 	.section-sub-heading{
 		margin:32px auto 0 auto;
 	}
@@ -124,6 +128,19 @@
 }
 .picture-2{
 	margin:0 2% 140px 0;
+}
+#approach-illus-one{
+	background:url('img/illos/illus-03.png');
+	background-size:100%;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	width:421px;
+	height:129px;
+	position:relative;
+	left:50%;
+	@include transform(translateX(-50%));
+	//margin:-31px 0 0 0;
+	z-index:-1;
 }
 ////////////////////////////////////////////////////
 @media only screen and (max-width:1270px){
@@ -172,5 +189,9 @@
 	}
 	#images{
 		margin:0 0 20px 0;
+	}
+	#approach-illus-one{
+		width:210px;
+		height:65px;
 	}
 }

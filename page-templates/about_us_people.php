@@ -21,6 +21,8 @@ $supporters			= get_field('supporters');
 			<h4 class='section-heading'><?php echo $team_heading; ?></h4>
 		</div>
 
+		<div id='people-illus-one'></div>
+
 		<div id='team-members' class='cf'>
 			<?php foreach($team_members as $row): ?>
 				<div class='single-team-member'>
@@ -34,12 +36,16 @@ $supporters			= get_field('supporters');
 			<?php endforeach; ?>
 		</div>
 
+		<div id='people-illus-two'></div>
+
 		<div id='supporters-heading'>
 			<?php foreach($supporters_heading as $row): ?>
 				<h4 class='section-heading'><?php echo $row['heading']; ?></h4>
 				<p class='section-sub-heading'><?php echo $row['text']; ?></p>
 			<?php endforeach; ?>
 		</div>
+
+		<div id='people-illus-three'></div>
 
 		<div id='supporters' class='cf'>
 			<?php foreach($supporters as $row): ?>
