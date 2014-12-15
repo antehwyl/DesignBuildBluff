@@ -156,7 +156,7 @@
   border: 4px solid rgba(255, 255, 255, 0); }
 
 #contact-illus-one {
-  background: url('img/illos/illus-05.png');
+  background: url('img/Illos/illus-05.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-x: -70px;
@@ -168,7 +168,7 @@
   z-index: -1; }
 
 #contact-illus-two {
-  background: url('img/illos/illus-06.png');
+  background: url('img/Illos/illus-06.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-x: 180px;
@@ -181,7 +181,7 @@
   margin: -225px 0 0 0; }
 
 #contact-illus-three {
-  background: url('img/illos/illus-07.png');
+  background: url('img/Illos/illus-07.png');
   background-size: 100%;
   background-repeat: no-repeat;
   overflow: hidden;
