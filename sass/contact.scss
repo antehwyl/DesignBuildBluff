@@ -173,6 +173,10 @@
 	}
 }
 @media only screen and (max-width:600px){
+	#contact-wrap{
+		overflow-y:scroll;
+		padding-right:15px;
+	}
 	#contact-inner{
 		width:auto;
 		margin:0 20px;
