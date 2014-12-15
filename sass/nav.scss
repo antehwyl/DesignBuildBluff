@@ -15,10 +15,7 @@
  //@include transition(0.5s);
 
 }
-footer{
-	width:100%;
-	background:#868688;
-}
+
 #header-inner,
 #footer-inner{
 	max-width:$max-width;
@@ -29,8 +26,7 @@ footer{
 #footer-inner{
 	padding:63px 0 50px 0;
 }
-#site-logo,
-#footer-site-logo{
+#site-logo{
 	float:left;
 	//background-image:url('img/logo.png');
 	//background-repeat:no-repeat;

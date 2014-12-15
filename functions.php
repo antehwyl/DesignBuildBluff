@@ -223,7 +223,28 @@ function wpse_62509_current_month_selector( $link_html ) {
 add_filter( 'get_archives_link', 'wpse_62509_current_month_selector' );
 
 /////////////////////////////////////////////////////////////////
+//hide custom fields menu
 function remove_acf(){
   remove_menu_page( 'edit.php?post_type=acf' ); 
 }
 add_action( 'admin_menu', 'remove_acf',100 );
+
+/////////////////////////////////////////////////////////////////
+//make widget sidebar
+register_sidebar(array(
+'name'=>'Footer Social',
+'id'=>'footer_social',
+//'before_widget'=>'<div id="footer-social">',
+//'after_widget'=>'</div>',
+'before_title'=>'<h3 class="title">',
+'after_title'=>'</h3>',
+));
+
+register_sidebar(array(
+'name'=>'Footer Contact',
+'id'=>'footer_contact',
+//'before_widget'=>'<div id="footer-social">',
+//'after_widget'=>'</div>',
+'before_title'=>'<h3 class="title">',
+'after_title'=>'</h3>',
+));

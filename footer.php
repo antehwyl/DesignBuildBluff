@@ -26,8 +26,15 @@
 				<h1>DesignBuildBluff</h1>
 				<a href='<?php echo get_site_url(); ?>'><img src="<?php echo get_stylesheet_directory_uri(); ?>/css/img/logo.png" /></a>
 			</div>
-			<div id='footer-main-menu-wrap'>
-				<?php wp_nav_menu( $main ); ?>
+			<div id='footer-right'>
+				<div id='footer-social'>
+					<p class='footer-section-title'>Connect</p>
+					<?php dynamic_sidebar( 'footer_social' ); ?>
+				</div>
+				<div id='footer-contact'>
+					<p class='footer-section-title'>Contact</p>
+					<?php dynamic_sidebar( 'footer_contact' ); ?>
+				</div>
 			</div>
 			
 			<?php /*
