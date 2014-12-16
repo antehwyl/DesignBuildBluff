@@ -35,11 +35,15 @@ $body 		= get_field('content');
 					<?php endif; ?>
 
 					<?php if($row['image'][0]['width'] == 'Half Width Left' ): /* Half width image */ ?>
-						<img src='<?php echo $row['image'][0]['image']['url']; ?>' class='half-width-left' />
+						<div class='half-width-left'>
+							<img src='<?php echo $row['image'][0]['image']['url']; ?>' />
+						</div>
 					<?php endif; ?>
 
 					<?php if($row['image'][0]['width'] == 'Half Width Right' ): /* Half width image */ ?>
-						<img src='<?php echo $row['image'][0]['image']['url']; ?>' class='half-width-right' />
+						<div class='half-width-right'>
+							<img src='<?php echo $row['image'][0]['image']['url']; ?>' />
+						</div>
 					<?php endif; ?>
 
 				<?php endif; ?>

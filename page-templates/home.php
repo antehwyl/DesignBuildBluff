@@ -27,6 +27,8 @@ $featured 			= get_field('featured_projects');
 			<?php endforeach; ?>
 		</div>
 		
+		<div id='home-illus-zero'></div>
+
 		<div id='home-who'>
 			<?php foreach($who as $row): ?>
 				<h4 class='section-heading'><?php echo $row['heading']; ?></h4>

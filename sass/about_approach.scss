@@ -28,6 +28,7 @@
 		color:$font-grey-two;
 		width:75%;
 		margin:52px auto 107px auto;
+		line-height:1.45em;
 }
 #video{
 	width:100%;
@@ -168,6 +169,11 @@
 		width:auto;
 		margin:25px 40px 70px 40px;
 	}
+	#section-one{
+		.section-heading{
+			margin:30px 0 0 0;
+		}
+	}
 	#section-two {
 		.section-sub-heading{
 			margin:25px 40px 0 40px;
@@ -179,6 +185,9 @@
 	    	margin:40px 40px 30px 40px;
 	    	width:auto;
 		}
+	}
+	#video{
+		margin:0 0 40px 0;
 	}
 	.picture-1,
 	.picture-2,

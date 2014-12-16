@@ -154,6 +154,14 @@
 		font-size:1em;
 		margin:80px 0 0 0;
 	}
+	#team-heading{
+		.section-heading{
+			margin:30px 0 0 0;
+		}
+	}
+	#team-members{
+		margin:25px 0 0 0;
+	}
 	.section-sub-heading{
 		font-size:1.25em;
 		margin:22px auto 0 auto;
@@ -179,5 +187,10 @@
 	}
 	#people-illus-one{
 		margin:-75px 0 0 0;
+		background-position-x:-30px;
+		width:120px;
+	}
+	#people-illus-three{
+		display:none;
 	}
 }

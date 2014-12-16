@@ -22,12 +22,20 @@ get_header(); ?>
 		<div id="content" class='cf' role="main">
 		
 		
-		<?php if ( have_posts() ) : ?>
+		
+
+		<?php if ( have_posts() ) :  $i=0; ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); $i++; ?>
 				<?php //get_template_part( 'content', get_post_format() ); ?>
 				
+				<?php if($i==1): ?>
+					<div id='blog-illus-one'></div>
+				<?php elseif($i==2): ?>
+					<div id='blog-illus-two'></div>
+				<?php endif; ?>
+
 				<article id='post-<?php echo get_the_ID(); ?>' class='post cf'>
 					<a href='<?php the_permalink(); ?>' class='post-title'><h4><?php the_title(); ?></h4></a>
 					<p class='post-date'><?php echo get_the_date(); ?></p>

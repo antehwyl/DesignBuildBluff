@@ -72,6 +72,20 @@
 #next-link{
 	float:right;
 }
+#post-illus-one{
+	background:url('img/Illos/illus-08.png');
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-position-x:250px;
+	overflow:hidden;
+	width:569px;
+	height:469px;
+	position:absolute;
+	right:0;
+	//@include transform(translateX(-50%));
+	margin:110px 0 0 0;
+	z-index:-1;
+}
 ////////////////////////////////////////////////////
 @media only screen and (max-width:1270px){
 	.post{
@@ -85,10 +99,18 @@
 			width:100%;
 		}
 	}
+	#post-illus-one{
+		width:400px;
+		margin:0;
+		background-position-x:150px;
+	}
 }
 @media only screen and (max-width:600px){//phone-ish
 	.post{
 		width:auto;
 		margin:0 20px;
+	}
+	#post-illus-one{
+		display:none;
 	}
 }

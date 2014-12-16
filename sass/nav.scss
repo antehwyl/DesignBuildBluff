@@ -56,6 +56,7 @@
 	opacity:1;
 	@include transition(0.2s);
 }
+
 #main-menu-wrap,
 #footer-main-menu-wrap{
 	float:right;
@@ -294,18 +295,20 @@
 		.main-menu-about:hover{
 			ul{
 				a{
-					//border-bottom:2px solid rgba(212,234,0,0);
+					
 					color:$white;
 				}
 			}
 		}
 		.main-menu-donate{
 			a{
-				color:$teal;
+				border:2px solid $white;
+				color:$white;
 			}
 		}
 		.main-menu-donate:hover{
 			a{
+				border:2px solid $teal;
 				color:$white;
 			}
 		}
@@ -491,6 +494,8 @@
 		left:0;
 		right:0;
 		top:0;
+		overflow-y:scroll;
+		padding-right:15px;
 		#menu-main-menu{
 			margin:0;
 		}
@@ -679,8 +684,8 @@
 	#mobile-toggle.open{
 		position:fixed;
 		z-index:2;
-		right:20px;
-		top:20px;
+		right:40px;
+		top:50px;
 		margin:5px 0 0 0;
 
 	}
@@ -725,6 +730,10 @@
 	}
 	#mobile-toggle{
 		margin:25px 0 0 0;
+	}
+	#mobile-toggle.open{
+		top:20px;
+		right:20px;
 	}
 	#mobile-toggle:before{
 		line-height:1em;

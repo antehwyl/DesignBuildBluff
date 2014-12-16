@@ -166,4 +166,6 @@ footer {
 @media only screen and (max-width: 600px) {
   #footer-site-logo {
     width: 186px;
-    height: 46px; } }
+    height: 46px; }
+  #footer-inner {
+    padding: 45px 0; } }

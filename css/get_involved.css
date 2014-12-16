@@ -84,12 +84,40 @@
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
+#involved-illus-1 {
+  background: url('img/Illos/illus-10.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 537px;
+  height: 278px;
+  position: absolute;
+  left: 0;
+  margin: -205px 0 0 0;
+  z-index: -1; }
+
+#involved-illus-2 {
+  background: url('img/Illos/illus-11.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 456px;
+  height: 287px;
+  position: absolute;
+  right: 0;
+  margin: -220px 0 0 0;
+  z-index: -1; }
+
 @media only screen and (max-width: 1270px) {
   .involved-content {
     width: auto;
     margin: 0 40px; } }
 
-@media only screen and (max-width: 1000px) { }
+@media only screen and (max-width: 1000px) {
+  #involved-illus-1 {
+    background-position-x: -40px;
+    width: 450px;
+    margin: -155px 0 0 0; } }
 
 @media only screen and (max-width: 600px) {
   .involved-content {
@@ -106,4 +134,12 @@
   .section-link {
     font-size: 1.25em; }
   .section2 .section-link {
-    margin: 0 0 70px 0; } }
+    margin: 0 0 70px 0; }
+  #involved-illus-1 {
+    width: 350px;
+    margin: -144px 0 0 0;
+    background-position-x: -80px; }
+  #involved-illus-2 {
+    width: 280px;
+    margin: -180px 0 0 0;
+    background-position-x: 100px; } }

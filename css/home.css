@@ -285,9 +285,20 @@
 .recent-post-1, .recent-post-2, .recent-post-3 {
   margin: 0 1.8666% 135px 0; }
 
+#home-illus-zero {
+  background: url('img/Illos/illus-14.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 201px;
+  height: 155px;
+  position: absolute;
+  margin: -75px 0 0 0;
+  right: 70px; }
+
 #home-illus-one {
   background: url('img/Illos/illus-01.png');
   background-size: 100%;
+  background-repeat: no-repeat;
   width: 158px;
   height: 157px;
   position: absolute;
@@ -345,7 +356,9 @@
     border-top: 0px solid #ffffff;
     border-bottom: 3px solid #ffffff; }
   .recent-date {
-    margin: 8px 0 40px 0; } }
+    margin: 8px 0 40px 0; }
+  #home-illus-zero {
+    right: 10px; } }
 
 @media only screen and (max-width: 600px) {
   #home-splash {
@@ -403,11 +416,15 @@
     border-bottom: 3px solid #ffffff; }
   .recent-date {
     margin: 8px 0 30px 0; }
+  #home-illus-zero {
+    width: 120px;
+    margin: -44px 0 0 0;
+    right: 10px; }
   #home-illus-one {
-    width: 80px;
-    height: 80px;
+    width: 100px;
     margin: -16px 0 0 0; }
   #home-illus-two {
+    display: none;
     background-position-x: 40px;
     width: 150px;
     height: 121px;

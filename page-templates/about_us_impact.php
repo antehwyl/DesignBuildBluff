@@ -19,6 +19,9 @@ $press 			= get_field('press');
 <div id='content-wrap' class='impact-content'>
 	<div id='content-inner'>
 		<div class='nav-buffer'></div>
+		
+		<div id='impact-illus-one'></div>
+
 		<div id='section-one' class='cf'>
 			<?php foreach($section_one as $row): ?>
 				<h4 class='section-heading'><?php echo $row['heading'] ?></h4>
@@ -42,6 +45,8 @@ $press 			= get_field('press');
 				</a>
 			<?php endforeach; ?>
 		</div>
+
+		<div id='impact-illus-two'></div>
 
 		<div id='awards-heading'>
 			<h4 class='section-heading'><?php echo $awards_heading; ?></h4>

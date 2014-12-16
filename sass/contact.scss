@@ -10,13 +10,15 @@
 	width:100%;
 	height:100%;
 	z-index:9999;
+	overflow-y:scroll;
+		padding-right:15px;
 }
 #contact-inner{
 	width:$max-width;
 	margin:auto;
 	position:relative;
-	top:50%;
-	@include transform(translateY(-50%));
+	top:120px;
+	//@include transform(translateY(-50%));
 }
 #contact-heading{
 	font-family:$neu-reg;
@@ -174,8 +176,7 @@
 }
 @media only screen and (max-width:600px){
 	#contact-wrap{
-		overflow-y:scroll;
-		padding-right:15px;
+
 	}
 	#contact-inner{
 		width:auto;
@@ -206,11 +207,13 @@
 		width:200px;
 	}
 	#contact-illus-two{
+		display:none;
 		background-position-x:75px;
 		width:300px;
 		margin:-180px 0 0 0;
 	}
 	#contact-illus-three{
+		display:none;
 		right:155px;
 		width:220px;
 		margin:-80px 0 0 0;

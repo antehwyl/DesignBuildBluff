@@ -24,7 +24,7 @@ get_header(); ?>
 		<?php include INCLUDES_DIR.'/blog_filters.php'; /* The contact information overlay */ ?>
 		<div id="content" class='cf' role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<?php if ( have_posts() ) : $i=0; ?>
 			<header class="archive-header">
 				<h1 class="archive-title"><?php
 					if ( is_day() ) :
@@ -41,7 +41,7 @@ get_header(); ?>
 
 			<?php
 			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			while ( have_posts() ) : the_post(); $i++;
 
 				/* Include the post format-specific template for the content. If you want to
 				 * this in a child theme then include a file called called content-___.php
@@ -49,6 +49,12 @@ get_header(); ?>
 				 */
 				//get_template_part( 'content', get_post_format() );
 			?>
+				<?php if($i==1): ?>
+					<div id='blog-illus-one'></div>
+				<?php elseif($i==2): ?>
+					<div id='blog-illus-two'></div>
+				<?php endif; ?>
+
 				<article id='post-<?php echo get_the_ID(); ?>' class='post cf cat-<?php the_category_ID(); ?>'>
 					<a href='<?php the_permalink(); ?>' class='post-title'><h4><?php the_title(); ?></h4></a>
 					<p class='post-date'><?php echo get_the_date(); ?></p>

@@ -62,7 +62,8 @@
   color: #515254;
   width: 75%;
   margin: 30px auto 60px auto;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.45em; }
 
 .section-text {
   width: 80%;
@@ -176,6 +177,32 @@
 #press {
   margin: 0 0 165px 0; }
 
+#impact-illus-one {
+  background: url('img/Illos/illus-08.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: 200px;
+  overflow: hidden;
+  width: 569px;
+  height: 469px;
+  position: absolute;
+  right: 0;
+  margin: 50px 0 0 0;
+  z-index: -1; }
+
+#impact-illus-two {
+  background: url('img/Illos/illus-09.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: -50px;
+  overflow: hidden;
+  width: 318px;
+  height: 233px;
+  position: absolute;
+  left: 0;
+  margin: 75px 0 0 0;
+  z-index: -1; }
+
 @media only screen and (max-width: 1270px) {
   .impact-content {
     width: auto;
@@ -183,7 +210,13 @@
 
 @media only screen and (max-width: 1000px) {
   #section-one .section-heading {
-    margin: 100px 0 0 0; } }
+    margin: 100px 0 0 0; }
+  #impact-illus-one {
+    width: 350px;
+    background-position-x: 170px; }
+  #impact-illus-two {
+    width: 250px;
+    margin: 5px 0 0 0; } }
 
 @media only screen and (max-width: 600px) {
   .impact-content {
@@ -194,9 +227,10 @@
   .section-sub-heading {
     font-size: 1.25em;
     margin: 30px 20px 40px 20px;
-    width: auto; }
+    width: auto;
+    line-height: 1.45em; }
   #section-one .section-heading {
-    margin: 80px 0 0 0; }
+    margin: 30px 0 0 0; }
   .section-text {
     -webkit-column-count: 1;
     /* Chrome, Safari, Opera */
@@ -216,4 +250,8 @@
     margin: 0 20px; }
   #press {
     width: auto;
-    margin: 0 20px 60px 20px; } }
+    margin: 0 20px 60px 20px; }
+  #impact-illus-one {
+    display: none; }
+  #impact-illus-two {
+    display: none; } }

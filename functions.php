@@ -145,6 +145,13 @@ function add_theme_scripts() {
     wp_enqueue_script( 'about_people' );
   endif;
 
+  if(is_single()){
+    wp_register_script('backstretch', get_stylesheet_directory_uri().'/js/backstretch.min.js', false, false, true);
+    wp_enqueue_script( 'backstretch' );
+    
+    wp_register_script('project_page', get_stylesheet_directory_uri().'/js/project_page.js', false, false, true);
+    wp_enqueue_script( 'project_page' );
+  }
   
 
 }

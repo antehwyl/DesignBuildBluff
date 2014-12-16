@@ -213,6 +213,30 @@
     color: #ffffff !important;
     background-color: #FF5F3F !important; }
 
+#blog-illus-one {
+  background: url('img/Illos/illus-12.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 137px;
+  height: 109px;
+  position: absolute;
+  left: 15px;
+  margin: 146px 0 0 0;
+  z-index: -1; }
+
+#blog-illus-two {
+  background: url('img/Illos/illus-13.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 345px;
+  height: 323px;
+  position: absolute;
+  right: 0;
+  margin: 146px 0 0 0;
+  z-index: -1; }
+
 @media only screen and (max-width: 1270px) {
   .blog-content, .category-content, .archive-content {
     width: auto;
@@ -229,7 +253,12 @@
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     -webkit-animation-fill-mode: forwards;
-    position: relative; } }
+    position: relative; }
+  #blog-illus-one {
+    margin: 20px 0 0 0; }
+  #blog-illus-two {
+    width: 250px;
+    margin: 0; } }
 
 @media only screen and (max-width: 600px) {
   .blog-content, .category-content, .archive-content {
@@ -262,4 +291,13 @@
   .post img {
     margin: 40px auto 0 auto; }
   .read-more-link p {
-    margin: 30px 0 10px 0; } }
+    margin: 30px 0 10px 0; }
+  #blog-illus-one {
+    width: 100px;
+    margin: 29px 0 0 0;
+    background-position-x: -30px;
+    left: 0; }
+  #blog-illus-two {
+    width: 150px;
+    margin: 0;
+    background-position-x: 40px; } }

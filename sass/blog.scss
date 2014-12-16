@@ -193,6 +193,34 @@
 
 	}
 }
+#blog-illus-one{
+	background:url('img/Illos/illus-12.png');
+	background-size:100%;
+	background-repeat:no-repeat;
+	//background-position-x:200px;
+	overflow:hidden;
+	width:137px;
+	height:109px;
+	position:absolute;
+	left:15px;
+	//@include transform(translateX(-50%));
+	margin:146px 0 0 0;
+	z-index:-1;
+}
+#blog-illus-two{
+	background:url('img/Illos/illus-13.png');
+	background-size:100%;
+	background-repeat:no-repeat;
+	//background-position-x:200px;
+	overflow:hidden;
+	width:345px;
+	height:323px;
+	position:absolute;
+	right:0;
+	//@include transform(translateX(-50%));
+	margin:146px 0 0 0;
+	z-index:-1;
+}
 ////////////////////////////////////////////////////
 @media only screen and (max-width:1270px){
 	.blog-content,
@@ -209,6 +237,13 @@
 		left:50%;
 		@include transform(translate(-50%,0));
 		position:relative;
+	}
+	#blog-illus-one{
+		margin:20px 0 0 0;
+	}
+	#blog-illus-two{
+		width:250px;
+		margin:0;
 	}
 }
 @media only screen and (max-width:600px){//phone-ish
@@ -257,5 +292,16 @@
 		p{
 			margin:30px 0 10px 0;
 		}
+	}
+	#blog-illus-one{
+		width:100px;
+		margin:29px 0 0 0;
+		background-position-x:-30px;
+		left:0;
+	}
+	#blog-illus-two{
+		width:150px;
+		margin:0;
+		background-position-x:40px;
 	}
 }
