@@ -44,7 +44,7 @@
   height: 113px; }
 
 #home-splash {
-  height: 810px;
+  height: 660px;
   overflow: hidden;
   width: 100%;
   position: relative; }
@@ -70,7 +70,7 @@
 #home-splash-text-wrap {
   width: 1220px;
   margin: auto;
-  height: 697px;
+  height: 547px;
   /* (image height)810 - (nav buffer)113 = 697px */
   position: relative;
   z-index: 2; }

@@ -44,7 +44,7 @@
   height: 113px; }
 
 #featured-project {
-  height: 810px;
+  height: 660px;
   overflow: hidden;
   width: 100%;
   position: relative; }
@@ -71,7 +71,7 @@
 #featured-text-wrap {
   width: 1220px;
   margin: auto;
-  height: 697px;
+  height: 547px;
   /* (image height)810 - (nav buffer)113 = 697px */
   text-align: center;
   position: relative;
