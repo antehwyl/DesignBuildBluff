@@ -127,7 +127,9 @@
     width: 100%; }
 
 .sub-project:hover .hover-overlay {
-  opacity: 1; }
+  opacity: 0.8; }
+.sub-project:hover .sub-project-text-wrap {
+  opacity: 0; }
 
 .sub-project:before {
   content: '';
@@ -155,6 +157,10 @@
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-animation-fill-mode: forwards;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   text-align: center;
   z-index: 2; }
   .sub-project-text-wrap h3 {
@@ -162,7 +168,9 @@
     font-size: 1.75em;
     font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #ffffff;
-    border-bottom: 4px solid #D4EA00; }
+    border-bottom: 4px solid #D4EA00;
+    font-weight: 600;
+    padding: 8px 0 0 0; }
   .sub-project-text-wrap .visit-text {
     display: none; }
 
@@ -195,8 +203,9 @@
     -webkit-animation-fill-mode: forwards;
     margin: auto;
     border: 4px solid #ffffff;
-    padding: 15px 20px 12px 20px;
-    display: inline-block; }
+    padding: 6px 20px 0px 20px;
+    display: inline-block;
+    font-weight: 600; }
 
 @media only screen and (max-width: 1270px) {
   #featured-text-wrap {

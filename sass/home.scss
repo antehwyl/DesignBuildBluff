@@ -93,7 +93,10 @@
 }
 .featured-item:hover{
 	.hover-overlay{
-		opacity:1;
+		opacity:.8;
+	}
+	.featured-item-title{
+		opacity:0;
 	}
 }
 .hover-overlay{
@@ -114,8 +117,9 @@
 		@include transform(translateY(-50%));
 		margin:auto;
 		border:4px solid $white;
-		padding:15px 20px 12px 20px;
+		padding:7px 20px 0px 20px;
 		display:inline-block;
+		font-weight:600;
 	}
 }
 .featured-item:before{
@@ -143,6 +147,9 @@
 	border-bottom:4px solid $yellow;
 	margin:0;
 	z-index:2;
+	font-weight:600;
+	padding:8px 0 2px 0;
+	@include transition(0.3s);
 }
 //23.7
 #home-blog{
@@ -157,9 +164,8 @@
 .recent-post{
 	width:23.6%;
 	float:left;
-	//background:red;
-	border-top:3px solid $font-grey-two;
-	border-bottom:3px solid $font-grey-two;
+	//border-top:3px solid $font-grey-two;
+	//border-bottom:3px solid $font-grey-two;
 	position:relative;
 	overflow:hidden;
 	@include transition(0.2s);
@@ -191,9 +197,36 @@
 		z-index:2;
 	}
 }
+.recent-post:before{
+	content:'';
+	display:inline-block;
+	width:100%;
+	height:100%;
+	border-top:3px solid $font-grey-two;
+	left:0;
+	right:0;
+	position:absolute;
+	background:rgba(0,0,0,0);
+	@include transition(0.2s);
+}
+.recent-post:after{
+	content:'';
+	display:inline-block;
+	width:100%;
+	border-top:3px solid $font-grey-two;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	@include transition(0.2s);
+}
 .recent-post:hover{
-	border-top:3px solid $white;
-	border-bottom:3px solid $white;
+	//border-top:0px solid $white;
+	//border-bottom:0px solid $white;
+	&:before, &:after{
+		border-top:0px solid $font-grey-two;
+		background:rgba(0,0,0,0.3);
+	}
 	img{
 		opacity:.8;
 	}
@@ -309,13 +342,16 @@
 	}
 	.recent-post-3,
 	.recent-post-4{
-		border-top:0px solid;
+		//border-top:0px solid;
+		&:before{
+			display:none;
+		}
 		margin-bottom:25px;
 	}
 	.recent-post.recent-post-3:hover,
 	.recent-post.recent-post-4:hover{
-		border-top:0px solid $white;
-		border-bottom:3px solid $white;
+		//border-top:0px solid $white;
+		//border-bottom:3px solid $white;
 	}
 	.recent-date{
 		margin:8px 0 40px 0;
@@ -388,23 +424,54 @@
 	.recent-post-1,
 	.recent-post-2,
 	.recent-post-3{
-		border-top:3px solid $font-grey-two;
-		border-bottom:0px solid;
+		//border-top:3px solid $font-grey-two;
+		&:before{
+			content:'';
+			display:inline-block;
+			width:100%;
+			border-top:3px solid $font-grey-two;
+			left:0;
+			right:0;
+			position:absolute;
+		}
+		&:after{
+			display:none;
+		}
+		//border-bottom:0px solid;
 	}
 	.recent-post-4{
-		border-top:3px solid $font-grey-two;
-		border-bottom:3px solid $font-grey-two;
+		&:before{
+			content:'';
+			display:inline-block;
+			width:100%;
+			border-top:3px solid $font-grey-two;
+			left:0;
+			right:0;
+			position:absolute;
+		}
+		&:after{
+			content:'';
+			display:inline-block;
+			width:100%;
+			border-top:3px solid $font-grey-two;
+			left:0;
+			right:0;
+			bottom:0;
+			position:absolute;
+		}
+		//border-top:3px solid $font-grey-two;
+		//border-bottom:3px solid $font-grey-two;
 		margin:0 0 50px 0;
 	}
 	.recent-post.recent-post-1:hover,
 	.recent-post.recent-post-2:hover,
 	.recent-post.recent-post-3:hover{
-		border-top:3px solid $white;
-		border-bottom:0px solid $white;
+		//border-top:3px solid $white;
+		//border-bottom:0px solid $white;
 	}
 	.recent-post.recent-post-4:hover{
-		border-top:3px solid $white;
-		border-bottom:3px solid $white;
+		//border-top:3px solid $white;
+		//border-bottom:3px solid $white;
 	}
 	.recent-date{
 		margin:8px 0 30px 0;

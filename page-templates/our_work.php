@@ -54,7 +54,7 @@ $projects 	= get_field('projects');
 							<img src='<?php echo $thumbnail_two['url'];?>' />
 							<div class='sub-project-text-wrap'>
 								<h3><?php echo the_title(); ?></h3>
-								<p class='visit-text'>Visit Project</p>
+								
 							</div>
 							<div class='hover-overlay'>
 								<p>View Project</p>

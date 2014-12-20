@@ -1,6 +1,7 @@
 (function($){
 	$(document).ready(function(){
 		postHeight();
+		//postHover();
 		stretch();
 		scaleIt();
 
@@ -22,7 +23,26 @@
 		$.each(posts,function(j){
 			$(posts[j]).height(maxHeight);
 		});
-		console.log(maxHeight);
+		//console.log(maxHeight);
+	}
+
+	function postHover(){//adjust the post's div height on hover to account for the borders going away
+		var posts = $('.recent-post');
+		var orig = $('.recent-post').height();
+		//var tall = 0;
+		$.each(posts,function(i){
+			$(posts[i]).hover(function(){
+				var tall = orig+6;
+				//console.log(tall);
+				$(this).height(tall);
+				$(this).find('.backstretch').height(tall)
+			},function(){
+				//tall -= 6;
+				$(this).height(orig);
+				$(this).find('.backstretch').height(orig);
+				//tall = 0;
+			});
+		});
 	}
 
 	function scaleIt(){

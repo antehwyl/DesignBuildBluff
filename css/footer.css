@@ -93,7 +93,13 @@ footer {
     color: #ffffff;
     text-decoration: none;
     border-bottom: 2px solid #D4EA00;
-    display: inline-block; }
+    display: inline-block;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  #footer-right a:hover {
+    border-bottom: 2px solid #ffffff; }
   #footer-right li {
     list-style: none; }
 
@@ -127,7 +133,9 @@ footer {
     font-family: "Karla Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 0.875em; }
   #footer-contact #phone {
-    margin: 25px 0 3px 0; }
+    margin: 25px 0 3px 0;
+    text-decoration: none;
+    color: #ffffff; }
 
 @media only screen and (max-width: 780px) {
   #footer-site-logo {

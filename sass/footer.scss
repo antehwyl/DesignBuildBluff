@@ -63,6 +63,10 @@ footer{
 		text-decoration:none;
 		border-bottom:2px solid $yellow;
 		display:inline-block;
+		@include transition(0.2s);
+	}
+	a:hover{
+		border-bottom:2px solid $white;
 	}
 	li{
 		list-style:none;
@@ -99,6 +103,8 @@ footer{
 	}
 	#phone{
 		margin:25px 0 3px 0;
+		text-decoration:none;
+		color:$white;
 	}
 }
 /////////////////////////////////////////////////////
