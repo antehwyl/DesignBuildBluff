@@ -67,7 +67,7 @@ $press 			= get_field('press');
 				
 				<?php if($row['link']): /* If there is a link */ ?>
 					<div>
-						<a href='<?php echo $row['link']; ?>'><p><?php echo $row['item']; ?></p></a>
+						<a href='<?php echo $row['link']; ?>' target='_blank'><p><?php echo $row['item']; ?></p></a>
 					</div>
 				<?php endif; ?>
 

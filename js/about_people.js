@@ -11,7 +11,8 @@
 		$.each(team,function(i){
 			var src = $(team[i]).find('img').attr('src');
 			$(team[i]).find('img').css('display','none');
-			$(team[i]).backstretch(src,{centeredY:false});
+			$(team[i]).backstretch(src);
+			//$(team[i]).backstretch(src,{centeredY:false});
 		});
 
 		//stretch supporters images
