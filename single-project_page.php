@@ -25,10 +25,19 @@ $body 		= get_field('content');
 			<?php foreach($body as $row): ?>
 				
 				<?php if($row['type'] == 'Text'): /* Text Row */ ?>
-					
-					<p class="cf project-text <?php echo $row['text'][0]['type'] ?>"><?php echo $row['text'][0]['text']; ?></p>
+					<p class="cf project-text text"><?php echo $row['text']; ?></p>
 				<?php endif; ?>
 
+				<?php if($row['type'] == 'Headline'):  ?>
+					<?php
+						//echo '<pre>';
+						//print_r($row);
+						//echo '</pre>';
+					 ?>
+
+					<p class="cf project-text headline"><?php echo $row['headline']; ?></p>
+				<?php endif; ?>
+				
 				<?php if($row['type'] == 'Image'): /* Image Row */ ?>
 
 					<div class='<?php echo $row["image"][0]["width"]; ?> cf'>
