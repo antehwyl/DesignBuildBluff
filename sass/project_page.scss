@@ -21,13 +21,16 @@
 	margin:50px auto 100px auto;
 	width:80%;
 }
-.full-width{
+.landscape-full{
 	width:100%;
 	margin-bottom:25px;
 	float:left;
+	img{
+		width:100%;
+	}
 }
-.half-width-left,
-.half-width-right{
+.landscape-half-left,
+.landscape-half-right{
 	width:49%;
 	height:330px;
 	overflow:hidden;
@@ -37,9 +40,48 @@
 		width:100%;
 	}
 }
-.half-width-left{
+.landscape-half-left{
 	margin:0 2% 25px 0;
 }
+.portrait-full{
+ 	width:70%;
+ 	margin:auto;
+ 	img{
+ 		width:100%;
+ 	}
+}
+.portrait-half-left,
+.portrait-half-right{
+	width:49%;
+	height:775px;
+	overflow:hidden;
+	margin-bottom:25px;
+	float:left;
+	img{
+		width:100%;
+	}
+}
+.portrait-half-left{
+	margin:0 2% 25px 0;
+}
+.portrait-third-left,
+.portrait-third-right,
+.portrait-third-middle{
+ 	width:32%;
+ 	height:525px;
+ 	overflow:hidden;
+ 	float:left;
+ 	margin-bottom:25px;
+ 	img{
+ 		width:100%;
+ 	}
+}
+.portrait-third-left,
+.portrait-third-middle{
+	margin:0 2% 25px 0;
+}
+
+
 .project-text{
 	width:80%;
 	margin:90px 10% 90px 10%;
@@ -89,9 +131,33 @@
 		margin:0 40px;
 	}
 }
+@media only screen and (max-width:1100px){
+	.portrait-third-left,
+	.portrait-third-right,
+	.portrait-third-middle{
+		height:430px;
+	}
+	.portrait-half-left,
+	.portrait-half-right{
+		height:620px;
+	}
+}
+@media only screen and (max-width:950px){
+	.portrait-third-left,
+	.portrait-third-right,
+	.portrait-third-middle{
+		height:375px;
+	}
+}
+@media only screen and (max-width:900px){
+	.portrait-half-left,
+	.portrait-half-right{
+		height:550px;
+	}
+}
 @media only screen and (max-width:800px){//tablet-ish
-	.half-width-left,
-	.half-width-right{
+	.landscape-half-left,
+	.landscape-half-right{
 		width:100%;
 		height:auto;
 		//overflow:hidden;
@@ -100,6 +166,22 @@
 		//img{
 		//	width:100%;
 		//}
+		img{
+			display:block !important;
+		}
+		.backstretch{
+			display:none !important;
+		}
+	}
+	.portrait-third-left,
+	.portrait-third-right,
+	.portrait-third-middle,
+	.portrait-half-left,
+	.portrait-half-right{
+		//height:310px;
+		width:100%;
+		height:auto;
+		margin-bottom:20px;
 		img{
 			display:block !important;
 		}
@@ -123,6 +205,20 @@
 	}
 	#project-nav{
 		margin:25px 0 80px 0;
+	}
+}
+@media only screen and (max-width:700px){//tablet-ish
+	.portrait-third-left,
+	.portrait-third-right,
+	.portrait-third-middle{
+		//height:275px;
+	}
+}
+@media only screen and (max-width:650px){//phone-ish
+	.portrait-third-left,
+	.portrait-third-right,
+	.portrait-third-middle{
+		//height:250px;
 	}
 }
 @media only screen and (max-width:600px){//phone-ish

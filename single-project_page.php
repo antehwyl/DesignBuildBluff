@@ -29,22 +29,10 @@ $body 		= get_field('content');
 				<?php endif; ?>
 
 				<?php if($row['type'] == 'Image'): /* Image Row */ ?>
-					
-					<?php if($row['image'][0]['width'] == 'Full Width' ): /* Full width image */ ?>
-						<img src='<?php echo $row['image'][0]['image']['url']; ?>' class='full-width' />
-					<?php endif; ?>
 
-					<?php if($row['image'][0]['width'] == 'Half Width Left' ): /* Half width image */ ?>
-						<div class='half-width-left'>
-							<img src='<?php echo $row['image'][0]['image']['url']; ?>' />
-						</div>
-					<?php endif; ?>
-
-					<?php if($row['image'][0]['width'] == 'Half Width Right' ): /* Half width image */ ?>
-						<div class='half-width-right'>
-							<img src='<?php echo $row['image'][0]['image']['url']; ?>' />
-						</div>
-					<?php endif; ?>
+					<div class='<?php echo $row["image"][0]["width"]; ?>'>
+						<img src='<?php echo $row['image'][0]['image']['url']; ?>' />
+					</div> 	
 
 				<?php endif; ?>
 			<?php endforeach; ?>
