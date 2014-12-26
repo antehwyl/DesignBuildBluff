@@ -81,8 +81,16 @@
 	margin:0 2% 25px 0;
 }
 
-
-.project-text{
+.project-text.headline{
+	float:left;
+	width:100%;
+	text-align:center;
+	font-family:$neu-reg;
+	font-size:1.75em;
+	color:$font-dark;
+	margin:30px 0 40px 0;
+}
+.project-text.text{
 	width:80%;
 	margin:90px 10% 90px 10%;
 	font-family:$karla-reg;
@@ -196,7 +204,7 @@
 		width:90%;
 		margin:30px auto 50px auto;
 	}
-	.project-text{
+	.project-text.text{
 		-webkit-column-count: 1; /* Chrome, Safari, Opera */
     	-moz-column-count: 1; /* Firefox */
     	column-count: 1;

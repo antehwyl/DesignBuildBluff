@@ -111,7 +111,16 @@
 .portrait-third-left, .portrait-third-middle {
   margin: 0 2% 25px 0; }
 
-.project-text {
+.project-text.headline {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1.75em;
+  color: #515254;
+  margin: 30px 0 40px 0; }
+
+.project-text.text {
   width: 80%;
   margin: 90px 10% 90px 10%;
   font-family: "Karla Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -190,7 +199,7 @@
   #project-headline {
     width: 90%;
     margin: 30px auto 50px auto; }
-  .project-text {
+  .project-text.text {
     -webkit-column-count: 1;
     /* Chrome, Safari, Opera */
     -moz-column-count: 1;

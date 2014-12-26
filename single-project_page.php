@@ -25,12 +25,13 @@ $body 		= get_field('content');
 			<?php foreach($body as $row): ?>
 				
 				<?php if($row['type'] == 'Text'): /* Text Row */ ?>
-					<p class='project-text'><?php echo $row['text']; ?></p>
+					
+					<p class="cf project-text <?php echo $row['text'][0]['type'] ?>"><?php echo $row['text'][0]['text']; ?></p>
 				<?php endif; ?>
 
 				<?php if($row['type'] == 'Image'): /* Image Row */ ?>
 
-					<div class='<?php echo $row["image"][0]["width"]; ?>'>
+					<div class='<?php echo $row["image"][0]["width"]; ?> cf'>
 						<img src='<?php echo $row['image'][0]['image']['url']; ?>' />
 					</div> 	
 
