@@ -64,6 +64,13 @@
 		font-size:1.25em;
 		text-decoration:none;
 		border-bottom:4px solid $red;
+		@include transition(0.2s);
+	}
+}
+#prev-link:hover,
+#next-link:hover{
+	a{
+		border-bottom:4px solid $font-dark;
 	}
 }
 #prev-link{

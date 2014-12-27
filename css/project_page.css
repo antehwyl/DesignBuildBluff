@@ -148,7 +148,11 @@
     text-decoration: none; }
   #project-nav p {
     border-bottom: 4px solid #D4EA00;
-    margin: 0; }
+    margin: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
   #project-nav .left {
     float: left; }
   #project-nav .right {
@@ -156,7 +160,15 @@
     #project-nav .right a {
       float: left;
       border-bottom: 4px solid #D4EA00;
-      margin: 0 0 0 40px; }
+      margin: 0 0 0 40px;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+    #project-nav .right a:hover {
+      border-bottom: 4px solid #515254; }
+  #project-nav p:hover {
+    border-bottom: 4px solid #515254; }
 
 @media only screen and (max-width: 1270px) {
   .project-content {

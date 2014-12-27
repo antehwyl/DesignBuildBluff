@@ -84,6 +84,9 @@
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
+.section-link:hover {
+  border-bottom: 4px solid #515254; }
+
 #involved-illus-1 {
   background: url('img/Illos/illus-10.png');
   background-size: 100%;

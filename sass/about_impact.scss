@@ -132,6 +132,12 @@
 			clear:both;
 			//line-height:1.2em;
 			border-bottom:4px solid $yellow;
+			@include transition(0.2s);
+		}
+	}
+	a:hover{
+		p{
+			border-bottom:4px solid $font-dark;
 		}
 	}
 }

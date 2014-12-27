@@ -98,7 +98,14 @@
     color: #515254;
     font-size: 1.25em;
     text-decoration: none;
-    border-bottom: 4px solid #FF5F3F; }
+    border-bottom: 4px solid #FF5F3F;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+
+#prev-link:hover a, #next-link:hover a {
+  border-bottom: 4px solid #515254; }
 
 #prev-link {
   float: left; }

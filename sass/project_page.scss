@@ -118,6 +118,7 @@
 	p{
 		border-bottom:4px solid $yellow;
 		margin:0;
+		@include transition(0.2s);
 	}
 	.left{
 		float:left;
@@ -129,7 +130,14 @@
 			float:left;
 			border-bottom:4px solid $yellow;
 			margin:0 0 0 40px;
+			@include transition(0.2s);
 		}
+		a:hover{
+			border-bottom:4px solid $font-dark;
+		}
+	}
+	p:hover{
+		border-bottom:4px solid $font-dark;
 	}
 }
 ////////////////////////////////////////////////////

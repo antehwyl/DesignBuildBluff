@@ -167,6 +167,12 @@
 		display:inline-block;
 		margin:30px 0 30px 0;
 		line-height:1.5em;
+		@include transition(0.2s);
+	}
+}
+.read-more-link:hover{
+	p{
+		border-bottom:4px solid $font-dark;
 	}
 }
 #pbd-alp-load-posts{

@@ -172,7 +172,13 @@
     #awards a p, #press a p {
       display: inline-block;
       clear: both;
-      border-bottom: 4px solid #D4EA00; }
+      border-bottom: 4px solid #D4EA00;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+  #awards a:hover p, #press a:hover p {
+    border-bottom: 4px solid #515254; }
 
 #press {
   margin: 0 0 165px 0; }

@@ -37,12 +37,13 @@
 		font-family:$neu-reg;
 		color:$white;
 		font-size:3.5em;
-		line-height:.75em;
+		line-height:1em;
 		text-align:center;
 		max-width:80%;
 		margin:auto;
 		border-bottom:4px solid $yellow;
 		display:inline-block;
+		font-weight:100;
 	}
 	a{
 		text-decoration:none;
@@ -53,8 +54,9 @@
 		@include transform(translateY(-50%));
 	}
 	.featured-text{
-		font-family:$neu-reg;
+		font-family:$neu-bold;
 		font-size:1.25em;
+		//font-weight:600;
 		line-height:115px;
 		color:$white;
 		width:110px;
@@ -113,9 +115,10 @@
 		margin:0;
 		font-size:1.75em;
 		font-family:$neu-reg;
+		font-weight:100;
 		color:$white;
-		border-bottom:4px solid $yellow;
-		font-weight:600;
+		border-bottom:2px solid $yellow;
+		//font-weight:600;
 		padding:8px 0 0 0;
 	}
 	.visit-text{
@@ -142,10 +145,10 @@
 		left:50%;
 		@include transform(translate(-50%,-50%));
 		margin:auto;
-		border:4px solid $white;
-		padding:6px 20px 0px 20px;
+		border:2px solid $white;
+		padding:6px 17px 0px 17px;
 		display:inline-block;
-		font-weight:600;
+		font-weight:100;
 	}
 }
 ////////////////////////////////////////////////////
