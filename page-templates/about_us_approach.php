@@ -21,6 +21,7 @@ $images			= get_field('images');
 			<?php foreach($section_one as $row): ?>
 				<h4 class='section-heading'><?php echo $row['heading']; ?></h4>
 				<p class='section-sub-heading'><?php echo $row['text']; ?></p>
+				<p class='section-one-text'><?php echo $row['second_text']; ?></p>
 			<?php endforeach; ?>
 		</div>
 
@@ -52,7 +53,9 @@ $images			= get_field('images');
 
 		<div id='images' class='cf'>
 			<?php $i=0; foreach($images as $row): $i++; ?>
-				<img src='<?php echo $row['image']['url']; ?>' class='<?php echo 'picture-'.$i; ?>' />
+				<div class='<?php echo 'picture-'.$i; ?>'>
+					<img src='<?php echo $row['image']['url']; ?>'  />
+				</div>
 			<?php endforeach; ?>
 		</div>
 

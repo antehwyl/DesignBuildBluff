@@ -1,6 +1,8 @@
 (function($){
 	$(document).ready(function(){
 		stretch();
+		scale.init();
+		scale.doit();
 	});
 
 	function stretch(){
@@ -52,6 +54,48 @@
 			$(portraitthridright[o]).find('img').css('display','none');
 			$(portraitthridright[o]).backstretch(img);
 		});
+	}
+
+	var scale = {
+		where:'',
+		
+		init:function(){
+			var that=this;
+			if($('#mobile-toggle').css('display')!='block'){
+				//console.log('screen');
+				that.where = 'screen';
+			}else{
+				//console.log('mobile');
+				that.where = 'mobile';
+			}
+		},
+
+		doit:function(){
+			var that=this;
+			$(window).resize(function(){
+				if( that.where == 'mobile'){
+					if( $('#mobile-toggle').css('display')!='block' ){
+						//console.log('mobile to screen');
+						that.where ='screen';
+
+						$('.landscape-half-left').backstretch('destroy');//replace these with every instance of a backstretch
+						$('.landscape-half-right').backstretch('destroy');
+						$('.portrait-half-left').backstretch('destroy');
+						$('.portrait-half-right').backstretch('destroy');
+						$('.portrait-third-left').backstretch('destroy');
+						$('.portrait-third-middle').backstretch('destroy');
+						$('.portrait-third-righ').backstretch('destroy');
+						stretch();
+					}
+				}
+				if( that.where == 'screen'){
+					if( $('#mobile-toggle').css('display')=='block' ){
+						//console.log('screen to mobile');
+						that.where ='mobile';
+					}
+				}
+			});
+		},
 	}
 
 })(jQuery);

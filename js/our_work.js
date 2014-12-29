@@ -2,6 +2,7 @@
 	
 	$(document).ready(function(){
 		stretch();
+		featuredHover();
 	});
 
 	function stretch(){
@@ -19,6 +20,14 @@
 			$(project[i]).find('img').css('display','none');
 			$(project[i]).backstretch(src);
 		})
+	}
+
+	function featuredHover(){
+		$('#featured-link').hover(function(){
+			$('#featured-project').addClass('hover');
+		},function(){
+			$('#featured-project').removeClass('hover');
+		});
 	}
 
 })(jQuery);

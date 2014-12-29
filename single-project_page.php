@@ -22,10 +22,10 @@ $body 		= get_field('content');
 		</div>
 		
 		<div id='project-body' class='cf'>
-			<?php foreach($body as $row): ?>
+			<?php $i=0; foreach($body as $row): $i++; ?>
 				
 				<?php if($row['type'] == 'Text'): /* Text Row */ ?>
-					<p class="cf project-text text"><?php echo $row['text']; ?></p>
+					<p class="cf project-text text <?php echo 'row'.$i; ?>"><?php echo $row['text']; ?></p>
 				<?php endif; ?>
 
 				<?php if($row['type'] == 'Headline'):  ?>
@@ -35,12 +35,12 @@ $body 		= get_field('content');
 						//echo '</pre>';
 					 ?>
 
-					<p class="cf project-text headline"><?php echo $row['headline']; ?></p>
+					<p class="cf project-text headline <?php echo 'row'.$i; ?>"><?php echo $row['headline']; ?></p>
 				<?php endif; ?>
 				
 				<?php if($row['type'] == 'Image'): /* Image Row */ ?>
 
-					<div class='<?php echo $row["image"][0]["width"]; ?> cf'>
+					<div class='<?php echo $row["image"][0]["width"]; ?> cf <?php echo 'row'.$i; ?>'>
 						<img src='<?php echo $row['image'][0]['image']['url']; ?>' />
 					</div> 	
 

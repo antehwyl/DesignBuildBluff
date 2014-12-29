@@ -22,7 +22,9 @@ $projects 	= get_field('projects');
 			setup_postdata( $post ); 
 		?>
 		    <div id='featured-project'>
+
 		    	<div class='nav-buffer'></div>
+
 		    	<?php 
 		    		$thumbnail = get_field('thumbnail');
 		    	?>
@@ -30,9 +32,13 @@ $projects 	= get_field('projects');
 		    	<div id='featured-text-wrap'>
 		    		<div id='text-wrap-inner'>
 		    			<p class='featured-text'>Featured</p>
-						<a href='<?php the_permalink(); ?>'><h3><?php echo the_title(); ?></h3></a>
+						<a href='<?php the_permalink(); ?>' id='featured-link'>
+							<h3><?php echo the_title(); ?></h3>
+							<p id='view-project'>View Project</p>
+						</a>
 		    		</div>
 		    	</div>
+		    	
 		    </div>
 		    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 		<?php endif; ?>

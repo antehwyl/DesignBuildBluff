@@ -113,6 +113,9 @@ function add_theme_scripts() {
   endif;
 
   if( is_page_template ('page-templates/about_us_approach.php') ):
+    wp_register_script('backstretch', get_stylesheet_directory_uri().'/js/backstretch.min.js', false, false, true);
+    wp_enqueue_script( 'backstretch' );
+
     wp_register_script('fancybox', get_stylesheet_directory_uri().'/js/fancybox/jquery.fancybox.pack.js', false, false, true);
     wp_enqueue_script( 'fancybox' );
 
@@ -121,6 +124,9 @@ function add_theme_scripts() {
 
     wp_register_script('lightboxes', get_stylesheet_directory_uri().'/js/lightboxes.js', false, false, true);
     wp_enqueue_script( 'lightboxes' );
+
+    wp_register_script('about-approach', get_stylesheet_directory_uri().'/js/about_approach.js', false, false, true);
+    wp_enqueue_script( 'about-approach' );
   endif;
 
   if( is_page_template ('page-templates/about_us_impact.php') ):
