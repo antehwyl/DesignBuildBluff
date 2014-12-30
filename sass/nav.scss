@@ -266,6 +266,23 @@
 .page-template-page-templatesget_involved-php{
 
 }
+.page-template-page-templatesabout_us_approach-php,
+.page-template-page-templatesabout_us_people-php,
+.page-template-page-templatesabout_us_impact-php{
+	#main-menu-wrap{
+		.main-menu-about{
+			ul{
+				opacity:1;
+				max-height:1000px;
+				padding:9px 0 0 0;
+				a{
+					//border-bottom:2px solid rgba(212,234,0,0);
+					color:$font-grey-two;
+				}
+			}
+		}
+	}
+}
 .page-template-page-templateshome-php,
 .page-template-page-templatesour_work-php{//light color nav
 	#masthead{

@@ -56,6 +56,7 @@
     font-size: 1em;
     color: #515254;
     line-height: 1.4em;
+    text-align: left;
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
     -moz-column-count: 2;
@@ -84,10 +85,16 @@
 #video {
   width: 100%;
   position: relative;
-  margin: 0 0 55px 0; }
+  margin: 0 0 55px 0;
+  cursor: pointer; }
   #video img {
     width: 100%;
     display: block; }
+
+#video-text-wrap:hover #play-preload {
+  opacity: 0; }
+#video-text-wrap:hover #play-button {
+  opacity: 1; }
 
 #video:before {
   content: '';
@@ -166,6 +173,7 @@
     color: #515254;
     line-height: 1.4em;
     float: left;
+    text-align: left;
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
     -moz-column-count: 2;

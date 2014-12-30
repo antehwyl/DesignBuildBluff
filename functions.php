@@ -261,3 +261,21 @@ register_sidebar(array(
 'before_title'=>'<h3 class="title">',
 'after_title'=>'</h3>',
 ));
+
+register_sidebar(array(
+'name'=>'Contact Address',
+'id'=>'contact_address',
+//'before_widget'=>'<div id="footer-social">',
+//'after_widget'=>'</div>',
+'before_title'=>'<h3 class="title">',
+'after_title'=>'</h3>',
+));
+
+register_sidebar(array(
+'name'=>'Contact Phone',
+'id'=>'contact_phone',
+//'before_widget'=>'<div id="footer-social">',
+//'after_widget'=>'</div>',
+'before_title'=>'<h3 class="title">',
+'after_title'=>'</h3>',
+));

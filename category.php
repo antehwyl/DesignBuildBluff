@@ -38,12 +38,13 @@ get_header(); ?>
 				 */
 				//get_template_part( 'content', get_post_format() );
 			?>
+				<?php /*
 				<?php if($i==1): ?>
 					<div id='blog-illus-one'></div>
 				<?php elseif($i==2): ?>
 					<div id='blog-illus-two'></div>
 				<?php endif; ?>
-				
+				*/ ?>
 				<article id='post-<?php echo get_the_ID(); ?>' class='post cf'>
 					<a href='<?php the_permalink(); ?>' class='post-title'><h4><?php the_title(); ?></h4></a>
 					<p class='post-date'><?php echo get_the_date(); ?></p>

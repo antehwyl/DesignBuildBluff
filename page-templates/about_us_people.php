@@ -24,8 +24,8 @@ $supporters			= get_field('supporters');
 		<div id='people-illus-one'></div>
 
 		<div id='team-members' class='cf'>
-			<?php foreach($team_members as $row): ?>
-				<div class='single-team-member'>
+			<?php $i=0; foreach($team_members as $row): $i++; ?>
+				<div class='single-team-member <?php echo 'row-'.$i; ?>'>
 					<div class='member-img-wrap'>
 						<img src='<?php echo $row['image']['url']; ?>' />
 					</div>
@@ -48,8 +48,8 @@ $supporters			= get_field('supporters');
 		<div id='people-illus-three'></div>
 
 		<div id='supporters' class='cf'>
-			<?php foreach($supporters as $row): ?>
-				<div class='single-supporter'>
+			<?php $i=0; foreach($supporters as $row): $i++; ?>
+				<div class='single-supporter <?php echo 'row-'.$i; ?>'>
 					<div class='supporter-img-wrap'>
 						<img src='<?php echo $row['image']['url']; ?>' />
 					</div>

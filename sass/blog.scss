@@ -7,6 +7,15 @@
 .archive-content{
 	max-width:$max-width;
 	margin:auto;
+
+}
+#content{
+	float:left;
+	text-align:center;
+	clear:both;
+	width:100%;
+	margin:0 0 50px 0;
+	min-height:500px;
 }
 #blog-filters{
 	float:right;
@@ -118,12 +127,7 @@
 .cat-141{//hide the project page category!
 	display:none !important;
 }
-#content{
-	float:left;
-	text-align:center;
-	clear:both;
-	width:100%;
-}
+
 .post-title{
 	
 	text-decoration:none;
@@ -133,11 +137,13 @@
 	font-size:1.75em;
 	color:$font-grey-two;
 		margin:60px 0 0 0;
+		font-weight:100;
 	}
 }
 .post-date{
 	font-family:$neu-reg;
-	font-size:.5625em;
+	font-size:.68em;
+	font-weight:600;
 	color:$font-grey-one;
 	text-transform:uppercase;
 	margin:10px 0 0 0;
@@ -145,9 +151,11 @@
 .post-excerpt{
 	font-family:$karla-reg;
 	font-size:1em;
+	line-height:1.375em;
 	color:$font-grey-two;
 	width:80%;
 	margin:30px 10% 0 10%;
+	text-align:left;
 }
 .post{
 	img{
@@ -163,7 +171,7 @@
 		font-family:$karla-bold;
 		font-size:1em;
 		color:$red;
-		border-bottom:4px solid $red;
+		border-bottom:4px solid $white;
 		display:inline-block;
 		margin:30px 0 30px 0;
 		line-height:1.5em;
@@ -172,7 +180,7 @@
 }
 .read-more-link:hover{
 	p{
-		border-bottom:4px solid $font-dark;
+		border-bottom:4px solid $red;
 	}
 }
 #pbd-alp-load-posts{
@@ -253,6 +261,9 @@
 	}
 }
 @media only screen and (max-width:600px){//phone-ish
+	#content{
+		margin:0;
+	}
 	.blog-content,
 	.category-content,
 	.archive-content{

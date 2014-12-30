@@ -20,13 +20,21 @@
 }
 .single-team-member,
 .single-supporter{
-	width:45%;
-	margin:0 2.5% 22px 2.5%;
+	width:32%;
+ 	overflow:hidden;
+ 	//float:left;
+	margin:0 0 22px 2%;
 	float:left;
 	text-align:center;
 	img{
 		width:100%;
 	}
+	.member-img-wrap{
+		height:500px;
+	}
+}
+.row-1,.row-4,.row-7,.row-10,.row-13,.row-16,.row-19,.row-22,.row-25,.row-28{
+	margin:0 0 22px 0;
 }
 .member-img-wrap,
 .supporter-img-wrap{
@@ -121,6 +129,15 @@
 		margin:0 40px;
 	}
 }
+@media only screen and (max-width:1100px){//tablet-ish
+	.single-team-member,
+	.single-supporter{
+		.member-img-wrap,
+		.supporter-img-wrap{
+			height:400px;
+		}
+	}
+}
 @media only screen and (max-width:1000px){//tablet-ish
 	.section-heading{
 		margin:100px 0 0 0;
@@ -129,13 +146,24 @@
 	.single-supporter{
 		width:48%;
 		margin:0 1% 22px 1%;
-	}
-	.member-img-wrap, 
-	.supporter-img-wrap{
-		height:250px;
+
+		.member-img-wrap, 
+		.supporter-img-wrap{
+			height:500px;
+		}
 	}
 }
-@media only screen and (max-width:750px){
+@media only screen and (max-width:800px){
+	.single-team-member, 
+	.single-supporter{
+
+		.member-img-wrap, 
+		.supporter-img-wrap{
+			height:400px;
+		}
+	}
+}
+@media only screen and (max-width:700px){
 	#people-illus-two{
 		width:305px;
 	}
@@ -143,6 +171,13 @@
 		width:200px;
 		margin:-81px 0 0 0;
 		background-position-x:70px;
+	}
+	.single-team-member, 
+	.single-supporter{
+		.member-img-wrap, 
+		.supporter-img-wrap{
+			height:350px;
+		}
 	}
 }
 @media only screen and (max-width:600px){//phone-ish
@@ -170,6 +205,12 @@
 	.single-supporter{
 		width:100%;
 		margin:0;
+		.member-img-wrap, 
+		.supporter-img-wrap{
+			height:300px;
+			width:50%;
+			margin:auto;
+		}
 	}
 	.single-supporter{
 		margin-bottom:15px;
@@ -192,5 +233,49 @@
 	}
 	#people-illus-three{
 		display:none;
+	}
+}
+@media only screen and (max-width:500px){//phone-ish
+	.single-team-member,
+	.single-supporter{
+		.member-img-wrap, 
+		.supporter-img-wrap{
+			height:350px;
+			width:70%;
+			margin:auto;
+		}
+	}
+}
+@media only screen and (max-width:400px){//phone-ish
+	.single-team-member,
+	.single-supporter{
+		.member-img-wrap, 
+		.supporter-img-wrap{
+			height:350px;
+			width:75%;
+			margin:auto;
+		}
+	}
+}
+@media only screen and (max-width:350px){//phone-ish
+	.single-team-member,
+	.single-supporter{
+		.member-img-wrap, 
+		.supporter-img-wrap{
+			height:320px;
+			width:80%;
+			margin:auto;
+		}
+	}
+}
+@media only screen and (max-width:300px){//phone-ish
+	.single-team-member,
+	.single-supporter{
+		.member-img-wrap, 
+		.supporter-img-wrap{
+			height:320px;
+			width:100%;
+			margin:auto;
+		}
 	}
 }

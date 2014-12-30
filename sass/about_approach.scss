@@ -23,7 +23,7 @@
 		color:$font-grey-two;
 		line-height:1.4em;
 		//float:left;
-
+		text-align:left;
 		-webkit-column-count: 2; /* Chrome, Safari, Opera */
 	    -moz-column-count: 2; /* Firefox */
 	    column-count: 2;
@@ -51,9 +51,18 @@
 	position:relative;
 	margin:0 0 55px 0;
 	//float:left;
+	cursor:pointer;
 	img{
 		width:100%;
 		display:block;
+	}
+}
+#video-text-wrap:hover{
+	#play-preload{
+		opacity:0;
+	}
+	#play-button{
+		opacity:1;
 	}
 }
 #video:before{
@@ -125,7 +134,7 @@
 		color:$font-grey-two;
 		line-height:1.4em;
 		float:left;
-
+		text-align:left;
 		-webkit-column-count: 2; /* Chrome, Safari, Opera */
 	    -moz-column-count: 2; /* Firefox */
 	    column-count: 2;

@@ -47,6 +47,14 @@
   max-width: 1220px;
   margin: auto; }
 
+#content {
+  float: left;
+  text-align: center;
+  clear: both;
+  width: 100%;
+  margin: 0 0 50px 0;
+  min-height: 500px; }
+
 #blog-filters {
   float: right;
   margin: 45px 0 0 0; }
@@ -145,23 +153,19 @@
 .cat-141 {
   display: none !important; }
 
-#content {
-  float: left;
-  text-align: center;
-  clear: both;
-  width: 100%; }
-
 .post-title {
   text-decoration: none; }
   .post-title h4 {
     font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1.75em;
     color: #515254;
-    margin: 60px 0 0 0; }
+    margin: 60px 0 0 0;
+    font-weight: 100; }
 
 .post-date {
   font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 0.5625em;
+  font-size: 0.68em;
+  font-weight: 600;
   color: #8A8C88;
   text-transform: uppercase;
   margin: 10px 0 0 0; }
@@ -169,9 +173,11 @@
 .post-excerpt {
   font-family: "Karla Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
+  line-height: 1.375em;
   color: #515254;
   width: 80%;
-  margin: 30px 10% 0 10%; }
+  margin: 30px 10% 0 10%;
+  text-align: left; }
 
 .post img {
   max-width: 100%;
@@ -185,7 +191,7 @@
     font-family: "Karla Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1em;
     color: #FF5F3F;
-    border-bottom: 4px solid #FF5F3F;
+    border-bottom: 4px solid #ffffff;
     display: inline-block;
     margin: 30px 0 30px 0;
     line-height: 1.5em;
@@ -195,7 +201,7 @@
     transition: all 0.2s ease; }
 
 .read-more-link:hover p {
-  border-bottom: 4px solid #515254; }
+  border-bottom: 4px solid #FF5F3F; }
 
 #pbd-alp-load-posts {
   font-family: "Karla Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -268,6 +274,8 @@
     margin: 0; } }
 
 @media only screen and (max-width: 600px) {
+  #content {
+    margin: 0; }
   .blog-content, .category-content, .archive-content {
     width: auto;
     margin: 0 20px 60px 20px; }
