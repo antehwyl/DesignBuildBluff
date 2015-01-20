@@ -12,6 +12,8 @@ $team_heading 		= get_field('team_heading');
 $team_members		= get_field('team_members');
 $supporters_heading = get_field('supporters_heading');
 $supporters			= get_field('supporters');
+$advisors_heading	= get_field('advisors_heading');
+$advisors 			= get_field('advisors');
 ?>
 
 <div id='content-wrap' class='people-content'>
@@ -56,6 +58,23 @@ $supporters			= get_field('supporters');
 					<h4 class='member-name'><?php echo $row['name']; ?></h4>
 					<p class='member-position'><?php echo $row['position']; ?></p>
 				</div>
+			<?php endforeach; ?>
+		</div>
+
+		<div id='advisors-heading' class='cf'>
+			<?php foreach($advisors_heading as $row): ?>
+				<h4 class='section-heading'><?php echo $row['heading']; ?></h4>
+				<p class='section-sub-heading'><?php echo $row['text']; ?></p>
+			<?php endforeach; ?>
+		</div>
+
+		<div id='advisors' class='cf'>
+			<?php foreach($advisors as $row): ?>
+				<?php if($row['link']): ?>
+					<a href='<?php echo $row['link']; ?>'><p><?php echo $row['name']; ?></p></a>
+				<?php else: ?>
+					<p><?php echo $row['name']; ?></p>
+				<?php endif; ?>
 			<?php endforeach; ?>
 		</div>
 
