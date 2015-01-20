@@ -20,7 +20,7 @@
 		var picThree = $('.picture-3');
 		var picThreeSrc = picThree.find('img').attr('src');
 		picThree.find('img').css('display','none');
-		picThree.backstretch(picTwoSrc);
+		picThree.backstretch(picThreeSrc);
 	}
 
 	var scale = {
