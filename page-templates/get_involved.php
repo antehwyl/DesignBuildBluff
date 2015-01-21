@@ -25,7 +25,11 @@ $page_section 	= get_field('page_section');
 				<div class='page_section <?php echo 'section'.$i; ?>'>
 					<h4 class='section-heading'><?php echo $row['heading']; ?></h4>
 					<p class='section-sub-heading'><?php echo $row['text']; ?></p>
-					<a href='<?php echo $row['link']; ?>' target='_blank'><p class='section-link'><?php echo $row['link_text']; ?></p></a>
+					<?php if($row['link_type']=='Link' ): ?>
+						<a href='<?php echo $row['link']; ?>' target='_blank'><p class='section-link'><?php echo $row['link_text']; ?></p></a>
+					<?php elseif($row['link_type']=='Email'): ?>
+						<a href="mailto:<?php echo $row['link']; ?>?subject=I'm curious about DesignBuildBLUFF" ><p class='section-link'><?php echo $row['link_text']; ?></p></a>
+					<?php endif; ?>
 					<div id='involved-illus-<?php echo $i; ?>'></div>
 				</div>
 			<?php endforeach; ?>
