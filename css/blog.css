@@ -173,11 +173,11 @@
 .post-excerpt {
   font-family: "Karla Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
-  line-height: 1.375em;
+  line-height: 1.5em;
   color: #515254;
   width: 80%;
   margin: 30px 10% 0 10%;
-  text-align: left; }
+  text-align: center; }
 
 .post img {
   max-width: 100%;

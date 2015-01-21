@@ -340,7 +340,7 @@
 
 #mobile-toggle:before {
   font-family: 'fontello';
-  content: '\e814';
+  content: '\e801';
   display: inline-block;
   font-size: 2em;
   font-weight: 100;
@@ -431,6 +431,8 @@
   .blog #main-menu-wrap .main-menu-donate:hover a, .archive #main-menu-wrap .main-menu-donate:hover a, .blog-page #main-menu-wrap .main-menu-donate:hover a {
     background: white;
     color: #1AB19A; }
+  .blog #main-menu-wrap .main-menu-work:hover a, .blog #main-menu-wrap .main-menu-about:hover a, .blog #main-menu-wrap .main-menu-involved:hover a, .blog #main-menu-wrap .main-menu-contact:hover a, .archive #main-menu-wrap .main-menu-work:hover a, .archive #main-menu-wrap .main-menu-about:hover a, .archive #main-menu-wrap .main-menu-involved:hover a, .archive #main-menu-wrap .main-menu-contact:hover a, .blog-page #main-menu-wrap .main-menu-work:hover a, .blog-page #main-menu-wrap .main-menu-about:hover a, .blog-page #main-menu-wrap .main-menu-involved:hover a, .blog-page #main-menu-wrap .main-menu-contact:hover a {
+    color: #A3E0D7; }
   .page-template-page-templatesabout_us_approach-php #main-menu-wrap .main-menu-about ul, .page-template-page-templatesabout_us_people-php #main-menu-wrap .main-menu-about ul, .page-template-page-templatesabout_us_impact-php #main-menu-wrap .main-menu-about ul {
     max-height: 1000px;
     padding: 9px 0 0 0; }

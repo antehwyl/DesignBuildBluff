@@ -481,7 +481,7 @@
 }
 #mobile-toggle:before{
 	font-family:'fontello';
-	content: '\e814';
+	content: '\e801';
 	display:inline-block;
 	font-size:2em;
 	font-weight:100;
@@ -634,6 +634,14 @@
 					color:$teal;
 				}
 			}
+			.main-menu-work:hover,
+			.main-menu-about:hover,
+			.main-menu-involved:hover,
+			.main-menu-contact:hover{
+				a{
+					color:$light-teal;
+				}
+			}
 		}
 	}
 	.page-template-page-templatesabout_us_approach-php,
@@ -683,6 +691,7 @@
 					color:$light-teal;
 				}
 			}
+
 		}
 	}
 	.project-page{

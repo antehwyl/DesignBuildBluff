@@ -7,28 +7,16 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "559647a6f430b3aeadbecd67194451dd",
-      "css": "menu",
-      "code": 59411,
+      "uid": "5211af474d3a9848f67f945e2ccaf143",
+      "css": "cancel",
+      "code": 59392,
       "src": "fontawesome"
     },
     {
-      "uid": "2cfb3f2b46b34a1790aec0aa846297b6",
-      "css": "menu-1",
-      "code": 59412,
-      "src": "entypo"
-    },
-    {
-      "uid": "c709da589c923ba3c2ad48d9fc563e93",
-      "css": "cancel",
-      "code": 59392,
-      "src": "entypo"
-    },
-    {
-      "uid": "c55fdf978f617992b43ee7cbaa6ef87e",
-      "css": "menu-2",
-      "code": 59413,
-      "src": "mfglabs"
+      "uid": "559647a6f430b3aeadbecd67194451dd",
+      "css": "menu",
+      "code": 59393,
+      "src": "fontawesome"
     }
   ]
 }

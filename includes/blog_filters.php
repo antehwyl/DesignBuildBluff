@@ -7,7 +7,7 @@ $blog_page = get_page_by_title( 'Blog' );
 //echo '</pre>';
 $category = array(
 	'show_option_all'    => '',
-	'show_option_none'   => 'Clear Filter',
+	'show_option_none'   => 'All Posts',
 	'orderby'            => 'NAME', 
 	'order'              => 'ASC',
 	'show_count'         => 0,

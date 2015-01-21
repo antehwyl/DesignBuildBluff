@@ -48,9 +48,11 @@
 		init:function(){
 			if( $('#mobile-toggle').css('display') == 'block' ){//if mobile size
 				where = 'mobile';
+				$('#main-menu-wrap').addClass('mobile');
 			}
 			if( $('#mobile-toggle').css('display') == 'none' ){//if desktop size
 				where = 'screen';
+				$('#main-menu-wrap').addClass('desktop');
 			}
 		},
 		watch:function(){
@@ -59,12 +61,16 @@
 					if( $('#mobile-toggle').css('display') == 'block' ){//moved from desktop to mobile size
 						where = 'mobile';
 						$('#main-menu-wrap').css('display','none');
+						$('#main-menu-wrap').addClass('mobile');
+						$('#main-menu-wrap').removeClass('desktop');
 					}
 				}
 				if( where=='mobile' ){
 					if( $('#mobile-toggle').css('display') == 'none' ){//moved from mobile to desktop size
 						where = 'screen';
 						$('#main-menu-wrap').css('display','block');
+						$('#main-menu-wrap').addClass('desktop');
+						$('#main-menu-wrap').removeClass('mobile');
 					}
 				}
 			});
