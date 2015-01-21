@@ -65,13 +65,19 @@ $press 			= get_field('press');
 		<div id='press'>
 			<?php foreach($press as $row): ?>
 				
-				<?php if($row['link']): /* If there is a link */ ?>
+				<?php if($row['link'] && !$row['pdf']): /* If there is a link */ ?>
 					<div>
 						<a href='<?php echo $row['link']; ?>' target='_blank'><p><?php echo $row['item']; ?></p></a>
 					</div>
 				<?php endif; ?>
 
-				<?php if(!$row['link']): /* If there is no link */ ?>
+				<?php if($row['pdf'] && !$row['link']): ?>
+					<div>
+						<a href='<?php echo $row['pdf']['url']; ?>' target='_blank'><p><?php echo $row['item']; ?></p></a>
+					</div>
+				<?php endif; ?>
+				
+				<?php if(!$row['link'] && !$row['pdf']): /* If there is no link */ ?>
 					<p><?php echo $row['item']; ?></p>
 				<?php endif; ?>
 
