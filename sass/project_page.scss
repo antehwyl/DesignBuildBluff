@@ -114,18 +114,19 @@
 }
 #project-credits{
 	text-align:center;
-	margin:40px 0 40px 0;
+	margin:40px 0 60px 0;
 	.section-heading{
 		font-family:$neu-reg;
 		color:$font-grey-one;
 		font-size:1.25em;
 		//text-align:center
+		margin:0 0 30px 0;
 	}
 	p{
 		font-family:$neu-reg;
-		font-size:1.75em;
+		font-size:1em;
 		color:$font-grey-two;
-		margin:20px 0 0 0;
+		margin:15px 0 0 0;
 		line-height:1em;
 	}
 }
@@ -284,7 +285,7 @@
 			font-size:1.25em;
 	}
 	#project-credits{
-		margin:20px 0 20px 0;
+		margin:20px 0 40px 0;
 		.section-heading{
 			font-size:1em;
 		}

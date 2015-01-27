@@ -25,9 +25,9 @@ $images			= get_field('images');
 			<?php endforeach; ?>
 		</div>
 
-		<div id='video'>
-			<?php foreach($video as $row): ?>
-				<a class='fancybox-video' href='<?php echo $row['iframe']; ?>'>
+		<?php foreach($video as $row): ?>
+			<a class='fancybox-video' href='<?php echo $row['iframe']; ?>'>
+				<div id='video'>
 					<div class='video-screencap'>
 						<img src='<?php echo $row['thumbnail']['url']; ?>' />
 						
@@ -36,10 +36,10 @@ $images			= get_field('images');
 							<div id='play-preload'></div>
 						
 						</div>
-					</div>
-				</a>
-			<?php endforeach; ?>
-		</div>
+					</div>					
+				</div>
+			</a>
+		<?php endforeach; ?>
 
 		<div id='approach-illus-one'></div>
 

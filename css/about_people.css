@@ -119,25 +119,25 @@
 
 #advisors {
   text-align: center;
-  margin: 50px 0 100px 0; }
+  margin: 30px 0 100px 0; }
   #advisors a {
     text-decoration: none;
     clear: both; }
     #advisors a p {
+      color: #1AB19A;
       display: inline-block;
       clear: both;
-      border-bottom: 4px solid #D4EA00;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       -o-transition: all 0.2s ease;
       transition: all 0.2s ease; }
   #advisors a:hover p {
-    border-bottom: 4px solid #515254; }
+    color: #A3E0D7; }
   #advisors p {
     font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 1.75em;
+    font-size: 1em;
     color: #515254;
-    margin: 20px 0 0 0;
+    margin: 15px 0 0 0;
     line-height: 1em; }
 
 #people-illus-one {

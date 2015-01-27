@@ -91,9 +91,9 @@
     width: 100%;
     display: block; }
 
-#video-text-wrap:hover #play-preload {
+#video:hover #play-preload {
   opacity: 0; }
-#video-text-wrap:hover #play-button {
+#video:hover #play-button {
   opacity: 1; }
 
 #video:before {

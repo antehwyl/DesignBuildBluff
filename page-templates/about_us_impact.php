@@ -29,22 +29,20 @@ $press 			= get_field('press');
 				<p class='section-text'><?php echo $row['text']; ?></p>
 			<?php endforeach; ?>
 		</div>
-
-		<div id='video' class='cf'>
-			<?php foreach($video as $row): ?>
-				<a class='fancybox-video' href='<?php echo $row['iframe']; ?>'>
-					<div class='video-screencap'>
-						<img src='<?php echo $row['thumbnail']['url']; ?>' />
-						
-						<div id='video-text-wrap'>
-							<div id='play-button'><span>PLAY</span></div>
-							<div id='play-preload'></div>
-							
+		
+		<?php foreach($video as $row): ?>
+			<a class='fancybox-video' href='<?php echo $row['iframe']; ?>'>
+				<div id='video' class='cf'>
+						<div class='video-screencap'>
+							<img src='<?php echo $row['thumbnail']['url']; ?>' />
+							<div id='video-text-wrap'>
+								<div id='play-button'><span>PLAY</span></div>
+								<div id='play-preload'></div>
+							</div>
 						</div>
-					</div>
-				</a>
-			<?php endforeach; ?>
-		</div>
+				</div>
+			</a>
+		<?php endforeach; ?>
 
 		<div id='impact-illus-two'></div>
 
