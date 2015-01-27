@@ -135,7 +135,7 @@
 
 #project-credits {
   text-align: center;
-  margin: 70px 0 0 0; }
+  margin: 40px 0 40px 0; }
   #project-credits .section-heading {
     font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #8A8C88;
@@ -249,4 +249,15 @@
     font-size: 1.25em; }
   #project-nav {
     font-size: 1.25em;
-    margin: 25px 0 50px 0; } }
+    margin: 25px 0 50px 0; }
+  .project-text.headline {
+    margin: 10px 0 25px 0;
+    font-size: 1.25em; }
+  #project-credits {
+    margin: 20px 0 20px 0; }
+    #project-credits .section-heading {
+      font-size: 1em; }
+    #project-credits p {
+      font-size: 1em;
+      margin: 20px 0 0 0;
+      line-height: 1em; } }
