@@ -49,14 +49,16 @@ $credits 	= get_field('credits');
 			<?php endforeach; ?>
 		</div>
 		
-		<div id='project-credits'>
-			<h4 class='section-heading'>Credits</h4>
-			<div id='credits-names'>
-				<?php foreach($credits as $row): ?>
-					<p><?php echo $row['text']; ?></p>
-				<?php endforeach; ?>
+		<?php if(have_rows('credits')): ?>
+			<div id='project-credits'>
+				<h4 class='section-heading'>Credits</h4>
+				<div id='credits-names'>
+					<?php foreach($credits as $row): ?>
+						<p><?php echo $row['text']; ?></p>
+					<?php endforeach; ?>
+				</div>
 			</div>
-		</div>
+		<?php endif; ?>
 		
 		<div id='project-nav' class='cf'>
 			<div class='left'>
