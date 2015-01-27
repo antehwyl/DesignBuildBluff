@@ -11,6 +11,7 @@ get_header(); ?>
 $title 		= get_field('title');
 $headline 	= get_field('headline');
 $body 		= get_field('content');
+$credits 	= get_field('credits');
 ?>
 
 <div id='content-wrap' class='project-content'>
@@ -47,7 +48,16 @@ $body 		= get_field('content');
 				<?php endif; ?>
 			<?php endforeach; ?>
 		</div>
-
+		
+		<div id='project-credits'>
+			<h4 class='section-heading'>Credits</h4>
+			<div id='credits-names'>
+				<?php foreach($credits as $row): ?>
+					<p><?php echo $row['text']; ?></p>
+				<?php endforeach; ?>
+			</div>
+		</div>
+		
 		<div id='project-nav' class='cf'>
 			<div class='left'>
 				
