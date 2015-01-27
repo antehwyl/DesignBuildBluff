@@ -96,6 +96,11 @@
   text-align: center;
   position: relative;
   z-index: 2; }
+  #featured-text-wrap p {
+    font-family: "Neuzeit Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #ffffff;
+    font-size: 1em;
+    margin: 0 0 10px 0; }
   #featured-text-wrap h3 {
     position: absolute;
     font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -125,6 +130,8 @@
   #featured-text-wrap a:hover #view-project {
     opacity: 1; }
   #featured-text-wrap a:hover h3 {
+    opacity: 0; }
+  #featured-text-wrap a:hover p {
     opacity: 0; }
   #featured-text-wrap #view-project {
     font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -215,14 +222,18 @@
   transition: all 0.3s ease;
   text-align: center;
   z-index: 2; }
+  .sub-project-text-wrap p {
+    font-family: "Neuzeit Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #ffffff;
+    font-size: 0.75em;
+    margin: 0 0 7px 0; }
   .sub-project-text-wrap h3 {
     margin: 0;
     font-size: 1.75em;
     font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 100;
     color: #ffffff;
-    border-bottom: 2px solid #D4EA00;
-    padding: 8px 0 0 0; }
+    border-bottom: 2px solid #D4EA00; }
   .sub-project-text-wrap .visit-text {
     display: none; }
 

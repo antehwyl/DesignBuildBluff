@@ -26,13 +26,15 @@ $projects 	= get_field('projects');
 		    	<div class='nav-buffer'></div>
 
 		    	<?php 
-		    		$thumbnail = get_field('thumbnail');
+		    		$thumbnail 	= get_field('thumbnail');
+		    		$year 		= get_field('year');
 		    	?>
 		    	<img src='<?php echo $thumbnail['url']; ?>' />
 		    	<div id='featured-text-wrap'>
 		    		<div id='text-wrap-inner'>
 		    			<p class='featured-text'>Featured</p>
 						<a href='<?php the_permalink(); ?>' id='featured-link'>
+							<p><?php echo $year; ?></p>
 							<h3><?php echo the_title(); ?></h3>
 							<p id='view-project'>View Project</p>
 						</a>
@@ -53,12 +55,14 @@ $projects 	= get_field('projects');
 					 	$post = $row['project'];
 						setup_postdata( $post );
 						$thumbnail_two = get_field('thumbnail');
+						$year_two = get_field('year');
 						
 			?>
 					<a href='<?php the_permalink(); ?>'>
 						<div class='sub-project <?php if($i%2==0){echo 'even-project';} if($i%2!=0){echo 'odd-project';}  ?>'>
 							<img src='<?php echo $thumbnail_two['url'];?>' />
 							<div class='sub-project-text-wrap'>
+								<p><?php echo $year_two; ?></p>
 								<h3><?php echo the_title(); ?></h3>
 								
 							</div>

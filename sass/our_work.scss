@@ -50,6 +50,12 @@
 	text-align:center;
 	position:relative;
 	z-index:2;
+	p{
+		font-family:$neu-bold;
+		color:$white;
+		font-size:1em;
+		margin:0 0 10px 0;
+	}
 	h3{
 		position:absolute;
 		font-family:$neu-reg;
@@ -78,6 +84,9 @@
 			opacity:1;
 		}
 		h3{
+			opacity:0;
+		}
+		p{
 			opacity:0;
 		}
 	}
@@ -162,6 +171,12 @@
 	text-align:center;
 	//@include transform(translateX(-50%));
 	z-index:2;
+	p{
+		font-family:$neu-bold;
+		color:$white;
+		font-size:.75em;
+		margin:0 0 7px 0;
+	}
 	h3{
 		margin:0;
 		font-size:1.75em;
@@ -170,7 +185,7 @@
 		color:$white;
 		border-bottom:2px solid $yellow;
 		//font-weight:600;
-		padding:8px 0 0 0;
+		//padding:8px 0 0 0;
 	}
 	.visit-text{
 		display:none;

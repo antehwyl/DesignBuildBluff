@@ -47,13 +47,16 @@ $featured 			= get_field('featured_projects');
 					// override $post
 					 	$post = $row['project'];
 						setup_postdata( $post );
-						$thumbnail = get_field('thumbnail'); 
-
+						$thumbnail 	= get_field('thumbnail'); 
+						$year		= get_field('year');
 			?>
 				<a href='<?php the_permalink(); ?>'>
 					<div class='featured-item item-<?php echo $i; ?>'>
 						<img src='<?php echo $thumbnail['url']; ?>' />
-						<h5 class='featured-item-title'><?php the_title(); ?></h5>
+						<div class='featured-text-wrap'>
+							<p class='featured-item-year'><?php echo $year; ?></p>
+							<h5 class='featured-item-title'><?php the_title(); ?></h5>
+						</div>
 						<div class='hover-overlay'>
 							<p>View Project</p>
 						</div>

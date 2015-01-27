@@ -210,6 +210,19 @@
 	}
 }
 @media only screen and (max-width:900px){//phone-ish
+	#section-one,
+	#section-two{
+		.section-one-text,
+		.section-two-text{	
+			text-align:center;
+			-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		    -moz-column-count: 1; /* Firefox */
+		    column-count: 1;
+		    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+		    -moz-column-gap: 20px; /* Firefox */
+		    column-gap: 20px;
+		}
+	}
 	.picture-2,
 	.picture-3{
 		width:100%;

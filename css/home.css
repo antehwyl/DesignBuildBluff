@@ -137,7 +137,7 @@
 
 .featured-item:hover .hover-overlay {
   opacity: 1; }
-.featured-item:hover .featured-item-title {
+.featured-item:hover .featured-text-wrap {
   opacity: 0; }
 
 .hover-overlay {
@@ -165,9 +165,10 @@
     -webkit-animation-fill-mode: forwards;
     margin: auto;
     border: 2px solid #ffffff;
-    padding: 5px 20px 2px 20px;
+    padding: 10px 20px 2px 20px;
     display: inline-block;
-    font-weight: 100; }
+    font-weight: 100;
+    line-height: 1em; }
 
 .featured-item:before {
   content: '';
@@ -185,16 +186,30 @@
   transition: all 0.3s ease;
   z-index: 1; }
 
-.featured-item-title {
+.featured-text-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 2;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards; }
+
+.featured-item-year {
+  text-align: center;
+  font-family: "Neuzeit Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1em;
+  color: #ffffff;
+  margin: 0 0 5px 0; }
+
+.featured-item-title {
   font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.75em;
   color: #ffffff;
@@ -202,11 +217,7 @@
   margin: 0;
   z-index: 2;
   font-weight: 100;
-  padding: 8px 0 2px 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  padding: 0; }
 
 #home-blog {
   width: 1220px;
