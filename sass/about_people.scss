@@ -3,7 +3,7 @@
 @import 'global';
 
 .people-content{
-	width:$max-width;
+	width:1000px;
 	margin:auto;
 }
 #team-heading{
@@ -31,7 +31,7 @@
 	}
 	.member-img-wrap,
 	.supporter-img-wrap{
-		height:500px;
+		height:420px;
 	}
 }
 .row-1,.row-4,.row-7,.row-10,.row-13,.row-16,.row-19,.row-22,.row-25,.row-28{
@@ -86,17 +86,19 @@
 }
 #advisors{
 	text-align:center;
-	margin:30px 0 100px 0;
+	margin:30px auto 100px auto;
+	width:50%;
+
 	a{
 		text-decoration:none;
-		//display:inline-block;
-		clear:both;
+		display:block;
+		//clear:both;
 		
 		p{
 			//font-size:1em;
 			color:$teal;
-			display:inline-block;
-			clear:both;
+			//display:inline-block;
+			//clear:both;
 			//line-height:1.2em;
 			//border-bottom:4px solid $yellow;
 			@include transition(0.2s);
@@ -114,6 +116,14 @@
 		color:$font-grey-two;
 		margin:15px 0 0 0;
 		line-height:1em;
+	}
+	.even{
+		float:right;
+		clear:right;
+	}
+	.odd{
+		float:left;
+		clear:left;
 	}
 }
 #people-illus-one{
@@ -186,6 +196,14 @@
 		.member-img-wrap, 
 		.supporter-img-wrap{
 			height:500px;
+		}
+	}
+	#advisors{
+		width:100%;
+		.even,
+		.odd{
+			float:none;
+			clear:both;
 		}
 	}
 }

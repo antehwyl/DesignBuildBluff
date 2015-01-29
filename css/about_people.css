@@ -44,7 +44,7 @@
   height: 113px; }
 
 .people-content {
-  width: 1220px;
+  width: 1000px;
   margin: auto; }
 
 #team-heading {
@@ -68,7 +68,7 @@
   .single-team-member img, .single-supporter img {
     width: 100%; }
   .single-team-member .member-img-wrap, .single-team-member .supporter-img-wrap, .single-supporter .member-img-wrap, .single-supporter .supporter-img-wrap {
-    height: 500px; }
+    height: 420px; }
 
 .row-1, .row-4, .row-7, .row-10, .row-13, .row-16, .row-19, .row-22, .row-25, .row-28 {
   margin: 0 0 22px 0; }
@@ -119,14 +119,13 @@
 
 #advisors {
   text-align: center;
-  margin: 30px 0 100px 0; }
+  margin: 30px auto 100px auto;
+  width: 50%; }
   #advisors a {
     text-decoration: none;
-    clear: both; }
+    display: block; }
     #advisors a p {
       color: #1AB19A;
-      display: inline-block;
-      clear: both;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       -o-transition: all 0.2s ease;
@@ -139,6 +138,12 @@
     color: #515254;
     margin: 15px 0 0 0;
     line-height: 1em; }
+  #advisors .even {
+    float: right;
+    clear: right; }
+  #advisors .odd {
+    float: left;
+    clear: left; }
 
 #people-illus-one {
   background: url('img/Illos/illus-01.png');
@@ -191,7 +196,12 @@
     width: 48%;
     margin: 0 1% 22px 1%; }
     .single-team-member .member-img-wrap, .single-team-member .supporter-img-wrap, .single-supporter .member-img-wrap, .single-supporter .supporter-img-wrap {
-      height: 500px; } }
+      height: 500px; }
+  #advisors {
+    width: 100%; }
+    #advisors .even, #advisors .odd {
+      float: none;
+      clear: both; } }
 
 @media only screen and (max-width: 800px) {
   .single-team-member .member-img-wrap, .single-team-member .supporter-img-wrap, .single-supporter .member-img-wrap, .single-supporter .supporter-img-wrap {

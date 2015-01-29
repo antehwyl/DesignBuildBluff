@@ -3,7 +3,7 @@
 @import 'global';
 
 .project-content{
-	width:$max-width;
+	width:1000px;
 	margin:auto;
 }
 #project-title{
@@ -114,7 +114,8 @@
 }
 #project-credits{
 	text-align:center;
-	margin:40px 0 60px 0;
+	margin:40px auto 60px auto;
+	width:75%;
 	.section-heading{
 		font-family:$neu-reg;
 		color:$font-grey-one;
@@ -122,12 +123,18 @@
 		//text-align:center
 		margin:0 0 30px 0;
 	}
+	h5{
+		font-family:$neu-reg;
+		font-size:1em;
+		color:$font-grey-two;
+		margin:30px 0 0 0;
+	}
 	p{
 		font-family:$neu-reg;
 		font-size:1em;
 		color:$font-grey-two;
-		margin:15px 0 0 0;
-		line-height:1em;
+		margin:10px 0 0 0;
+		line-height:1.5em;
 	}
 }
 #project-nav{

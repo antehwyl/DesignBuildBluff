@@ -30,11 +30,6 @@ $credits 	= get_field('credits');
 				<?php endif; ?>
 
 				<?php if($row['type'] == 'Headline'):  ?>
-					<?php
-						//echo '<pre>';
-						//print_r($row);
-						//echo '</pre>';
-					 ?>
 
 					<p class="cf project-text headline <?php echo 'row'.$i; ?>"><?php echo $row['headline']; ?></p>
 				<?php endif; ?>
@@ -54,6 +49,7 @@ $credits 	= get_field('credits');
 				<h4 class='section-heading'>Credits</h4>
 				<div id='credits-names'>
 					<?php foreach($credits as $row): ?>
+						<h5><?php echo $row['heading']; ?></h5>
 						<p><?php echo $row['text']; ?></p>
 					<?php endforeach; ?>
 				</div>

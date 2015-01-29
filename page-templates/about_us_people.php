@@ -69,11 +69,11 @@ $advisors 			= get_field('advisors');
 		</div>
 
 		<div id='advisors' class='cf'>
-			<?php foreach($advisors as $row): ?>
+			<?php $i=0; foreach($advisors as $row): $i++; ?>
 				<?php if($row['link']): ?>
-					<a href='<?php echo $row['link']; ?>'><p><?php echo $row['name']; ?></p></a>
+					<a href='<?php echo $row['link']; ?>' class='<?php if($i%2==0){echo 'even';} else{echo 'odd';} ?>'><p><?php echo $row['name']; ?></p></a>
 				<?php else: ?>
-					<p><?php echo $row['name']; ?></p>
+					<p class='<?php if($i%2==0){echo 'even';} else{echo 'odd';} ?>'><?php echo $row['name']; ?></p>
 				<?php endif; ?>
 			<?php endforeach; ?>
 		</div>

@@ -44,7 +44,7 @@
   height: 113px; }
 
 .project-content {
-  width: 1220px;
+  width: 1000px;
   margin: auto; }
 
 #project-title {
@@ -135,18 +135,24 @@
 
 #project-credits {
   text-align: center;
-  margin: 40px 0 60px 0; }
+  margin: 40px auto 60px auto;
+  width: 75%; }
   #project-credits .section-heading {
     font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #8A8C88;
     font-size: 1.25em;
     margin: 0 0 30px 0; }
+  #project-credits h5 {
+    font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1em;
+    color: #515254;
+    margin: 30px 0 0 0; }
   #project-credits p {
     font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1em;
     color: #515254;
-    margin: 15px 0 0 0;
-    line-height: 1em; }
+    margin: 10px 0 0 0;
+    line-height: 1.5em; }
 
 #project-nav {
   font-family: "Neuzeit Reg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
